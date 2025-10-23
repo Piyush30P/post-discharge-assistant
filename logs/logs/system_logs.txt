@@ -1,0 +1,989 @@
+[2025-10-23 00:08:07] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:08:07] [INFO] [PostDischargeAssistant] System Logger Initialized
+[2025-10-23 00:08:07] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:09:39] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:09:39] [INFO] [PostDischargeAssistant] System Logger Initialized
+[2025-10-23 00:09:39] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:12:31] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:12:31] [INFO] [PostDischargeAssistant] System Logger Initialized
+[2025-10-23 00:12:31] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:14:59] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:14:59] [INFO] [PostDischargeAssistant] System Logger Initialized
+[2025-10-23 00:14:59] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:15:58] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:15:58] [INFO] [PostDischargeAssistant] System Logger Initialized
+[2025-10-23 00:15:58] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:16:52] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:16:52] [INFO] [PostDischargeAssistant] System Logger Initialized
+[2025-10-23 00:16:52] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:18:36] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:18:36] [INFO] [PostDischargeAssistant] System Logger Initialized
+[2025-10-23 00:18:36] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:20:58] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:20:58] [INFO] [PostDischargeAssistant] System Logger Initialized
+[2025-10-23 00:20:58] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:21:30] [INFO] [PostDischargeAssistant] Generating 30 dummy patient records...
+[2025-10-23 00:21:30] [INFO] [PostDischargeAssistant] ✓ Successfully generated 30 patient records
+[2025-10-23 00:21:30] [INFO] [PostDischargeAssistant] ✓ Saved patient reports to: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\patient_reports.json
+[2025-10-23 00:21:30] [INFO] [PostDischargeAssistant] Initializing database at: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\patients.db
+[2025-10-23 00:21:30] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-10-23 00:21:30] [INFO] [PostDischargeAssistant] Bulk adding 30 patients...
+[2025-10-23 00:21:30] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Margaret Hernandez
+[2025-10-23 00:21:30] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Daniel King
+[2025-10-23 00:21:30] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Joseph Lee
+[2025-10-23 00:21:30] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Richard Jackson
+[2025-10-23 00:21:31] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Mary Smith
+[2025-10-23 00:21:31] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Sarah Moore
+[2025-10-23 00:21:31] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Patricia Walker
+[2025-10-23 00:21:31] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Sarah Lopez
+[2025-10-23 00:21:31] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Matthew Lopez
+[2025-10-23 00:21:31] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Jennifer Thomas
+[2025-10-23 00:21:31] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Elizabeth Williams
+[2025-10-23 00:21:31] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Mary Miller
+[2025-10-23 00:21:31] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: John Brown
+[2025-10-23 00:21:31] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: William Johnson
+[2025-10-23 00:21:31] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Sandra Anderson
+[2025-10-23 00:21:32] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Matthew Martinez
+[2025-10-23 00:21:32] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Richard Anderson
+[2025-10-23 00:21:32] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Ashley Harris
+[2025-10-23 00:21:32] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Susan Thompson
+[2025-10-23 00:21:32] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Robert Lee
+[2025-10-23 00:21:32] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Patricia Martinez
+[2025-10-23 00:21:32] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Jennifer Garcia
+[2025-10-23 00:21:32] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Sandra White
+[2025-10-23 00:21:32] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Sarah Harris
+[2025-10-23 00:21:32] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Jennifer Allen
+[2025-10-23 00:21:33] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Christopher Thompson
+[2025-10-23 00:21:33] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Mary White
+[2025-10-23 00:21:33] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Sandra Smith
+[2025-10-23 00:21:33] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Betty Thompson
+[2025-10-23 00:21:33] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Patricia Taylor
+[2025-10-23 00:21:33] [INFO] [PostDischargeAssistant] ✓ Successfully added 30/30 patients
+[2025-10-23 00:21:33] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:21:33] [INFO] [PostDischargeAssistant] Starting Enhanced PDF Processing Pipeline
+[2025-10-23 00:21:33] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:21:33] [INFO] [PostDischargeAssistant] Opening PDF: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\nephrology_book.pdf
+[2025-10-23 00:21:33] [INFO] [PostDischargeAssistant] PDF has 1547 pages
+[2025-10-23 00:21:37] [INFO] [PostDischargeAssistant] Processed 100/1547 pages...
+[2025-10-23 00:21:38] [INFO] [PostDischargeAssistant] Processed 200/1547 pages...
+[2025-10-23 00:21:39] [INFO] [PostDischargeAssistant] Processed 300/1547 pages...
+[2025-10-23 00:21:40] [INFO] [PostDischargeAssistant] Processed 400/1547 pages...
+[2025-10-23 00:21:41] [INFO] [PostDischargeAssistant] Processed 500/1547 pages...
+[2025-10-23 00:21:42] [INFO] [PostDischargeAssistant] Processed 600/1547 pages...
+[2025-10-23 00:21:43] [INFO] [PostDischargeAssistant] Processed 700/1547 pages...
+[2025-10-23 00:21:44] [INFO] [PostDischargeAssistant] Processed 800/1547 pages...
+[2025-10-23 00:21:45] [INFO] [PostDischargeAssistant] Processed 900/1547 pages...
+[2025-10-23 00:21:46] [INFO] [PostDischargeAssistant] Processed 1000/1547 pages...
+[2025-10-23 00:21:46] [INFO] [PostDischargeAssistant] Processed 1100/1547 pages...
+[2025-10-23 00:21:47] [INFO] [PostDischargeAssistant] Processed 1200/1547 pages...
+[2025-10-23 00:21:48] [INFO] [PostDischargeAssistant] Processed 1300/1547 pages...
+[2025-10-23 00:21:49] [INFO] [PostDischargeAssistant] Processed 1400/1547 pages...
+[2025-10-23 00:21:50] [INFO] [PostDischargeAssistant] Processed 1500/1547 pages...
+[2025-10-23 00:21:51] [INFO] [PostDischargeAssistant] ✓ Successfully extracted text from 1547 pages
+[2025-10-23 00:21:51] [INFO] [PostDischargeAssistant] Starting intelligent chunking (target=1000, overlap=200)...
+[2025-10-23 00:21:52] [INFO] [PostDischargeAssistant] ✓ Created 12562 intelligent chunks from 1547 pages
+[2025-10-23 00:21:52] [INFO] [PostDischargeAssistant] Chunk statistics:
+[2025-10-23 00:21:52] [INFO] [PostDischargeAssistant]   Average size: 705 characters
+[2025-10-23 00:21:52] [INFO] [PostDischargeAssistant]   Min size: 3 characters
+[2025-10-23 00:21:52] [INFO] [PostDischargeAssistant]   Max size: 6692 characters
+[2025-10-23 00:21:52] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:21:52] [INFO] [PostDischargeAssistant] PDF Processing Complete
+[2025-10-23 00:21:52] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:21:52] [INFO] [PostDischargeAssistant] Total Pages: 1547
+[2025-10-23 00:21:52] [INFO] [PostDischargeAssistant] Total Chunks: 12562
+[2025-10-23 00:21:52] [INFO] [PostDischargeAssistant] Average Chunk Size: 705 characters
+[2025-10-23 00:21:52] [INFO] [PostDischargeAssistant] Total Characters: 8,857,652
+[2025-10-23 00:21:52] [INFO] [PostDischargeAssistant] ✓ Saved chunks preview to: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\chunks_preview.txt
+[2025-10-23 00:21:52] [INFO] [PostDischargeAssistant] Initializing Pinecone client...
+[2025-10-23 00:21:52] [INFO] [PostDischargeAssistant] Loading embedding model: all-MiniLM-L6-v2
+[2025-10-23 00:22:13] [INFO] [PostDischargeAssistant] ✓ Embedding model loaded (dimension: 384)
+[2025-10-23 00:22:13] [INFO] [PostDischargeAssistant] Creating Pinecone index: nephrology-knowledge
+[2025-10-23 00:22:15] [INFO] [PostDischargeAssistant] Creating serverless index...
+[2025-10-23 00:22:15] [INFO] [PostDischargeAssistant]   Dimension: 384
+[2025-10-23 00:22:15] [INFO] [PostDischargeAssistant]   Metric: cosine
+[2025-10-23 00:22:15] [INFO] [PostDischargeAssistant]   Cloud: aws
+[2025-10-23 00:22:15] [INFO] [PostDischargeAssistant]   Region: us-east-1
+[2025-10-23 00:22:19] [INFO] [PostDischargeAssistant] Waiting for index to be ready...
+[2025-10-23 00:22:19] [INFO] [PostDischargeAssistant] ✓ Index 'nephrology-knowledge' created successfully
+[2025-10-23 00:22:20] [INFO] [PostDischargeAssistant] Upserting 12562 documents to Pinecone...
+[2025-10-23 00:22:20] [INFO] [PostDischargeAssistant] Batch size: 100
+[2025-10-23 00:31:02] [INFO] [PostDischargeAssistant] ✓ Successfully upserted documents
+[2025-10-23 00:31:02] [INFO] [PostDischargeAssistant]   Total vectors in index: 12562
+[2025-10-23 00:31:02] [INFO] [PostDischargeAssistant] Searching Pinecone for: 'chronic kidney disease treatment'
+[2025-10-23 00:31:02] [INFO] [PostDischargeAssistant]   Top K: 3
+[2025-10-23 00:31:02] [INFO] [PostDischargeAssistant] ✓ Found 3 results
+[2025-10-23 00:31:02] [INFO] [PostDischargeAssistant] Initializing database at: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\patients.db
+[2025-10-23 00:31:02] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-10-23 00:31:02] [INFO] [PostDischargeAssistant] Initializing Pinecone client...
+[2025-10-23 00:31:02] [INFO] [PostDischargeAssistant] Loading embedding model: all-MiniLM-L6-v2
+[2025-10-23 00:31:06] [INFO] [PostDischargeAssistant] ✓ Embedding model loaded (dimension: 384)
+[2025-10-23 00:31:06] [INFO] [PostDischargeAssistant] Connecting to index: nephrology-knowledge
+[2025-10-23 00:31:08] [INFO] [PostDischargeAssistant] ✓ Connected to index 'nephrology-knowledge'
+[2025-10-23 00:31:08] [INFO] [PostDischargeAssistant]   Total vectors: 12562
+[2025-10-23 00:36:52] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:36:52] [INFO] [PostDischargeAssistant] System Logger Initialized
+[2025-10-23 00:36:52] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:36:52] [INFO] [PostDischargeAssistant] Initializing database at: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\patients.db
+[2025-10-23 00:36:52] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-10-23 00:37:24] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:37:24] [INFO] [PostDischargeAssistant] System Logger Initialized
+[2025-10-23 00:37:24] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:37:24] [INFO] [PostDischargeAssistant] Initializing database at: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\patients.db
+[2025-10-23 00:37:24] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-10-23 00:38:58] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:38:58] [INFO] [PostDischargeAssistant] System Logger Initialized
+[2025-10-23 00:38:58] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:38:58] [INFO] [PostDischargeAssistant] Initializing database at: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\patients.db
+[2025-10-23 00:38:58] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-10-23 00:42:14] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:42:14] [INFO] [PostDischargeAssistant] System Logger Initialized
+[2025-10-23 00:42:14] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:42:14] [INFO] [PostDischargeAssistant] Initializing database at: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\patients.db
+[2025-10-23 00:42:14] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-10-23 00:44:12] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:44:12] [INFO] [PostDischargeAssistant] System Logger Initialized
+[2025-10-23 00:44:12] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:44:12] [INFO] [PostDischargeAssistant] Initializing database at: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\patients.db
+[2025-10-23 00:44:12] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-10-23 00:45:34] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:45:34] [INFO] [PostDischargeAssistant] System Logger Initialized
+[2025-10-23 00:45:34] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:45:34] [INFO] [PostDischargeAssistant] Initializing database at: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\patients.db
+[2025-10-23 00:45:34] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-10-23 00:48:39] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:48:39] [INFO] [PostDischargeAssistant] System Logger Initialized
+[2025-10-23 00:48:39] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:48:39] [INFO] [PostDischargeAssistant] Initializing database at: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\patients.db
+[2025-10-23 00:48:39] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-10-23 00:49:38] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:49:38] [INFO] [PostDischargeAssistant] System Logger Initialized
+[2025-10-23 00:49:38] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:49:38] [INFO] [PostDischargeAssistant] Initializing database at: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\patients.db
+[2025-10-23 00:49:38] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-10-23 00:50:39] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:50:39] [INFO] [PostDischargeAssistant] System Logger Initialized
+[2025-10-23 00:50:39] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:53:04] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:53:04] [INFO] [PostDischargeAssistant] System Logger Initialized
+[2025-10-23 00:53:04] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:53:53] [INFO] [PostDischargeAssistant] Initializing database at: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\patients.db
+[2025-10-23 00:53:53] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-10-23 00:53:59] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:53:59] [INFO] [PostDischargeAssistant] Starting Enhanced PDF Processing Pipeline
+[2025-10-23 00:53:59] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:53:59] [INFO] [PostDischargeAssistant] Opening PDF: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\nephrology_book.pdf
+[2025-10-23 00:53:59] [INFO] [PostDischargeAssistant] PDF has 1547 pages
+[2025-10-23 00:54:00] [INFO] [PostDischargeAssistant] Processed 100/1547 pages...
+[2025-10-23 00:54:01] [INFO] [PostDischargeAssistant] Processed 200/1547 pages...
+[2025-10-23 00:54:02] [INFO] [PostDischargeAssistant] Processed 300/1547 pages...
+[2025-10-23 00:54:02] [INFO] [PostDischargeAssistant] Processed 400/1547 pages...
+[2025-10-23 00:54:03] [INFO] [PostDischargeAssistant] Processed 500/1547 pages...
+[2025-10-23 00:54:04] [INFO] [PostDischargeAssistant] Processed 600/1547 pages...
+[2025-10-23 00:54:05] [INFO] [PostDischargeAssistant] Processed 700/1547 pages...
+[2025-10-23 00:54:06] [INFO] [PostDischargeAssistant] Processed 800/1547 pages...
+[2025-10-23 00:54:07] [INFO] [PostDischargeAssistant] Processed 900/1547 pages...
+[2025-10-23 00:54:08] [INFO] [PostDischargeAssistant] Processed 1000/1547 pages...
+[2025-10-23 00:54:08] [INFO] [PostDischargeAssistant] Processed 1100/1547 pages...
+[2025-10-23 00:54:09] [INFO] [PostDischargeAssistant] Processed 1200/1547 pages...
+[2025-10-23 00:54:10] [INFO] [PostDischargeAssistant] Processed 1300/1547 pages...
+[2025-10-23 00:54:11] [INFO] [PostDischargeAssistant] Processed 1400/1547 pages...
+[2025-10-23 00:54:12] [INFO] [PostDischargeAssistant] Processed 1500/1547 pages...
+[2025-10-23 00:54:13] [INFO] [PostDischargeAssistant] ✓ Successfully extracted text from 1547 pages
+[2025-10-23 00:54:13] [INFO] [PostDischargeAssistant] Starting intelligent chunking (target=1000, overlap=200)...
+[2025-10-23 00:54:14] [INFO] [PostDischargeAssistant] ✓ Created 12562 intelligent chunks from 1547 pages
+[2025-10-23 00:54:14] [INFO] [PostDischargeAssistant] Chunk statistics:
+[2025-10-23 00:54:14] [INFO] [PostDischargeAssistant]   Average size: 705 characters
+[2025-10-23 00:54:14] [INFO] [PostDischargeAssistant]   Min size: 3 characters
+[2025-10-23 00:54:14] [INFO] [PostDischargeAssistant]   Max size: 6692 characters
+[2025-10-23 00:54:14] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:54:14] [INFO] [PostDischargeAssistant] PDF Processing Complete
+[2025-10-23 00:54:14] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:54:14] [INFO] [PostDischargeAssistant] Total Pages: 1547
+[2025-10-23 00:54:14] [INFO] [PostDischargeAssistant] Total Chunks: 12562
+[2025-10-23 00:54:14] [INFO] [PostDischargeAssistant] Average Chunk Size: 705 characters
+[2025-10-23 00:54:14] [INFO] [PostDischargeAssistant] Total Characters: 8,857,652
+[2025-10-23 00:54:14] [INFO] [PostDischargeAssistant] ✓ Saved chunks preview to: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\chunks_preview.txt
+[2025-10-23 00:54:14] [INFO] [PostDischargeAssistant] Initializing Pinecone client...
+[2025-10-23 00:54:14] [ERROR] [PostDischargeAssistant] [ERROR] Pinecone Setup: module 'pinecone' has no attribute 'init'
+Traceback (most recent call last):
+  File "C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\setup_phase1.py", line 167, in step_5_setup_pinecone
+    manager = PineconeManager()
+  File "C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\src\pinecone_manager.py", line 39, in __init__
+    pinecone.init(api_key=self.api_key, environment=self.environment)
+AttributeError: module 'pinecone' has no attribute 'init'
+[2025-10-23 00:57:09] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 00:57:09] [INFO] [PostDischargeAssistant] System Logger Initialized
+[2025-10-23 00:57:09] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 01:00:27] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 01:00:27] [INFO] [PostDischargeAssistant] System Logger Initialized
+[2025-10-23 01:00:27] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 01:00:56] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 01:00:56] [INFO] [PostDischargeAssistant] System Logger Initialized
+[2025-10-23 01:00:56] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 01:01:11] [INFO] [PostDischargeAssistant] Initializing database at: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\patients.db
+[2025-10-23 01:01:11] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-10-23 01:01:14] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 01:01:14] [INFO] [PostDischargeAssistant] Starting Enhanced PDF Processing Pipeline
+[2025-10-23 01:01:14] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 01:01:14] [INFO] [PostDischargeAssistant] Opening PDF: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\nephrology_book.pdf
+[2025-10-23 01:01:14] [INFO] [PostDischargeAssistant] PDF has 1547 pages
+[2025-10-23 01:01:14] [INFO] [PostDischargeAssistant] Processed 100/1547 pages...
+[2025-10-23 01:01:15] [INFO] [PostDischargeAssistant] Processed 200/1547 pages...
+[2025-10-23 01:01:16] [INFO] [PostDischargeAssistant] Processed 300/1547 pages...
+[2025-10-23 01:01:17] [INFO] [PostDischargeAssistant] Processed 400/1547 pages...
+[2025-10-23 01:01:18] [INFO] [PostDischargeAssistant] Processed 500/1547 pages...
+[2025-10-23 01:01:19] [INFO] [PostDischargeAssistant] Processed 600/1547 pages...
+[2025-10-23 01:01:20] [INFO] [PostDischargeAssistant] Processed 700/1547 pages...
+[2025-10-23 01:01:21] [INFO] [PostDischargeAssistant] Processed 800/1547 pages...
+[2025-10-23 01:01:21] [INFO] [PostDischargeAssistant] Processed 900/1547 pages...
+[2025-10-23 01:01:22] [INFO] [PostDischargeAssistant] Processed 1000/1547 pages...
+[2025-10-23 01:01:23] [INFO] [PostDischargeAssistant] Processed 1100/1547 pages...
+[2025-10-23 01:01:24] [INFO] [PostDischargeAssistant] Processed 1200/1547 pages...
+[2025-10-23 01:01:25] [INFO] [PostDischargeAssistant] Processed 1300/1547 pages...
+[2025-10-23 01:01:26] [INFO] [PostDischargeAssistant] Processed 1400/1547 pages...
+[2025-10-23 01:01:27] [INFO] [PostDischargeAssistant] Processed 1500/1547 pages...
+[2025-10-23 01:01:28] [INFO] [PostDischargeAssistant] ✓ Successfully extracted text from 1547 pages
+[2025-10-23 01:01:28] [INFO] [PostDischargeAssistant] Starting intelligent chunking (target=1000, overlap=200)...
+[2025-10-23 01:01:29] [INFO] [PostDischargeAssistant] ✓ Created 12562 intelligent chunks from 1547 pages
+[2025-10-23 01:01:29] [INFO] [PostDischargeAssistant] Chunk statistics:
+[2025-10-23 01:01:29] [INFO] [PostDischargeAssistant]   Average size: 705 characters
+[2025-10-23 01:01:29] [INFO] [PostDischargeAssistant]   Min size: 3 characters
+[2025-10-23 01:01:29] [INFO] [PostDischargeAssistant]   Max size: 6692 characters
+[2025-10-23 01:01:29] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 01:01:29] [INFO] [PostDischargeAssistant] PDF Processing Complete
+[2025-10-23 01:01:29] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 01:01:29] [INFO] [PostDischargeAssistant] Total Pages: 1547
+[2025-10-23 01:01:29] [INFO] [PostDischargeAssistant] Total Chunks: 12562
+[2025-10-23 01:01:29] [INFO] [PostDischargeAssistant] Average Chunk Size: 705 characters
+[2025-10-23 01:01:29] [INFO] [PostDischargeAssistant] Total Characters: 8,857,652
+[2025-10-23 01:01:29] [INFO] [PostDischargeAssistant] ✓ Saved chunks preview to: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\chunks_preview.txt
+[2025-10-23 01:01:29] [INFO] [PostDischargeAssistant] Initializing Pinecone client...
+[2025-10-23 01:01:29] [ERROR] [PostDischargeAssistant] [ERROR] Pinecone Setup: init is no longer a top-level attribute of the pinecone package.
+
+Please create an instance of the Pinecone class instead.
+
+Example:
+
+    import os
+    from pinecone import Pinecone, ServerlessSpec
+
+    pc = Pinecone(
+        api_key=os.environ.get("PINECONE_API_KEY")
+    )
+
+    # Now do stuff
+    if 'my_index' not in pc.list_indexes().names():
+        pc.create_index(
+            name='my_index', 
+            dimension=1536, 
+            metric='euclidean',
+            spec=ServerlessSpec(
+                cloud='aws',
+                region='us-west-2'
+            )
+        )
+
+Traceback (most recent call last):
+  File "C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\setup_phase1.py", line 167, in step_5_setup_pinecone
+    manager = PineconeManager()
+  File "C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\src\pinecone_manager.py", line 38, in __init__
+    pinecone.init(api_key=self.api_key, environment=self.environment)
+  File "C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\venv\lib\site-packages\pinecone\deprecation_warnings.py", line 39, in init
+    raise AttributeError(msg)
+AttributeError: init is no longer a top-level attribute of the pinecone package.
+
+Please create an instance of the Pinecone class instead.
+
+Example:
+
+    import os
+    from pinecone import Pinecone, ServerlessSpec
+
+    pc = Pinecone(
+        api_key=os.environ.get("PINECONE_API_KEY")
+    )
+
+    # Now do stuff
+    if 'my_index' not in pc.list_indexes().names():
+        pc.create_index(
+            name='my_index', 
+            dimension=1536, 
+            metric='euclidean',
+            spec=ServerlessSpec(
+                cloud='aws',
+                region='us-west-2'
+            )
+        )
+
+
+[2025-10-23 01:03:41] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 01:03:41] [INFO] [PostDischargeAssistant] System Logger Initialized
+[2025-10-23 01:03:41] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 01:03:52] [INFO] [PostDischargeAssistant] Generating 30 dummy patient records...
+[2025-10-23 01:03:52] [INFO] [PostDischargeAssistant] ✓ Successfully generated 30 patient records
+[2025-10-23 01:03:52] [INFO] [PostDischargeAssistant] ✓ Saved patient reports to: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\patient_reports.json
+[2025-10-23 01:03:52] [INFO] [PostDischargeAssistant] Initializing database at: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\patients.db
+[2025-10-23 01:03:52] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-10-23 01:03:53] [WARNING] [PostDischargeAssistant] Resetting database - all data will be lost!
+[2025-10-23 01:03:53] [INFO] [PostDischargeAssistant] Initializing database at: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\patients.db
+[2025-10-23 01:03:53] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-10-23 01:03:53] [INFO] [PostDischargeAssistant] ✓ Database reset complete
+[2025-10-23 01:03:53] [INFO] [PostDischargeAssistant] Bulk adding 30 patients...
+[2025-10-23 01:03:53] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Karen King
+[2025-10-23 01:03:53] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Donald Williams
+[2025-10-23 01:03:53] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: John Taylor
+[2025-10-23 01:03:53] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Linda Allen
+[2025-10-23 01:03:53] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Michael Young
+[2025-10-23 01:03:53] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Susan Lee
+[2025-10-23 01:03:53] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Joseph Rodriguez
+[2025-10-23 01:03:53] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Robert Rodriguez
+[2025-10-23 01:03:53] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: John Young
+[2025-10-23 01:03:53] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: William Robinson
+[2025-10-23 01:03:53] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Elizabeth Anderson
+[2025-10-23 01:03:54] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Mark Allen
+[2025-10-23 01:03:54] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Jessica Clark
+[2025-10-23 01:03:54] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Jennifer Brown
+[2025-10-23 01:03:54] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Robert Garcia
+[2025-10-23 01:03:54] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Sandra Jackson
+[2025-10-23 01:03:54] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Margaret Brown
+[2025-10-23 01:03:54] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: James Lee
+[2025-10-23 01:03:54] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: James Anderson
+[2025-10-23 01:03:54] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Sarah Clark
+[2025-10-23 01:03:54] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Donald Thomas
+[2025-10-23 01:03:54] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: James Thomas
+[2025-10-23 01:03:54] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Karen Jackson
+[2025-10-23 01:03:54] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Sarah Harris
+[2025-10-23 01:03:54] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: John Hernandez
+[2025-10-23 01:03:54] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Nancy Davis
+[2025-10-23 01:03:54] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Thomas Lewis
+[2025-10-23 01:03:54] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Thomas Martinez
+[2025-10-23 01:03:54] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Sarah Martin
+[2025-10-23 01:03:54] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Lisa Allen
+[2025-10-23 01:03:54] [INFO] [PostDischargeAssistant] ✓ Successfully added 30/30 patients
+[2025-10-23 01:03:54] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 01:03:54] [INFO] [PostDischargeAssistant] Starting Enhanced PDF Processing Pipeline
+[2025-10-23 01:03:54] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 01:03:54] [INFO] [PostDischargeAssistant] Opening PDF: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\nephrology_book.pdf
+[2025-10-23 01:03:54] [INFO] [PostDischargeAssistant] PDF has 1547 pages
+[2025-10-23 01:03:54] [INFO] [PostDischargeAssistant] Processed 100/1547 pages...
+[2025-10-23 01:03:55] [INFO] [PostDischargeAssistant] Processed 200/1547 pages...
+[2025-10-23 01:03:56] [INFO] [PostDischargeAssistant] Processed 300/1547 pages...
+[2025-10-23 01:03:57] [INFO] [PostDischargeAssistant] Processed 400/1547 pages...
+[2025-10-23 01:03:57] [INFO] [PostDischargeAssistant] Processed 500/1547 pages...
+[2025-10-23 01:03:58] [INFO] [PostDischargeAssistant] Processed 600/1547 pages...
+[2025-10-23 01:03:59] [INFO] [PostDischargeAssistant] Processed 700/1547 pages...
+[2025-10-23 01:04:00] [INFO] [PostDischargeAssistant] Processed 800/1547 pages...
+[2025-10-23 01:04:01] [INFO] [PostDischargeAssistant] Processed 900/1547 pages...
+[2025-10-23 01:04:02] [INFO] [PostDischargeAssistant] Processed 1000/1547 pages...
+[2025-10-23 01:04:03] [INFO] [PostDischargeAssistant] Processed 1100/1547 pages...
+[2025-10-23 01:04:03] [INFO] [PostDischargeAssistant] Processed 1200/1547 pages...
+[2025-10-23 01:04:04] [INFO] [PostDischargeAssistant] Processed 1300/1547 pages...
+[2025-10-23 01:04:05] [INFO] [PostDischargeAssistant] Processed 1400/1547 pages...
+[2025-10-23 01:04:06] [INFO] [PostDischargeAssistant] Processed 1500/1547 pages...
+[2025-10-23 01:04:07] [INFO] [PostDischargeAssistant] ✓ Successfully extracted text from 1547 pages
+[2025-10-23 01:04:07] [INFO] [PostDischargeAssistant] Starting intelligent chunking (target=1000, overlap=200)...
+[2025-10-23 01:04:08] [INFO] [PostDischargeAssistant] ✓ Created 12562 intelligent chunks from 1547 pages
+[2025-10-23 01:04:08] [INFO] [PostDischargeAssistant] Chunk statistics:
+[2025-10-23 01:04:08] [INFO] [PostDischargeAssistant]   Average size: 705 characters
+[2025-10-23 01:04:08] [INFO] [PostDischargeAssistant]   Min size: 3 characters
+[2025-10-23 01:04:08] [INFO] [PostDischargeAssistant]   Max size: 6692 characters
+[2025-10-23 01:04:08] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 01:04:08] [INFO] [PostDischargeAssistant] PDF Processing Complete
+[2025-10-23 01:04:08] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 01:04:08] [INFO] [PostDischargeAssistant] Total Pages: 1547
+[2025-10-23 01:04:08] [INFO] [PostDischargeAssistant] Total Chunks: 12562
+[2025-10-23 01:04:08] [INFO] [PostDischargeAssistant] Average Chunk Size: 705 characters
+[2025-10-23 01:04:08] [INFO] [PostDischargeAssistant] Total Characters: 8,857,652
+[2025-10-23 01:04:08] [INFO] [PostDischargeAssistant] ✓ Saved chunks preview to: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\chunks_preview.txt
+[2025-10-23 01:04:08] [INFO] [PostDischargeAssistant] Initializing Pinecone client...
+[2025-10-23 01:04:08] [ERROR] [PostDischargeAssistant] [ERROR] Pinecone Setup: init is no longer a top-level attribute of the pinecone package.
+
+Please create an instance of the Pinecone class instead.
+
+Example:
+
+    import os
+    from pinecone import Pinecone, ServerlessSpec
+
+    pc = Pinecone(
+        api_key=os.environ.get("PINECONE_API_KEY")
+    )
+
+    # Now do stuff
+    if 'my_index' not in pc.list_indexes().names():
+        pc.create_index(
+            name='my_index', 
+            dimension=1536, 
+            metric='euclidean',
+            spec=ServerlessSpec(
+                cloud='aws',
+                region='us-west-2'
+            )
+        )
+
+Traceback (most recent call last):
+  File "C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\setup_phase1.py", line 167, in step_5_setup_pinecone
+    manager = PineconeManager()
+  File "C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\src\pinecone_manager.py", line 38, in __init__
+    pinecone.init(api_key=self.api_key, environment=self.environment)
+  File "C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\venv\lib\site-packages\pinecone\deprecation_warnings.py", line 39, in init
+    raise AttributeError(msg)
+AttributeError: init is no longer a top-level attribute of the pinecone package.
+
+Please create an instance of the Pinecone class instead.
+
+Example:
+
+    import os
+    from pinecone import Pinecone, ServerlessSpec
+
+    pc = Pinecone(
+        api_key=os.environ.get("PINECONE_API_KEY")
+    )
+
+    # Now do stuff
+    if 'my_index' not in pc.list_indexes().names():
+        pc.create_index(
+            name='my_index', 
+            dimension=1536, 
+            metric='euclidean',
+            spec=ServerlessSpec(
+                cloud='aws',
+                region='us-west-2'
+            )
+        )
+
+
+[2025-10-23 01:04:48] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 01:04:48] [INFO] [PostDischargeAssistant] System Logger Initialized
+[2025-10-23 01:04:48] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 01:04:48] [INFO] [PostDischargeAssistant] Initializing database at: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\patients.db
+[2025-10-23 01:04:48] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-10-23 01:04:59] [INFO] [PostDischargeAssistant] Initializing Pinecone client...
+[2025-10-23 10:20:23] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 10:20:23] [INFO] [PostDischargeAssistant] System Logger Initialized
+[2025-10-23 10:20:23] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 10:21:48] [INFO] [PostDischargeAssistant] Initializing database at: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\patients.db
+[2025-10-23 10:21:48] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-10-23 10:21:51] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 10:21:51] [INFO] [PostDischargeAssistant] Starting Enhanced PDF Processing Pipeline
+[2025-10-23 10:21:51] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 10:21:51] [INFO] [PostDischargeAssistant] Opening PDF: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\nephrology_book.pdf
+[2025-10-23 10:21:51] [INFO] [PostDischargeAssistant] PDF has 1547 pages
+[2025-10-23 10:21:52] [INFO] [PostDischargeAssistant] Processed 100/1547 pages...
+[2025-10-23 10:21:53] [INFO] [PostDischargeAssistant] Processed 200/1547 pages...
+[2025-10-23 10:21:54] [INFO] [PostDischargeAssistant] Processed 300/1547 pages...
+[2025-10-23 10:21:55] [INFO] [PostDischargeAssistant] Processed 400/1547 pages...
+[2025-10-23 10:21:56] [INFO] [PostDischargeAssistant] Processed 500/1547 pages...
+[2025-10-23 10:21:57] [INFO] [PostDischargeAssistant] Processed 600/1547 pages...
+[2025-10-23 10:21:58] [INFO] [PostDischargeAssistant] Processed 700/1547 pages...
+[2025-10-23 10:21:59] [INFO] [PostDischargeAssistant] Processed 800/1547 pages...
+[2025-10-23 10:22:00] [INFO] [PostDischargeAssistant] Processed 900/1547 pages...
+[2025-10-23 10:22:01] [INFO] [PostDischargeAssistant] Processed 1000/1547 pages...
+[2025-10-23 10:22:02] [INFO] [PostDischargeAssistant] Processed 1100/1547 pages...
+[2025-10-23 10:22:03] [INFO] [PostDischargeAssistant] Processed 1200/1547 pages...
+[2025-10-23 10:22:04] [INFO] [PostDischargeAssistant] Processed 1300/1547 pages...
+[2025-10-23 10:22:05] [INFO] [PostDischargeAssistant] Processed 1400/1547 pages...
+[2025-10-23 10:22:05] [INFO] [PostDischargeAssistant] Processed 1500/1547 pages...
+[2025-10-23 10:22:07] [INFO] [PostDischargeAssistant] ✓ Successfully extracted text from 1547 pages
+[2025-10-23 10:22:07] [INFO] [PostDischargeAssistant] Starting intelligent chunking (target=1000, overlap=200)...
+[2025-10-23 10:22:07] [INFO] [PostDischargeAssistant] ✓ Created 12562 intelligent chunks from 1547 pages
+[2025-10-23 10:22:07] [INFO] [PostDischargeAssistant] Chunk statistics:
+[2025-10-23 10:22:07] [INFO] [PostDischargeAssistant]   Average size: 705 characters
+[2025-10-23 10:22:07] [INFO] [PostDischargeAssistant]   Min size: 3 characters
+[2025-10-23 10:22:07] [INFO] [PostDischargeAssistant]   Max size: 6692 characters
+[2025-10-23 10:22:07] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 10:22:07] [INFO] [PostDischargeAssistant] PDF Processing Complete
+[2025-10-23 10:22:07] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 10:22:07] [INFO] [PostDischargeAssistant] Total Pages: 1547
+[2025-10-23 10:22:07] [INFO] [PostDischargeAssistant] Total Chunks: 12562
+[2025-10-23 10:22:07] [INFO] [PostDischargeAssistant] Average Chunk Size: 705 characters
+[2025-10-23 10:22:07] [INFO] [PostDischargeAssistant] Total Characters: 8,857,652
+[2025-10-23 10:22:07] [INFO] [PostDischargeAssistant] ✓ Saved chunks preview to: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\chunks_preview.txt
+[2025-10-23 10:22:07] [INFO] [PostDischargeAssistant] Initializing Pinecone client...
+[2025-10-23 10:22:07] [ERROR] [PostDischargeAssistant] [ERROR] Pinecone Setup: init is no longer a top-level attribute of the pinecone package.
+
+Please create an instance of the Pinecone class instead.
+
+Example:
+
+    import os
+    from pinecone import Pinecone, ServerlessSpec
+
+    pc = Pinecone(
+        api_key=os.environ.get("PINECONE_API_KEY")
+    )
+
+    # Now do stuff
+    if 'my_index' not in pc.list_indexes().names():
+        pc.create_index(
+            name='my_index', 
+            dimension=1536, 
+            metric='euclidean',
+            spec=ServerlessSpec(
+                cloud='aws',
+                region='us-west-2'
+            )
+        )
+
+Traceback (most recent call last):
+  File "C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\setup_phase1.py", line 167, in step_5_setup_pinecone
+    manager = PineconeManager()
+  File "C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\src\pinecone_manager.py", line 38, in __init__
+    pinecone.init(api_key=self.api_key, environment=self.environment)
+  File "C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\venv\lib\site-packages\pinecone\deprecation_warnings.py", line 39, in init
+    raise AttributeError(msg)
+AttributeError: init is no longer a top-level attribute of the pinecone package.
+
+Please create an instance of the Pinecone class instead.
+
+Example:
+
+    import os
+    from pinecone import Pinecone, ServerlessSpec
+
+    pc = Pinecone(
+        api_key=os.environ.get("PINECONE_API_KEY")
+    )
+
+    # Now do stuff
+    if 'my_index' not in pc.list_indexes().names():
+        pc.create_index(
+            name='my_index', 
+            dimension=1536, 
+            metric='euclidean',
+            spec=ServerlessSpec(
+                cloud='aws',
+                region='us-west-2'
+            )
+        )
+
+
+[2025-10-23 10:23:28] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 10:23:28] [INFO] [PostDischargeAssistant] System Logger Initialized
+[2025-10-23 10:23:28] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 10:23:46] [INFO] [PostDischargeAssistant] Generating 30 dummy patient records...
+[2025-10-23 10:23:46] [INFO] [PostDischargeAssistant] ✓ Successfully generated 30 patient records
+[2025-10-23 10:23:46] [INFO] [PostDischargeAssistant] ✓ Saved patient reports to: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\patient_reports.json
+[2025-10-23 10:23:46] [INFO] [PostDischargeAssistant] Initializing database at: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\patients.db
+[2025-10-23 10:23:46] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-10-23 10:23:48] [WARNING] [PostDischargeAssistant] Resetting database - all data will be lost!
+[2025-10-23 10:23:48] [INFO] [PostDischargeAssistant] Initializing database at: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\patients.db
+[2025-10-23 10:23:48] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-10-23 10:23:48] [INFO] [PostDischargeAssistant] ✓ Database reset complete
+[2025-10-23 10:23:48] [INFO] [PostDischargeAssistant] Bulk adding 30 patients...
+[2025-10-23 10:23:48] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Barbara Lee
+[2025-10-23 10:23:48] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: William Lee
+[2025-10-23 10:23:48] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Margaret Lee
+[2025-10-23 10:23:48] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Patricia Anderson
+[2025-10-23 10:23:48] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Barbara Moore
+[2025-10-23 10:23:48] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: James Davis
+[2025-10-23 10:23:48] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Lisa Johnson
+[2025-10-23 10:23:48] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Daniel Williams
+[2025-10-23 10:23:48] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Matthew Wilson
+[2025-10-23 10:23:48] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Elizabeth Lewis
+[2025-10-23 10:23:48] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Susan Jackson
+[2025-10-23 10:23:48] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Barbara Anderson
+[2025-10-23 10:23:48] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: William Miller
+[2025-10-23 10:23:48] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Elizabeth Garcia
+[2025-10-23 10:23:48] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Christopher Thomas
+[2025-10-23 10:23:48] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Susan Robinson
+[2025-10-23 10:23:48] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Jessica Brown
+[2025-10-23 10:23:48] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Jessica Davis
+[2025-10-23 10:23:48] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Richard Williams
+[2025-10-23 10:23:48] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Patricia Lewis
+[2025-10-23 10:23:48] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Jessica Lopez
+[2025-10-23 10:23:48] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: William Thompson
+[2025-10-23 10:23:48] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Donald Martin
+[2025-10-23 10:23:48] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Mary Clark
+[2025-10-23 10:23:48] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Ashley Johnson
+[2025-10-23 10:23:48] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Charles Robinson
+[2025-10-23 10:23:48] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Sarah Lee
+[2025-10-23 10:23:48] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Patricia Brown
+[2025-10-23 10:23:48] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Jessica Robinson
+[2025-10-23 10:23:48] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: John Lopez
+[2025-10-23 10:23:48] [INFO] [PostDischargeAssistant] ✓ Successfully added 30/30 patients
+[2025-10-23 10:23:48] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 10:23:48] [INFO] [PostDischargeAssistant] Starting Enhanced PDF Processing Pipeline
+[2025-10-23 10:23:48] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 10:23:48] [INFO] [PostDischargeAssistant] Opening PDF: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\nephrology_book.pdf
+[2025-10-23 10:23:48] [INFO] [PostDischargeAssistant] PDF has 1547 pages
+[2025-10-23 10:23:49] [INFO] [PostDischargeAssistant] Processed 100/1547 pages...
+[2025-10-23 10:23:50] [INFO] [PostDischargeAssistant] Processed 200/1547 pages...
+[2025-10-23 10:23:51] [INFO] [PostDischargeAssistant] Processed 300/1547 pages...
+[2025-10-23 10:23:52] [INFO] [PostDischargeAssistant] Processed 400/1547 pages...
+[2025-10-23 10:23:53] [INFO] [PostDischargeAssistant] Processed 500/1547 pages...
+[2025-10-23 10:23:53] [INFO] [PostDischargeAssistant] Processed 600/1547 pages...
+[2025-10-23 10:23:54] [INFO] [PostDischargeAssistant] Processed 700/1547 pages...
+[2025-10-23 10:23:55] [INFO] [PostDischargeAssistant] Processed 800/1547 pages...
+[2025-10-23 10:23:56] [INFO] [PostDischargeAssistant] Processed 900/1547 pages...
+[2025-10-23 10:23:57] [INFO] [PostDischargeAssistant] Processed 1000/1547 pages...
+[2025-10-23 10:23:58] [INFO] [PostDischargeAssistant] Processed 1100/1547 pages...
+[2025-10-23 10:23:59] [INFO] [PostDischargeAssistant] Processed 1200/1547 pages...
+[2025-10-23 10:24:00] [INFO] [PostDischargeAssistant] Processed 1300/1547 pages...
+[2025-10-23 10:24:00] [INFO] [PostDischargeAssistant] Processed 1400/1547 pages...
+[2025-10-23 10:24:02] [INFO] [PostDischargeAssistant] Processed 1500/1547 pages...
+[2025-10-23 10:24:03] [INFO] [PostDischargeAssistant] ✓ Successfully extracted text from 1547 pages
+[2025-10-23 10:24:03] [INFO] [PostDischargeAssistant] Starting intelligent chunking (target=1000, overlap=200)...
+[2025-10-23 10:24:04] [INFO] [PostDischargeAssistant] ✓ Created 12562 intelligent chunks from 1547 pages
+[2025-10-23 10:24:04] [INFO] [PostDischargeAssistant] Chunk statistics:
+[2025-10-23 10:24:04] [INFO] [PostDischargeAssistant]   Average size: 705 characters
+[2025-10-23 10:24:04] [INFO] [PostDischargeAssistant]   Min size: 3 characters
+[2025-10-23 10:24:04] [INFO] [PostDischargeAssistant]   Max size: 6692 characters
+[2025-10-23 10:24:04] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 10:24:04] [INFO] [PostDischargeAssistant] PDF Processing Complete
+[2025-10-23 10:24:04] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 10:24:04] [INFO] [PostDischargeAssistant] Total Pages: 1547
+[2025-10-23 10:24:04] [INFO] [PostDischargeAssistant] Total Chunks: 12562
+[2025-10-23 10:24:04] [INFO] [PostDischargeAssistant] Average Chunk Size: 705 characters
+[2025-10-23 10:24:04] [INFO] [PostDischargeAssistant] Total Characters: 8,857,652
+[2025-10-23 10:24:04] [INFO] [PostDischargeAssistant] ✓ Saved chunks preview to: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\chunks_preview.txt
+[2025-10-23 10:24:04] [INFO] [PostDischargeAssistant] Initializing Pinecone client...
+[2025-10-23 10:24:04] [ERROR] [PostDischargeAssistant] [ERROR] Pinecone Setup: init is no longer a top-level attribute of the pinecone package.
+
+Please create an instance of the Pinecone class instead.
+
+Example:
+
+    import os
+    from pinecone import Pinecone, ServerlessSpec
+
+    pc = Pinecone(
+        api_key=os.environ.get("PINECONE_API_KEY")
+    )
+
+    # Now do stuff
+    if 'my_index' not in pc.list_indexes().names():
+        pc.create_index(
+            name='my_index', 
+            dimension=1536, 
+            metric='euclidean',
+            spec=ServerlessSpec(
+                cloud='aws',
+                region='us-west-2'
+            )
+        )
+
+Traceback (most recent call last):
+  File "C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\setup_phase1.py", line 167, in step_5_setup_pinecone
+    manager = PineconeManager()
+  File "C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\src\pinecone_manager.py", line 38, in __init__
+    pinecone.init(api_key=self.api_key, environment=self.environment)
+  File "C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\venv\lib\site-packages\pinecone\deprecation_warnings.py", line 39, in init
+    raise AttributeError(msg)
+AttributeError: init is no longer a top-level attribute of the pinecone package.
+
+Please create an instance of the Pinecone class instead.
+
+Example:
+
+    import os
+    from pinecone import Pinecone, ServerlessSpec
+
+    pc = Pinecone(
+        api_key=os.environ.get("PINECONE_API_KEY")
+    )
+
+    # Now do stuff
+    if 'my_index' not in pc.list_indexes().names():
+        pc.create_index(
+            name='my_index', 
+            dimension=1536, 
+            metric='euclidean',
+            spec=ServerlessSpec(
+                cloud='aws',
+                region='us-west-2'
+            )
+        )
+
+
+[2025-10-23 10:25:35] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 10:25:35] [INFO] [PostDischargeAssistant] System Logger Initialized
+[2025-10-23 10:25:35] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 10:25:49] [INFO] [PostDischargeAssistant] Generating 30 dummy patient records...
+[2025-10-23 10:25:49] [INFO] [PostDischargeAssistant] ✓ Successfully generated 30 patient records
+[2025-10-23 10:25:49] [INFO] [PostDischargeAssistant] ✓ Saved patient reports to: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\patient_reports.json
+[2025-10-23 10:25:49] [INFO] [PostDischargeAssistant] Initializing database at: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\patients.db
+[2025-10-23 10:25:49] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-10-23 10:25:50] [WARNING] [PostDischargeAssistant] Resetting database - all data will be lost!
+[2025-10-23 10:25:50] [INFO] [PostDischargeAssistant] Initializing database at: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\patients.db
+[2025-10-23 10:25:50] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-10-23 10:25:50] [INFO] [PostDischargeAssistant] ✓ Database reset complete
+[2025-10-23 10:25:50] [INFO] [PostDischargeAssistant] Bulk adding 30 patients...
+[2025-10-23 10:25:50] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Karen Moore
+[2025-10-23 10:25:50] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Margaret Brown
+[2025-10-23 10:25:50] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Matthew Harris
+[2025-10-23 10:25:50] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Donald Hernandez
+[2025-10-23 10:25:50] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: James Taylor
+[2025-10-23 10:25:50] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Christopher Williams
+[2025-10-23 10:25:50] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Lisa Thomas
+[2025-10-23 10:25:50] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Jessica Thompson
+[2025-10-23 10:25:50] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: James Wilson
+[2025-10-23 10:25:50] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Richard Harris
+[2025-10-23 10:25:50] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Susan Jones
+[2025-10-23 10:25:50] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: William Thompson
+[2025-10-23 10:25:50] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Margaret Lewis
+[2025-10-23 10:25:50] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Mary Anderson
+[2025-10-23 10:25:50] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Elizabeth Smith
+[2025-10-23 10:25:50] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Charles Lee
+[2025-10-23 10:25:50] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Christopher Jackson
+[2025-10-23 10:25:50] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Sarah Garcia
+[2025-10-23 10:25:50] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Linda Garcia
+[2025-10-23 10:25:50] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: David Lee
+[2025-10-23 10:25:50] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Daniel Lee
+[2025-10-23 10:25:50] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Anthony Thompson
+[2025-10-23 10:25:50] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Susan Martinez
+[2025-10-23 10:25:50] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Michael Lewis
+[2025-10-23 10:25:50] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Matthew Rodriguez
+[2025-10-23 10:25:50] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Daniel Martin
+[2025-10-23 10:25:50] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Barbara Davis
+[2025-10-23 10:25:50] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Anthony Garcia
+[2025-10-23 10:25:50] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Thomas Clark
+[2025-10-23 10:25:50] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Matthew Lee
+[2025-10-23 10:25:50] [INFO] [PostDischargeAssistant] ✓ Successfully added 30/30 patients
+[2025-10-23 10:25:50] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 10:25:50] [INFO] [PostDischargeAssistant] Starting Enhanced PDF Processing Pipeline
+[2025-10-23 10:25:50] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 10:25:50] [INFO] [PostDischargeAssistant] Opening PDF: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\nephrology_book.pdf
+[2025-10-23 10:25:50] [INFO] [PostDischargeAssistant] PDF has 1547 pages
+[2025-10-23 10:25:51] [INFO] [PostDischargeAssistant] Processed 100/1547 pages...
+[2025-10-23 10:25:52] [INFO] [PostDischargeAssistant] Processed 200/1547 pages...
+[2025-10-23 10:25:52] [INFO] [PostDischargeAssistant] Processed 300/1547 pages...
+[2025-10-23 10:25:53] [INFO] [PostDischargeAssistant] Processed 400/1547 pages...
+[2025-10-23 10:25:54] [INFO] [PostDischargeAssistant] Processed 500/1547 pages...
+[2025-10-23 10:25:54] [INFO] [PostDischargeAssistant] Processed 600/1547 pages...
+[2025-10-23 10:25:55] [INFO] [PostDischargeAssistant] Processed 700/1547 pages...
+[2025-10-23 10:25:56] [INFO] [PostDischargeAssistant] Processed 800/1547 pages...
+[2025-10-23 10:25:57] [INFO] [PostDischargeAssistant] Processed 900/1547 pages...
+[2025-10-23 10:25:58] [INFO] [PostDischargeAssistant] Processed 1000/1547 pages...
+[2025-10-23 10:25:59] [INFO] [PostDischargeAssistant] Processed 1100/1547 pages...
+[2025-10-23 10:25:59] [INFO] [PostDischargeAssistant] Processed 1200/1547 pages...
+[2025-10-23 10:26:00] [INFO] [PostDischargeAssistant] Processed 1300/1547 pages...
+[2025-10-23 10:26:01] [INFO] [PostDischargeAssistant] Processed 1400/1547 pages...
+[2025-10-23 10:26:02] [INFO] [PostDischargeAssistant] Processed 1500/1547 pages...
+[2025-10-23 10:26:03] [INFO] [PostDischargeAssistant] ✓ Successfully extracted text from 1547 pages
+[2025-10-23 10:26:03] [INFO] [PostDischargeAssistant] Starting intelligent chunking (target=1000, overlap=200)...
+[2025-10-23 10:26:04] [INFO] [PostDischargeAssistant] ✓ Created 12562 intelligent chunks from 1547 pages
+[2025-10-23 10:26:04] [INFO] [PostDischargeAssistant] Chunk statistics:
+[2025-10-23 10:26:04] [INFO] [PostDischargeAssistant]   Average size: 705 characters
+[2025-10-23 10:26:04] [INFO] [PostDischargeAssistant]   Min size: 3 characters
+[2025-10-23 10:26:04] [INFO] [PostDischargeAssistant]   Max size: 6692 characters
+[2025-10-23 10:26:04] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 10:26:04] [INFO] [PostDischargeAssistant] PDF Processing Complete
+[2025-10-23 10:26:04] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 10:26:04] [INFO] [PostDischargeAssistant] Total Pages: 1547
+[2025-10-23 10:26:04] [INFO] [PostDischargeAssistant] Total Chunks: 12562
+[2025-10-23 10:26:04] [INFO] [PostDischargeAssistant] Average Chunk Size: 705 characters
+[2025-10-23 10:26:04] [INFO] [PostDischargeAssistant] Total Characters: 8,857,652
+[2025-10-23 10:26:04] [INFO] [PostDischargeAssistant] ✓ Saved chunks preview to: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\chunks_preview.txt
+[2025-10-23 10:26:04] [INFO] [PostDischargeAssistant] Initializing Pinecone client...
+[2025-10-23 10:26:04] [ERROR] [PostDischargeAssistant] [ERROR] Pinecone Setup: init is no longer a top-level attribute of the pinecone package.
+
+Please create an instance of the Pinecone class instead.
+
+Example:
+
+    import os
+    from pinecone import Pinecone, ServerlessSpec
+
+    pc = Pinecone(
+        api_key=os.environ.get("PINECONE_API_KEY")
+    )
+
+    # Now do stuff
+    if 'my_index' not in pc.list_indexes().names():
+        pc.create_index(
+            name='my_index', 
+            dimension=1536, 
+            metric='euclidean',
+            spec=ServerlessSpec(
+                cloud='aws',
+                region='us-west-2'
+            )
+        )
+
+Traceback (most recent call last):
+  File "C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\setup_phase1.py", line 167, in step_5_setup_pinecone
+    manager = PineconeManager()
+  File "C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\src\pinecone_manager.py", line 38, in __init__
+    pinecone.init(api_key=self.api_key, environment=self.environment)
+  File "C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\venv\lib\site-packages\pinecone\deprecation_warnings.py", line 39, in init
+    raise AttributeError(msg)
+AttributeError: init is no longer a top-level attribute of the pinecone package.
+
+Please create an instance of the Pinecone class instead.
+
+Example:
+
+    import os
+    from pinecone import Pinecone, ServerlessSpec
+
+    pc = Pinecone(
+        api_key=os.environ.get("PINECONE_API_KEY")
+    )
+
+    # Now do stuff
+    if 'my_index' not in pc.list_indexes().names():
+        pc.create_index(
+            name='my_index', 
+            dimension=1536, 
+            metric='euclidean',
+            spec=ServerlessSpec(
+                cloud='aws',
+                region='us-west-2'
+            )
+        )
+
+
+[2025-10-23 10:37:22] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 10:37:22] [INFO] [PostDischargeAssistant] System Logger Initialized
+[2025-10-23 10:37:22] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 10:37:22] [INFO] [PostDischargeAssistant] Initializing Pinecone client...
+[2025-10-23 10:37:22] [INFO] [PostDischargeAssistant] Loading embedding model: all-MiniLM-L6-v2
+[2025-10-23 10:37:26] [INFO] [PostDischargeAssistant] ✓ Embedding model loaded (dimension: 384)
+[2025-10-23 10:37:26] [INFO] [PostDischargeAssistant] Connecting to index: nephrology-knowledge
+[2025-10-23 10:37:28] [INFO] [PostDischargeAssistant] ✓ Connected to index 'nephrology-knowledge'
+[2025-10-23 10:37:28] [INFO] [PostDischargeAssistant]   Total vectors: 0
+[2025-10-23 10:37:29] [INFO] [PostDischargeAssistant] Searching Pinecone for: 'chronic kidney disease'
+[2025-10-23 10:37:29] [INFO] [PostDischargeAssistant]   Top K: 1
+[2025-10-23 10:37:29] [INFO] [PostDischargeAssistant] ✓ Found 0 results
+[2025-10-23 10:39:03] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 10:39:03] [INFO] [PostDischargeAssistant] System Logger Initialized
+[2025-10-23 10:39:03] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 10:39:03] [INFO] [PostDischargeAssistant] Initializing Pinecone client...
+[2025-10-23 10:39:03] [INFO] [PostDischargeAssistant] Loading embedding model: all-MiniLM-L6-v2
+[2025-10-23 10:39:07] [INFO] [PostDischargeAssistant] ✓ Embedding model loaded (dimension: 384)
+[2025-10-23 10:39:07] [INFO] [PostDischargeAssistant] Connecting to index: nephrology-knowledge
+[2025-10-23 10:39:09] [INFO] [PostDischargeAssistant] ✓ Connected to index 'nephrology-knowledge'
+[2025-10-23 10:39:09] [INFO] [PostDischargeAssistant]   Total vectors: 0
+[2025-10-23 10:39:10] [INFO] [PostDischargeAssistant] Searching Pinecone for: 'chronic kidney disease'
+[2025-10-23 10:39:10] [INFO] [PostDischargeAssistant]   Top K: 1
+[2025-10-23 10:39:10] [INFO] [PostDischargeAssistant] ✓ Found 0 results
+[2025-10-23 10:40:25] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 10:40:25] [INFO] [PostDischargeAssistant] System Logger Initialized
+[2025-10-23 10:40:25] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 10:40:35] [INFO] [PostDischargeAssistant] Generating 30 dummy patient records...
+[2025-10-23 10:40:35] [INFO] [PostDischargeAssistant] ✓ Successfully generated 30 patient records
+[2025-10-23 10:40:35] [INFO] [PostDischargeAssistant] ✓ Saved patient reports to: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\patient_reports.json
+[2025-10-23 10:40:35] [INFO] [PostDischargeAssistant] Initializing database at: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\patients.db
+[2025-10-23 10:40:35] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-10-23 10:40:36] [WARNING] [PostDischargeAssistant] Resetting database - all data will be lost!
+[2025-10-23 10:40:36] [INFO] [PostDischargeAssistant] Initializing database at: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\patients.db
+[2025-10-23 10:40:36] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-10-23 10:40:36] [INFO] [PostDischargeAssistant] ✓ Database reset complete
+[2025-10-23 10:40:36] [INFO] [PostDischargeAssistant] Bulk adding 30 patients...
+[2025-10-23 10:40:36] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Linda Johnson
+[2025-10-23 10:40:36] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Karen Clark
+[2025-10-23 10:40:36] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Thomas Hernandez
+[2025-10-23 10:40:36] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Jessica Clark
+[2025-10-23 10:40:36] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: James Thomas
+[2025-10-23 10:40:36] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: John Martin
+[2025-10-23 10:40:36] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Thomas King
+[2025-10-23 10:40:36] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Matthew Johnson
+[2025-10-23 10:40:36] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: James Wilson
+[2025-10-23 10:40:36] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: James King
+[2025-10-23 10:40:36] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Donald Walker
+[2025-10-23 10:40:36] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Barbara Smith
+[2025-10-23 10:40:36] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Sarah Thompson
+[2025-10-23 10:40:36] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Charles Rodriguez
+[2025-10-23 10:40:36] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Joseph Taylor
+[2025-10-23 10:40:36] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Lisa Rodriguez
+[2025-10-23 10:40:36] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Christopher Taylor
+[2025-10-23 10:40:36] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Daniel Miller
+[2025-10-23 10:40:36] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Christopher Harris
+[2025-10-23 10:40:36] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Charles Martin
+[2025-10-23 10:40:36] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Lisa Hernandez
+[2025-10-23 10:40:36] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Anthony Harris
+[2025-10-23 10:40:36] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Barbara King
+[2025-10-23 10:40:36] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Matthew Garcia
+[2025-10-23 10:40:36] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Charles Anderson
+[2025-10-23 10:40:36] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Christopher Young
+[2025-10-23 10:40:36] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: William Jackson
+[2025-10-23 10:40:36] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Patricia Moore
+[2025-10-23 10:40:36] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Ashley Hernandez
+[2025-10-23 10:40:36] [INFO] [PostDischargeAssistant] [DATABASE] INSERT: Added patient: Nancy Moore
+[2025-10-23 10:40:36] [INFO] [PostDischargeAssistant] ✓ Successfully added 30/30 patients
+[2025-10-23 10:40:36] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 10:40:36] [INFO] [PostDischargeAssistant] Starting Enhanced PDF Processing Pipeline
+[2025-10-23 10:40:36] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 10:40:36] [INFO] [PostDischargeAssistant] Opening PDF: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\nephrology_book.pdf
+[2025-10-23 10:40:36] [INFO] [PostDischargeAssistant] PDF has 1547 pages
+[2025-10-23 10:40:37] [INFO] [PostDischargeAssistant] Processed 100/1547 pages...
+[2025-10-23 10:40:38] [INFO] [PostDischargeAssistant] Processed 200/1547 pages...
+[2025-10-23 10:40:39] [INFO] [PostDischargeAssistant] Processed 300/1547 pages...
+[2025-10-23 10:40:40] [INFO] [PostDischargeAssistant] Processed 400/1547 pages...
+[2025-10-23 10:40:40] [INFO] [PostDischargeAssistant] Processed 500/1547 pages...
+[2025-10-23 10:40:41] [INFO] [PostDischargeAssistant] Processed 600/1547 pages...
+[2025-10-23 10:40:42] [INFO] [PostDischargeAssistant] Processed 700/1547 pages...
+[2025-10-23 10:40:43] [INFO] [PostDischargeAssistant] Processed 800/1547 pages...
+[2025-10-23 10:40:44] [INFO] [PostDischargeAssistant] Processed 900/1547 pages...
+[2025-10-23 10:40:45] [INFO] [PostDischargeAssistant] Processed 1000/1547 pages...
+[2025-10-23 10:40:46] [INFO] [PostDischargeAssistant] Processed 1100/1547 pages...
+[2025-10-23 10:40:47] [INFO] [PostDischargeAssistant] Processed 1200/1547 pages...
+[2025-10-23 10:40:48] [INFO] [PostDischargeAssistant] Processed 1300/1547 pages...
+[2025-10-23 10:40:49] [INFO] [PostDischargeAssistant] Processed 1400/1547 pages...
+[2025-10-23 10:40:50] [INFO] [PostDischargeAssistant] Processed 1500/1547 pages...
+[2025-10-23 10:40:51] [INFO] [PostDischargeAssistant] ✓ Successfully extracted text from 1547 pages
+[2025-10-23 10:40:51] [INFO] [PostDischargeAssistant] Starting intelligent chunking (target=1000, overlap=200)...
+[2025-10-23 10:40:52] [INFO] [PostDischargeAssistant] ✓ Created 12562 intelligent chunks from 1547 pages
+[2025-10-23 10:40:52] [INFO] [PostDischargeAssistant] Chunk statistics:
+[2025-10-23 10:40:52] [INFO] [PostDischargeAssistant]   Average size: 705 characters
+[2025-10-23 10:40:52] [INFO] [PostDischargeAssistant]   Min size: 3 characters
+[2025-10-23 10:40:52] [INFO] [PostDischargeAssistant]   Max size: 6692 characters
+[2025-10-23 10:40:52] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 10:40:52] [INFO] [PostDischargeAssistant] PDF Processing Complete
+[2025-10-23 10:40:52] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 10:40:52] [INFO] [PostDischargeAssistant] Total Pages: 1547
+[2025-10-23 10:40:52] [INFO] [PostDischargeAssistant] Total Chunks: 12562
+[2025-10-23 10:40:52] [INFO] [PostDischargeAssistant] Average Chunk Size: 705 characters
+[2025-10-23 10:40:52] [INFO] [PostDischargeAssistant] Total Characters: 8,857,652
+[2025-10-23 10:40:52] [INFO] [PostDischargeAssistant] ✓ Saved chunks preview to: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\chunks_preview.txt
+[2025-10-23 10:40:52] [INFO] [PostDischargeAssistant] Initializing Pinecone client...
+[2025-10-23 10:40:52] [INFO] [PostDischargeAssistant] Loading embedding model: all-MiniLM-L6-v2
+[2025-10-23 10:40:55] [INFO] [PostDischargeAssistant] ✓ Embedding model loaded (dimension: 384)
+[2025-10-23 10:40:55] [INFO] [PostDischargeAssistant] Creating Pinecone index: nephrology-knowledge
+[2025-10-23 10:40:57] [WARNING] [PostDischargeAssistant] Index 'nephrology-knowledge' already exists
+[2025-10-23 10:41:04] [WARNING] [PostDischargeAssistant] Deleting index: nephrology-knowledge
+[2025-10-23 10:41:15] [INFO] [PostDischargeAssistant] ✓ Index 'nephrology-knowledge' deleted
+[2025-10-23 10:41:15] [INFO] [PostDischargeAssistant] Creating serverless index...
+[2025-10-23 10:41:15] [INFO] [PostDischargeAssistant]   Dimension: 384
+[2025-10-23 10:41:15] [INFO] [PostDischargeAssistant]   Metric: cosine
+[2025-10-23 10:41:15] [INFO] [PostDischargeAssistant]   Cloud: aws
+[2025-10-23 10:41:15] [INFO] [PostDischargeAssistant]   Region: us-east-1
+[2025-10-23 10:41:20] [INFO] [PostDischargeAssistant] Waiting for index to be ready...
+[2025-10-23 10:41:20] [INFO] [PostDischargeAssistant] ✓ Index 'nephrology-knowledge' created successfully
+[2025-10-23 10:41:20] [INFO] [PostDischargeAssistant] Upserting 12562 documents to Pinecone...
+[2025-10-23 10:41:20] [INFO] [PostDischargeAssistant] Batch size: 100
+[2025-10-23 10:50:14] [INFO] [PostDischargeAssistant] ✓ Successfully upserted documents
+[2025-10-23 10:50:14] [INFO] [PostDischargeAssistant]   Total vectors in index: 12562
+[2025-10-23 10:50:15] [INFO] [PostDischargeAssistant] Searching Pinecone for: 'chronic kidney disease treatment'
+[2025-10-23 10:50:15] [INFO] [PostDischargeAssistant]   Top K: 3
+[2025-10-23 10:50:15] [INFO] [PostDischargeAssistant] ✓ Found 3 results
+[2025-10-23 10:50:15] [INFO] [PostDischargeAssistant] Initializing database at: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\patients.db
+[2025-10-23 10:50:15] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-10-23 10:50:15] [INFO] [PostDischargeAssistant] Initializing Pinecone client...
+[2025-10-23 10:50:15] [INFO] [PostDischargeAssistant] Loading embedding model: all-MiniLM-L6-v2
+[2025-10-23 10:50:18] [INFO] [PostDischargeAssistant] ✓ Embedding model loaded (dimension: 384)
+[2025-10-23 10:50:18] [INFO] [PostDischargeAssistant] Connecting to index: nephrology-knowledge
+[2025-10-23 10:50:20] [INFO] [PostDischargeAssistant] ✓ Connected to index 'nephrology-knowledge'
+[2025-10-23 10:50:20] [INFO] [PostDischargeAssistant]   Total vectors: 12562
+[2025-10-23 10:50:48] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 10:50:48] [INFO] [PostDischargeAssistant] System Logger Initialized
+[2025-10-23 10:50:48] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-23 10:50:48] [INFO] [PostDischargeAssistant] Initializing database at: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\patients.db
+[2025-10-23 10:50:48] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-10-23 10:51:01] [INFO] [PostDischargeAssistant] Initializing Pinecone client...
+[2025-10-23 10:51:01] [INFO] [PostDischargeAssistant] Loading embedding model: all-MiniLM-L6-v2
+[2025-10-23 10:51:04] [INFO] [PostDischargeAssistant] ✓ Embedding model loaded (dimension: 384)
+[2025-10-23 10:51:04] [INFO] [PostDischargeAssistant] Connecting to index: nephrology-knowledge
+[2025-10-23 10:51:06] [INFO] [PostDischargeAssistant] ✓ Connected to index 'nephrology-knowledge'
+[2025-10-23 10:51:06] [INFO] [PostDischargeAssistant]   Total vectors: 12562
+[2025-10-23 10:51:07] [INFO] [PostDischargeAssistant] Initializing Pinecone client...
+[2025-10-23 10:51:07] [INFO] [PostDischargeAssistant] Loading embedding model: all-MiniLM-L6-v2
+[2025-10-23 10:51:10] [INFO] [PostDischargeAssistant] ✓ Embedding model loaded (dimension: 384)
+[2025-10-23 10:51:10] [INFO] [PostDischargeAssistant] Connecting to index: nephrology-knowledge
+[2025-10-23 10:51:11] [INFO] [PostDischargeAssistant] ✓ Connected to index 'nephrology-knowledge'
+[2025-10-23 10:51:11] [INFO] [PostDischargeAssistant]   Total vectors: 12562
+[2025-10-23 10:51:11] [INFO] [PostDischargeAssistant] Searching Pinecone for: 'chronic kidney disease treatment'
+[2025-10-23 10:51:11] [INFO] [PostDischargeAssistant]   Top K: 3
+[2025-10-23 10:51:12] [INFO] [PostDischargeAssistant] ✓ Found 3 results
