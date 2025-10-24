@@ -1,12 +1,14 @@
 """
 MCP Tools for Post-Discharge Assistant
 Provides tools for patient data retrieval, RAG search, and web search
+UPDATED: Using Tavily API for reliable web search
 """
 
 from typing import Dict, List, Optional
+from tavily import TavilyClient
 from src.database import DatabaseManager
 from src.pinecone_manager import PineconeManager
-from duckduckgo_search import DDGS
+from src.config import TAVILY_API_KEY
 from src.utils.logger import get_logger
 
 logger = get_logger()
@@ -19,6 +21,15 @@ class MCPTools:
         self.db = DatabaseManager()
         self.pinecone = PineconeManager()
         self.pinecone.connect_to_index()
+        
+        # Initialize Tavily client
+        try:
+            self.tavily_client = TavilyClient(api_key=TAVILY_API_KEY)
+            logger.info("✓ Tavily client initialized")
+        except Exception as e:
+            logger.error(f"Failed to initialize Tavily: {e}")
+            self.tavily_client = None
+        
         logger.info("✓ MCP Tools initialized")
     
     def get_patient_data(self, patient_name: str) -> Dict:
@@ -127,7 +138,7 @@ class MCPTools:
     
     def web_search(self, query: str, max_results: int = 3) -> Dict:
         """
-        Search the web for current medical information
+        Search the web for current medical information using Tavily API
         
         Args:
             query: Search query
@@ -138,9 +149,24 @@ class MCPTools:
         """
         logger.log_web_search(query, max_results)
         
+        if not self.tavily_client:
+            logger.error("Tavily client not initialized")
+            return {
+                "success": False,
+                "error": "Web search service not available. Please check TAVILY_API_KEY in .env file"
+            }
+        
         try:
-            ddgs = DDGS()
-            results = list(ddgs.text(query, max_results=max_results))
+            # Use Tavily search with medical context
+            response = self.tavily_client.search(
+                query=query,
+                max_results=max_results,
+                search_depth="advanced",  # Use advanced search for better results
+                include_domains=[],  # You can specify trusted medical domains
+                exclude_domains=[]
+            )
+            
+            results = response.get("results", [])
             
             if results:
                 formatted_results = {
@@ -154,13 +180,15 @@ class MCPTools:
                     formatted_results["results"].append({
                         "rank": i + 1,
                         "title": result.get("title", ""),
-                        "snippet": result.get("body", ""),
-                        "url": result.get("href", "")
+                        "snippet": result.get("content", ""),
+                        "url": result.get("url", ""),
+                        "score": result.get("score", 0)
                     })
                 
                 logger.info(f"✓ Found {len(results)} web results for: {query}")
                 return formatted_results
             else:
+                logger.warning(f"No web results found for: {query}")
                 return {
                     "success": False,
                     "query": query,
@@ -171,7 +199,7 @@ class MCPTools:
             logger.log_error("web_search", e)
             return {
                 "success": False,
-                "error": str(e)
+                "error": f"Web search failed: {str(e)}"
             }
 
 
@@ -213,7 +241,7 @@ def get_tool_descriptions() -> List[Dict]:
         },
         {
             "name": "web_search",
-            "description": "Searches the web for current medical information. Use this as a fallback when the knowledge base doesn't have recent information or for current medical guidelines.",
+            "description": "Searches the web for current medical information using Tavily API. Use this as a fallback when the knowledge base doesn't have recent information or for current medical guidelines.",
             "parameters": {
                 "type": "object",
                 "properties": {

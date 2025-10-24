@@ -22,11 +22,14 @@ LOGS_DIR.mkdir(exist_ok=True)
 VECTOR_STORE_DIR.mkdir(exist_ok=True)
 
 # API Keys
+
+
+# API Keys
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "")
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY", "")
+TAVILY_API_KEY = os.getenv("TAVILY_API_KEY", "")  # ADD THIS LINE
 PINECONE_ENVIRONMENT = os.getenv("PINECONE_ENVIRONMENT", "us-west1-gcp")
 PINECONE_INDEX_NAME = os.getenv("PINECONE_INDEX_NAME", "nephrology-knowledge")
-
 # Logging
 LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO")
 LOG_FILE = LOGS_DIR / os.getenv("LOG_FILE", "system_logs.txt")
