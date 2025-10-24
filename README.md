@@ -37,39 +37,46 @@ The **Post-Discharge Medical AI Assistant** is an intelligent multi-agent system
 - **Evidence-Based**: All medical advice includes citations and disclaimers
 
 ### 🎥 Demo Video
-[Watch the 5-minute demo](https://youtu.be/YOUR_VIDEO_LINK) *(Coming soon)*
+
+[Watch the 5-minute demo](https://youtu.be/YOUR_VIDEO_LINK) _(Coming soon)_
 
 ---
 
 ## ✨ Features
 
 ### 🤖 Multi-Agent System
+
 - **Receptionist Agent**: Greets patients, retrieves discharge reports, handles basic queries
 - **Clinical Agent**: Provides medical information using RAG and web search
 - **Smart Handoff**: Automatically routes complex medical queries to Clinical Agent
 
 ### 🧠 RAG Implementation
+
 - **Vector Database**: Pinecone cloud-based storage (~4000 medical text chunks)
 - **Embeddings**: Sentence-Transformers (all-MiniLM-L6-v2)
 - **Source Material**: Comprehensive Clinical Nephrology 7th Edition
 - **Intelligent Chunking**: Sentence-aware splitting for better semantic meaning
 
 ### 🌐 Web Search Integration
+
 - **Provider**: Tavily API for reliable, rate-limit-free searches
 - **Use Case**: Latest research, current guidelines, recent medical news
 - **Smart Fallback**: Uses web search when knowledge base doesn't have current info
 
 ### 💾 Patient Data Management
+
 - **Database**: SQLite with 30+ dummy patient records
 - **Data**: Discharge reports, medications, dietary restrictions, follow-ups
 - **Privacy**: All data is dummy/synthetic for demonstration purposes
 
 ### 📊 Comprehensive Logging
+
 - **All Operations**: Database queries, tool calls, agent actions, errors
 - **Debugging**: Detailed logs for troubleshooting
 - **Analytics**: Track user interactions and system performance
 
 ### 🎨 User Interface
+
 - **Framework**: Streamlit for rapid prototyping
 - **Features**: Chat interface, conversation history, session management
 - **Responsive**: Works on desktop and mobile browsers
@@ -77,6 +84,22 @@ The **Post-Discharge Medical AI Assistant** is an intelligent multi-agent system
 ---
 
 ## 🏗️ Architecture
+
+# Architecture Overview
+
+<details>
+<summary>📊 Click to view System Architecture</summary>
+
+![System Architecture](Architecture%20diagram/architecture_diagram.jpg)
+
+</details>
+
+<details>
+<summary>🔄 Click to view Workflow</summary>
+
+![Workflow Flowchart](Architecture%20diagram/data_flow_diagram.jpg)
+
+</details>
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -117,17 +140,17 @@ The **Post-Discharge Medical AI Assistant** is an intelligent multi-agent system
 
 ## 🛠️ Technology Stack
 
-| Category | Technology | Purpose |
-|----------|-----------|---------|
-| **LLM** | Google Gemini 2.0 Flash | Fast, cost-effective reasoning |
-| **Framework** | LangChain + LangGraph | Agent orchestration |
-| **Vector DB** | Pinecone | Semantic search (serverless) |
-| **Embeddings** | Sentence-Transformers | Text vectorization |
-| **Web Search** | Tavily API | Current information retrieval |
-| **Database** | SQLite | Patient data storage |
-| **Frontend** | Streamlit | Rapid UI development |
-| **PDF Processing** | PyMuPDF | Extract text from medical books |
-| **Logging** | Python logging | System monitoring |
+| Category           | Technology              | Purpose                         |
+| ------------------ | ----------------------- | ------------------------------- |
+| **LLM**            | Google Gemini 2.0 Flash | Fast, cost-effective reasoning  |
+| **Framework**      | LangChain + LangGraph   | Agent orchestration             |
+| **Vector DB**      | Pinecone                | Semantic search (serverless)    |
+| **Embeddings**     | Sentence-Transformers   | Text vectorization              |
+| **Web Search**     | Tavily API              | Current information retrieval   |
+| **Database**       | SQLite                  | Patient data storage            |
+| **Frontend**       | Streamlit               | Rapid UI development            |
+| **PDF Processing** | PyMuPDF                 | Extract text from medical books |
+| **Logging**        | Python logging          | System monitoring               |
 
 ---
 
@@ -223,6 +246,7 @@ python setup_phase1.py
 ```
 
 This will:
+
 - ✅ Generate 30 dummy patient records
 - ✅ Populate SQLite database
 - ✅ Process PDF (if available)
@@ -239,6 +263,7 @@ python setup_phase2.py
 ```
 
 This will:
+
 - ✅ Install Phase 2 dependencies
 - ✅ Verify agent initialization
 - ✅ Test workflow orchestration
@@ -258,13 +283,15 @@ The app will open in your browser at `http://localhost:8501`
 ### Example Conversations
 
 **1. Patient Greeting**
+
 ```
 User: Hello, my name is Ashley King
-Assistant: Hi Ashley King! I found your discharge report from 
+Assistant: Hi Ashley King! I found your discharge report from
 August 16, 2025, for Kidney Stones. How are you feeling today?
 ```
 
 **2. Medication Query**
+
 ```
 User: What are my medications?
 Assistant: Your medications are:
@@ -274,6 +301,7 @@ Assistant: Your medications are:
 ```
 
 **3. Medical Question (RAG)**
+
 ```
 User: What causes kidney stones?
 Assistant: According to Comprehensive Clinical Nephrology (page 456),
@@ -282,9 +310,10 @@ substances... [detailed answer with citations]
 ```
 
 **4. Current Research (Web Search)**
+
 ```
 User: What's the latest research on SGLT2 inhibitors?
-Assistant: According to recent medical literature from Northwestern 
+Assistant: According to recent medical literature from Northwestern
 University and the National Kidney Foundation, SGLT2 inhibitors have
 shown promising results... [current information with sources]
 ```
@@ -352,6 +381,7 @@ python verify_phase1.py
 ```
 
 Checks:
+
 - ✅ Patient data generated
 - ✅ Database populated
 - ✅ Pinecone index created
@@ -364,6 +394,7 @@ python verify_phase2.py
 ```
 
 Checks:
+
 - ✅ All modules import correctly
 - ✅ MCP tools working
 - ✅ Agents initialized
@@ -383,21 +414,22 @@ Test the complete system with these queries:
 
 ## 📊 System Metrics
 
-| Metric | Value |
-|--------|-------|
-| Patient Records | 30 |
-| Vector DB Size | ~4,000 chunks |
-| Avg Chunk Size | ~1,000 characters |
-| Database Size | ~100 KB |
-| Embedding Dimension | 384 |
-| Response Time (RAG) | 2-3 seconds |
-| Response Time (Web) | 3-5 seconds |
+| Metric              | Value             |
+| ------------------- | ----------------- |
+| Patient Records     | 30                |
+| Vector DB Size      | ~4,000 chunks     |
+| Avg Chunk Size      | ~1,000 characters |
+| Database Size       | ~100 KB           |
+| Embedding Dimension | 384               |
+| Response Time (RAG) | 2-3 seconds       |
+| Response Time (Web) | 3-5 seconds       |
 
 ---
 
 ## 🎓 Architecture Justification
 
 See [REPORT.md](REPORT.md) for detailed architecture justification including:
+
 - LLM Selection (Google Gemini)
 - Vector Database (Pinecone)
 - Multi-Agent Framework (LangGraph)
@@ -440,6 +472,7 @@ python -c "from src.mcp.tools import MCPTools; tools = MCPTools(); print(tools.w
 ### Issue: "Slow responses"
 
 **Possible causes**:
+
 - First query loads models (5-7 seconds)
 - Pinecone cold start
 - Large PDF chunking
@@ -451,6 +484,7 @@ python -c "from src.mcp.tools import MCPTools; tools = MCPTools(); print(tools.w
 ⚠️ **Important**: This is a **demonstration project** with dummy data only.
 
 **For production use**:
+
 - [ ] Implement proper authentication
 - [ ] Use encrypted database
 - [ ] HIPAA compliance measures
@@ -476,7 +510,6 @@ This is an AI assistant for EDUCATIONAL PURPOSES ONLY.
 
 ---
 
-
 ---
 
 ## 📜 License
@@ -488,6 +521,7 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
 ## 👨‍💻 Author
 
 **Your Name**
+
 - GitHub: [@yourusername](https://github.com/yourusername)
 - LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
 - Email: your.email@example.com
@@ -544,4 +578,4 @@ If you have questions or need help:
 
 ---
 
-*Last Updated: October 2025*
+_Last Updated: October 2025_
