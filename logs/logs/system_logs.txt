@@ -4238,3 +4238,185 @@ google.api_core.exceptions.NotFound: 404 models/gemini-1.5-pro is not found for 
 [2025-10-24 16:59:51] [INFO] [PostDischargeAssistant] [CLINICAL] Attempt 1/2
 [2025-10-24 16:59:57] [INFO] [PostDischargeAssistant] [CLINICAL] Success! Response: 2559 chars
 [2025-10-24 16:59:57] [INFO] [PostDischargeAssistant] [WORKFLOW] Response generated (2579 chars)
+[2025-10-24 17:18:45] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-24 17:18:45] [INFO] [PostDischargeAssistant] System Logger Initialized
+[2025-10-24 17:18:45] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-24 17:18:56] [INFO] [PostDischargeAssistant] Initializing Multi-Agent Workflow...
+[2025-10-24 17:18:56] [INFO] [PostDischargeAssistant] Initializing database at: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\patients.db
+[2025-10-24 17:18:56] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-10-24 17:18:56] [INFO] [PostDischargeAssistant] Initializing Pinecone client...
+[2025-10-24 17:18:56] [INFO] [PostDischargeAssistant] Loading embedding model: all-MiniLM-L6-v2
+[2025-10-24 17:18:59] [INFO] [PostDischargeAssistant] ✓ Embedding model loaded (dimension: 384)
+[2025-10-24 17:18:59] [INFO] [PostDischargeAssistant] Connecting to index: nephrology-knowledge
+[2025-10-24 17:19:02] [INFO] [PostDischargeAssistant] ✓ Connected to index 'nephrology-knowledge'
+[2025-10-24 17:19:02] [INFO] [PostDischargeAssistant]   Total vectors: 12562
+[2025-10-24 17:19:02] [INFO] [PostDischargeAssistant] ✓ MCP Tools initialized
+[2025-10-24 17:19:02] [INFO] [PostDischargeAssistant] ✓ Receptionist Agent initialized
+[2025-10-24 17:19:02] [INFO] [PostDischargeAssistant] Initializing database at: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\patients.db
+[2025-10-24 17:19:02] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-10-24 17:19:02] [INFO] [PostDischargeAssistant] Initializing Pinecone client...
+[2025-10-24 17:19:02] [INFO] [PostDischargeAssistant] Loading embedding model: all-MiniLM-L6-v2
+[2025-10-24 17:19:05] [INFO] [PostDischargeAssistant] ✓ Embedding model loaded (dimension: 384)
+[2025-10-24 17:19:05] [INFO] [PostDischargeAssistant] Connecting to index: nephrology-knowledge
+[2025-10-24 17:19:07] [INFO] [PostDischargeAssistant] ✓ Connected to index 'nephrology-knowledge'
+[2025-10-24 17:19:07] [INFO] [PostDischargeAssistant]   Total vectors: 12562
+[2025-10-24 17:19:07] [INFO] [PostDischargeAssistant] ✓ MCP Tools initialized
+[2025-10-24 17:19:07] [INFO] [PostDischargeAssistant] ✓ Clinical Agent initialized
+[2025-10-24 17:19:07] [INFO] [PostDischargeAssistant] ✓ Multi-Agent Workflow ready
+[2025-10-24 17:19:07] [INFO] [PostDischargeAssistant] [APP] New session: 66b5a96e-2cce-432c-9ce6-ff511015ed7c
+[2025-10-24 17:20:19] [INFO] [PostDischargeAssistant] [WORKFLOW] Processing message: my name is Ashley King...
+[2025-10-24 17:20:19] [INFO] [PostDischargeAssistant] [WORKFLOW] Receptionist node
+[2025-10-24 17:20:19] [INFO] [PostDischargeAssistant] [RECEPTIONIST] Processing: my name is Ashley King...
+[2025-10-24 17:20:21] [INFO] [PostDischargeAssistant] [TOOL] get_patient_data called with params: {'patient_name': 'Ashley King'}
+[2025-10-24 17:20:21] [INFO] [PostDischargeAssistant] [TOOL] get_patient_data result: Retrieving patient data
+[2025-10-24 17:20:21] [INFO] [PostDischargeAssistant] [DATABASE] SELECT: Looking up patient: Ashley King
+[2025-10-24 17:20:21] [INFO] [PostDischargeAssistant] ✓ Found patient: Ashley King
+[2025-10-24 17:20:21] [INFO] [PostDischargeAssistant] ✓ Retrieved patient data for: Ashley King
+[2025-10-24 17:20:23] [INFO] [PostDischargeAssistant] [RECEPTIONIST] Response generated (routing: False)
+[2025-10-24 17:20:23] [INFO] [PostDischargeAssistant] [WORKFLOW] Ending at receptionist
+[2025-10-24 17:20:23] [INFO] [PostDischargeAssistant] [WORKFLOW] Response generated (188 chars)
+[2025-10-24 17:20:39] [INFO] [PostDischargeAssistant] [WORKFLOW] Processing message: what is my medication ?
+...
+[2025-10-24 17:20:39] [INFO] [PostDischargeAssistant] [WORKFLOW] Receptionist node
+[2025-10-24 17:20:39] [INFO] [PostDischargeAssistant] [RECEPTIONIST] Processing: what is my medication ?
+...
+[2025-10-24 17:20:41] [INFO] [PostDischargeAssistant] [TOOL] get_patient_data called with params: {'patient_name': 'Ashley King'}
+[2025-10-24 17:20:41] [INFO] [PostDischargeAssistant] [TOOL] get_patient_data result: Retrieving patient data
+[2025-10-24 17:20:41] [INFO] [PostDischargeAssistant] [DATABASE] SELECT: Looking up patient: Ashley King
+[2025-10-24 17:20:41] [INFO] [PostDischargeAssistant] ✓ Found patient: Ashley King
+[2025-10-24 17:20:41] [INFO] [PostDischargeAssistant] ✓ Retrieved patient data for: Ashley King
+[2025-10-24 17:20:43] [INFO] [PostDischargeAssistant] [RECEPTIONIST] Response generated (routing: False)
+[2025-10-24 17:20:43] [INFO] [PostDischargeAssistant] [WORKFLOW] Ending at receptionist
+[2025-10-24 17:20:43] [INFO] [PostDischargeAssistant] [WORKFLOW] Response generated (287 chars)
+[2025-10-24 17:20:50] [INFO] [PostDischargeAssistant] [WORKFLOW] Processing message: I'm having swelling in my legs. Should I be worrie...
+[2025-10-24 17:20:50] [INFO] [PostDischargeAssistant] [WORKFLOW] Receptionist node
+[2025-10-24 17:20:50] [INFO] [PostDischargeAssistant] [RECEPTIONIST] Processing: I'm having swelling in my legs. Should I be worrie...
+[2025-10-24 17:20:52] [INFO] [PostDischargeAssistant] [RECEPTIONIST] Response generated (routing: True)
+[2025-10-24 17:20:52] [INFO] [PostDischargeAssistant] [WORKFLOW] Routing to clinical agent
+[2025-10-24 17:20:52] [INFO] [PostDischargeAssistant] [WORKFLOW] Clinical node
+[2025-10-24 17:20:52] [INFO] [PostDischargeAssistant] [CLINICAL] Processing: **Receptionist Agent:** This sounds like a medical...
+[2025-10-24 17:20:52] [INFO] [PostDischargeAssistant] [CLINICAL] Invoking agent executor...
+[2025-10-24 17:20:54] [INFO] [PostDischargeAssistant] [CLINICAL] Success! Response: 193 chars
+[2025-10-24 17:20:54] [INFO] [PostDischargeAssistant] [WORKFLOW] Response generated (213 chars)
+[2025-10-24 17:21:23] [INFO] [PostDischargeAssistant] [WORKFLOW] Processing message: i had headache , little fever from 2 weeks ...
+[2025-10-24 17:21:23] [INFO] [PostDischargeAssistant] [WORKFLOW] Receptionist node
+[2025-10-24 17:21:23] [INFO] [PostDischargeAssistant] [RECEPTIONIST] Processing: i had headache , little fever from 2 weeks ...
+[2025-10-24 17:21:24] [INFO] [PostDischargeAssistant] [RECEPTIONIST] Response generated (routing: True)
+[2025-10-24 17:21:24] [INFO] [PostDischargeAssistant] [WORKFLOW] Routing to clinical agent
+[2025-10-24 17:21:24] [INFO] [PostDischargeAssistant] [WORKFLOW] Clinical node
+[2025-10-24 17:21:24] [INFO] [PostDischargeAssistant] [CLINICAL] Processing: **Receptionist Agent:** This sounds like a medical...
+[2025-10-24 17:21:24] [INFO] [PostDischargeAssistant] [CLINICAL] Invoking agent executor...
+[2025-10-24 17:21:26] [INFO] [PostDischargeAssistant] [CLINICAL] Success! Response: 193 chars
+[2025-10-24 17:21:26] [INFO] [PostDischargeAssistant] [WORKFLOW] Response generated (213 chars)
+[2025-10-24 17:22:44] [INFO] [PostDischargeAssistant] [WORKFLOW] Processing message: i also have little fever from 2 week . is anything...
+[2025-10-24 17:22:44] [INFO] [PostDischargeAssistant] [WORKFLOW] Receptionist node
+[2025-10-24 17:22:44] [INFO] [PostDischargeAssistant] [RECEPTIONIST] Processing: i also have little fever from 2 week . is anything...
+[2025-10-24 17:22:46] [INFO] [PostDischargeAssistant] [RECEPTIONIST] Response generated (routing: True)
+[2025-10-24 17:22:46] [INFO] [PostDischargeAssistant] [WORKFLOW] Routing to clinical agent
+[2025-10-24 17:22:46] [INFO] [PostDischargeAssistant] [WORKFLOW] Clinical node
+[2025-10-24 17:22:46] [INFO] [PostDischargeAssistant] [CLINICAL] Processing: **Receptionist Agent:** **Receptionist Agent:** Th...
+[2025-10-24 17:22:46] [INFO] [PostDischargeAssistant] [CLINICAL] Invoking agent executor...
+[2025-10-24 17:22:49] [INFO] [PostDischargeAssistant] [CLINICAL] Success! Response: 193 chars
+[2025-10-24 17:22:49] [INFO] [PostDischargeAssistant] [WORKFLOW] Response generated (213 chars)
+[2025-10-24 17:23:22] [INFO] [PostDischargeAssistant] [WORKFLOW] Processing message: "What's the latest research on SGLT2 inhibitors fo...
+[2025-10-24 17:23:22] [INFO] [PostDischargeAssistant] [WORKFLOW] Receptionist node
+[2025-10-24 17:23:22] [INFO] [PostDischargeAssistant] [RECEPTIONIST] Processing: "What's the latest research on SGLT2 inhibitors fo...
+[2025-10-24 17:23:24] [INFO] [PostDischargeAssistant] [RECEPTIONIST] Response generated (routing: True)
+[2025-10-24 17:23:24] [INFO] [PostDischargeAssistant] [WORKFLOW] Routing to clinical agent
+[2025-10-24 17:23:24] [INFO] [PostDischargeAssistant] [WORKFLOW] Clinical node
+[2025-10-24 17:23:24] [INFO] [PostDischargeAssistant] [CLINICAL] Processing: **Receptionist Agent:** **Receptionist Agent:** Th...
+[2025-10-24 17:23:24] [INFO] [PostDischargeAssistant] [CLINICAL] Invoking agent executor...
+[2025-10-24 17:23:25] [INFO] [PostDischargeAssistant] [CLINICAL] Success! Response: 193 chars
+[2025-10-24 17:23:25] [INFO] [PostDischargeAssistant] [WORKFLOW] Response generated (213 chars)
+[2025-10-24 17:38:37] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-24 17:38:37] [INFO] [PostDischargeAssistant] System Logger Initialized
+[2025-10-24 17:38:37] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-24 17:38:50] [INFO] [PostDischargeAssistant] Initializing Multi-Agent Workflow...
+[2025-10-24 17:38:50] [INFO] [PostDischargeAssistant] Initializing database at: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\patients.db
+[2025-10-24 17:38:50] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-10-24 17:38:50] [INFO] [PostDischargeAssistant] Initializing Pinecone client...
+[2025-10-24 17:38:50] [INFO] [PostDischargeAssistant] Loading embedding model: all-MiniLM-L6-v2
+[2025-10-24 17:38:53] [INFO] [PostDischargeAssistant] ✓ Embedding model loaded (dimension: 384)
+[2025-10-24 17:38:53] [INFO] [PostDischargeAssistant] Connecting to index: nephrology-knowledge
+[2025-10-24 17:38:56] [INFO] [PostDischargeAssistant] ✓ Connected to index 'nephrology-knowledge'
+[2025-10-24 17:38:56] [INFO] [PostDischargeAssistant]   Total vectors: 12562
+[2025-10-24 17:38:56] [INFO] [PostDischargeAssistant] ✓ MCP Tools initialized
+[2025-10-24 17:38:56] [INFO] [PostDischargeAssistant] ✓ Receptionist Agent initialized
+[2025-10-24 17:38:56] [INFO] [PostDischargeAssistant] Initializing database at: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\patients.db
+[2025-10-24 17:38:56] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-10-24 17:38:56] [INFO] [PostDischargeAssistant] Initializing Pinecone client...
+[2025-10-24 17:38:56] [INFO] [PostDischargeAssistant] Loading embedding model: all-MiniLM-L6-v2
+[2025-10-24 17:38:59] [INFO] [PostDischargeAssistant] ✓ Embedding model loaded (dimension: 384)
+[2025-10-24 17:38:59] [INFO] [PostDischargeAssistant] Connecting to index: nephrology-knowledge
+[2025-10-24 17:39:00] [INFO] [PostDischargeAssistant] ✓ Connected to index 'nephrology-knowledge'
+[2025-10-24 17:39:00] [INFO] [PostDischargeAssistant]   Total vectors: 12562
+[2025-10-24 17:39:00] [INFO] [PostDischargeAssistant] ✓ MCP Tools initialized
+[2025-10-24 17:39:00] [INFO] [PostDischargeAssistant] ✓ Clinical Agent initialized
+[2025-10-24 17:39:00] [INFO] [PostDischargeAssistant] ✓ Multi-Agent Workflow ready
+[2025-10-24 17:39:00] [INFO] [PostDischargeAssistant] [APP] New session: 59a68abb-1a90-4485-a9a3-d405041479e3
+[2025-10-24 17:39:07] [INFO] [PostDischargeAssistant] [WORKFLOW] Processing message: my name is Ashley King...
+[2025-10-24 17:39:07] [INFO] [PostDischargeAssistant] [WORKFLOW] Receptionist node
+[2025-10-24 17:39:07] [INFO] [PostDischargeAssistant] [WORKFLOW] Processing user message: my name is Ashley King...
+[2025-10-24 17:39:07] [INFO] [PostDischargeAssistant] [RECEPTIONIST] Processing: my name is Ashley King...
+[2025-10-24 17:39:09] [INFO] [PostDischargeAssistant] [TOOL] get_patient_data called with params: {'patient_name': 'Ashley King'}
+[2025-10-24 17:39:09] [INFO] [PostDischargeAssistant] [TOOL] get_patient_data result: Retrieving patient data
+[2025-10-24 17:39:09] [INFO] [PostDischargeAssistant] [DATABASE] SELECT: Looking up patient: Ashley King
+[2025-10-24 17:39:09] [INFO] [PostDischargeAssistant] ✓ Found patient: Ashley King
+[2025-10-24 17:39:09] [INFO] [PostDischargeAssistant] ✓ Retrieved patient data for: Ashley King
+[2025-10-24 17:39:10] [INFO] [PostDischargeAssistant] [RECEPTIONIST] Response generated (routing: False)
+[2025-10-24 17:39:10] [INFO] [PostDischargeAssistant] [WORKFLOW] Ending at receptionist
+[2025-10-24 17:39:10] [INFO] [PostDischargeAssistant] [WORKFLOW] Response generated (199 chars)
+[2025-10-24 17:39:26] [INFO] [PostDischargeAssistant] [WORKFLOW] Processing message: what is my medication ?...
+[2025-10-24 17:39:26] [INFO] [PostDischargeAssistant] [WORKFLOW] Receptionist node
+[2025-10-24 17:39:26] [INFO] [PostDischargeAssistant] [WORKFLOW] Processing user message: what is my medication ?...
+[2025-10-24 17:39:26] [INFO] [PostDischargeAssistant] [RECEPTIONIST] Processing: what is my medication ?...
+[2025-10-24 17:39:29] [INFO] [PostDischargeAssistant] [RECEPTIONIST] Response generated (routing: False)
+[2025-10-24 17:39:29] [INFO] [PostDischargeAssistant] [WORKFLOW] Ending at receptionist
+[2025-10-24 17:39:29] [INFO] [PostDischargeAssistant] [WORKFLOW] Response generated (281 chars)
+[2025-10-24 17:39:59] [INFO] [PostDischargeAssistant] [WORKFLOW] Processing message: I'm having swelling in my legs. i had headache , l...
+[2025-10-24 17:39:59] [INFO] [PostDischargeAssistant] [WORKFLOW] Receptionist node
+[2025-10-24 17:39:59] [INFO] [PostDischargeAssistant] [WORKFLOW] Processing user message: I'm having swelling in my legs. i had headache , l...
+[2025-10-24 17:39:59] [INFO] [PostDischargeAssistant] [RECEPTIONIST] Processing: I'm having swelling in my legs. i had headache , l...
+[2025-10-24 17:40:01] [INFO] [PostDischargeAssistant] [RECEPTIONIST] Response generated (routing: True)
+[2025-10-24 17:40:01] [INFO] [PostDischargeAssistant] [WORKFLOW] Routing to clinical agent
+[2025-10-24 17:40:01] [INFO] [PostDischargeAssistant] [WORKFLOW] Clinical node
+[2025-10-24 17:40:01] [INFO] [PostDischargeAssistant] [WORKFLOW] Passing to clinical: I'm having swelling in my legs. i had headache , l...
+[2025-10-24 17:40:01] [INFO] [PostDischargeAssistant] [CLINICAL] Extracted query: I'm having swelling in my legs. i had headache , little fever from 2 weeks.Should I be worried?...
+[2025-10-24 17:40:01] [INFO] [PostDischargeAssistant] [CLINICAL] Processing: I'm having swelling in my legs. i had headache , l...
+[2025-10-24 17:40:01] [INFO] [PostDischargeAssistant] [CLINICAL] Attempt 1/2
+[2025-10-24 17:40:01] [INFO] [PostDischargeAssistant] [CLINICAL] Invoking agent executor...
+[2025-10-24 17:40:04] [INFO] [PostDischargeAssistant] [CLINICAL] RAG Search: leg swelling headache fever kidney disease...
+[2025-10-24 17:40:04] [INFO] [PostDischargeAssistant] [RAG] Query: leg swelling headache fever kidney disease
+[2025-10-24 17:40:04] [INFO] [PostDischargeAssistant] [RAG] Retrieved 3 chunks from sources: ['Nephrology Textbook']
+[2025-10-24 17:40:04] [INFO] [PostDischargeAssistant] Searching Pinecone for: 'leg swelling headache fever kidney disease'
+[2025-10-24 17:40:04] [INFO] [PostDischargeAssistant]   Top K: 3
+[2025-10-24 17:40:05] [INFO] [PostDischargeAssistant] ✓ Found 3 results
+[2025-10-24 17:40:05] [INFO] [PostDischargeAssistant] ✓ Found 3 relevant chunks for: leg swelling headache fever kidney disease
+[2025-10-24 17:40:05] [INFO] [PostDischargeAssistant] [CLINICAL] RAG found 3 results
+[2025-10-24 17:40:09] [INFO] [PostDischargeAssistant] [CLINICAL] Success! Response: 1945 chars
+[2025-10-24 17:40:09] [INFO] [PostDischargeAssistant] [WORKFLOW] Response generated (1965 chars)
+[2025-10-24 17:41:20] [INFO] [PostDischargeAssistant] [WORKFLOW] Processing message: any recent news about heart transplant ?...
+[2025-10-24 17:41:20] [INFO] [PostDischargeAssistant] [WORKFLOW] Receptionist node
+[2025-10-24 17:41:20] [INFO] [PostDischargeAssistant] [WORKFLOW] Processing user message: any recent news about heart transplant ?...
+[2025-10-24 17:41:20] [INFO] [PostDischargeAssistant] [RECEPTIONIST] Processing: any recent news about heart transplant ?...
+[2025-10-24 17:41:22] [INFO] [PostDischargeAssistant] [RECEPTIONIST] Response generated (routing: True)
+[2025-10-24 17:41:22] [INFO] [PostDischargeAssistant] [WORKFLOW] Routing to clinical agent
+[2025-10-24 17:41:22] [INFO] [PostDischargeAssistant] [WORKFLOW] Clinical node
+[2025-10-24 17:41:22] [INFO] [PostDischargeAssistant] [WORKFLOW] Passing to clinical: any recent news about heart transplant ?...
+[2025-10-24 17:41:22] [INFO] [PostDischargeAssistant] [CLINICAL] Extracted query: any recent news about heart transplant ?...
+[2025-10-24 17:41:22] [INFO] [PostDischargeAssistant] [CLINICAL] Processing: any recent news about heart transplant ?...
+[2025-10-24 17:41:22] [INFO] [PostDischargeAssistant] [CLINICAL] Attempt 1/2
+[2025-10-24 17:41:22] [INFO] [PostDischargeAssistant] [CLINICAL] Invoking agent executor...
+[2025-10-24 17:41:23] [INFO] [PostDischargeAssistant] [CLINICAL] Web Search: recent news about heart transplant...
+[2025-10-24 17:41:23] [INFO] [PostDischargeAssistant] [WEB_SEARCH] Query: recent news about heart transplant
+[2025-10-24 17:41:23] [INFO] [PostDischargeAssistant] [WEB_SEARCH] Found 3 results
+[2025-10-24 17:41:27] [ERROR] [PostDischargeAssistant] [ERROR] web_search: https://html.duckduckgo.com/html 202 Ratelimit
+Traceback (most recent call last):
+  File "C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\src\mcp\tools.py", line 143, in web_search
+    results = list(ddgs.text(query, max_results=max_results))
+  File "C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\venv\lib\site-packages\duckduckgo_search\duckduckgo_search.py", line 258, in text
+    raise DuckDuckGoSearchException(err)
+duckduckgo_search.exceptions.DuckDuckGoSearchException: https://html.duckduckgo.com/html 202 Ratelimit
+[2025-10-24 17:41:27] [WARNING] [PostDischargeAssistant] [CLINICAL] Web search failed: https://html.duckduckgo.com/html 202 Ratelimit
+[2025-10-24 17:41:28] [INFO] [PostDischargeAssistant] [CLINICAL] Success! Response: 239 chars
+[2025-10-24 17:41:28] [INFO] [PostDischargeAssistant] [WORKFLOW] Response generated (259 chars)

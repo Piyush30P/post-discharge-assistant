@@ -1,6 +1,6 @@
 """
-Workflow State Management
-Defines the state structure for the multi-agent system
+Workflow State Management - UPDATED
+Added last_user_query to track original user messages during routing
 """
 
 from typing import TypedDict, List, Dict, Optional, Annotated
@@ -31,6 +31,9 @@ class AgentState(TypedDict):
     needs_routing: bool
     route_to: Optional[str]
     route_reason: Optional[str]
+    
+    # ADDED: Store original user query for proper clinical agent routing
+    last_user_query: Optional[str]
 
 
 def create_initial_state(conversation_id: str) -> AgentState:
@@ -45,5 +48,6 @@ def create_initial_state(conversation_id: str) -> AgentState:
         turn_count=0,
         needs_routing=False,
         route_to=None,
-        route_reason=None
+        route_reason=None,
+        last_user_query=None  # ADDED
     )

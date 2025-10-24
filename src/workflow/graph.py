@@ -1,7 +1,10 @@
 """
-LangGraph Workflow
-Orchestrates multi-agent conversation flow with agent labels
-FIXED: Clinical agent responses now show correct label
+LangGraph Workflow - FIXED VERSION
+Key fixes:
+1. Proper message extraction when routing between agents
+2. Only pass actual user queries to clinical agent
+3. Better state management
+4. Cleaner agent transitions
 """
 
 from typing import Dict, List, Literal
@@ -10,6 +13,7 @@ from langgraph.checkpoint.memory import MemorySaver
 
 from src.workflow.state import AgentState, create_initial_state
 from src.agents.receptionist_agent import ReceptionistAgent
+# Import fixed clinical agent or use the same import
 from src.agents.clinical_agent import ClinicalAgent
 from src.utils.logger import get_logger
 
@@ -55,8 +59,7 @@ class MultiAgentWorkflow:
             }
         )
         
-        # CRITICAL FIX: Clinical goes directly to END
-        # This prevents the label from being overwritten by receptionist
+        # Clinical goes directly to END
         workflow.add_edge("clinical", END)
         
         return workflow
@@ -84,14 +87,32 @@ class MultiAgentWorkflow:
                 result.append(msg)
         return result
     
+    def _get_original_user_message(self, messages: List) -> str:
+        """
+        Get the most recent actual user message
+        Skips any routing/agent messages
+        """
+        for msg in reversed(messages):
+            content = self._extract_message_content(msg)
+            role = msg.get("role") if isinstance(msg, dict) else getattr(msg, "type", None)
+            
+            # Look for user messages
+            if role == "user":
+                return content
+        
+        # Fallback to last message
+        if messages:
+            return self._extract_message_content(messages[-1])
+        return ""
+    
     def _receptionist_node(self, state: AgentState) -> Dict:
         """Process message through receptionist"""
         logger.info("[WORKFLOW] Receptionist node")
         
-        # Get last message
-        last_message = ""
-        if state["messages"]:
-            last_message = self._extract_message_content(state["messages"][-1])
+        # Get last user message
+        last_message = self._get_original_user_message(state["messages"])
+        
+        logger.info(f"[WORKFLOW] Processing user message: {last_message[:50]}...")
         
         # Get chat history (exclude last message)
         chat_history = []
@@ -104,32 +125,48 @@ class MultiAgentWorkflow:
         # Add agent label to response
         labeled_response = f"**Receptionist Agent:** {response['message']}"
         
+        # Store the original user message for clinical agent if routing
+        original_user_query = last_message if response.get("needs_routing") else None
+        
         # Update state
         return {
             "messages": [{"role": "assistant", "content": labeled_response}],
             "current_agent": "receptionist",
             "needs_routing": response.get("needs_routing", False),
             "route_to": response.get("route_to"),
-            "turn_count": state.get("turn_count", 0) + 1
+            "turn_count": state.get("turn_count", 0) + 1,
+            # CRITICAL: Store original query for clinical agent
+            "last_user_query": original_user_query
         }
     
     def _clinical_node(self, state: AgentState) -> Dict:
         """Process message through clinical agent"""
         logger.info("[WORKFLOW] Clinical node")
         
-        # Get last message
-        last_message = ""
-        if state["messages"]:
-            last_message = self._extract_message_content(state["messages"][-1])
+        # CRITICAL FIX: Get the original user message, not the receptionist's routing message
+        user_query = state.get("last_user_query")
         
-        # Get chat history
+        if not user_query:
+            # Fallback: try to extract from messages
+            user_query = self._get_original_user_message(state["messages"])
+        
+        logger.info(f"[WORKFLOW] Passing to clinical: {user_query[:50]}...")
+        
+        # Get chat history (excluding routing messages)
         chat_history = []
-        if len(state["messages"]) > 1:
-            chat_history = self._convert_messages_to_dict(state["messages"][:-1])
+        for msg in state["messages"]:
+            content = self._extract_message_content(msg)
+            role = msg.get("role") if isinstance(msg, dict) else getattr(msg, "type", "user")
+            
+            # Skip receptionist routing messages
+            if "let me connect you" in content.lower() or "clinical agent" in content.lower():
+                continue
+            
+            chat_history.append({"role": role, "content": content})
         
         # Process through clinical agent
         response = self.clinical.process(
-            last_message,
+            user_query,  # Pass the actual user question
             chat_history,
             patient_context=state.get("patient_data")
         )
@@ -204,6 +241,8 @@ class MultiAgentWorkflow:
                 state['route_to'] = None
             if 'route_reason' not in state:
                 state['route_reason'] = None
+            if 'last_user_query' not in state:
+                state['last_user_query'] = None
             
             # Add user message
             state["messages"].append({"role": "user", "content": message})
@@ -250,38 +289,42 @@ class MultiAgentWorkflow:
 
 
 def test_workflow():
-    """Test the multi-agent workflow"""
+    """Test the fixed workflow"""
     print("\n" + "="*80)
-    print("Testing Multi-Agent Workflow with Agent Labels")
+    print("Testing FIXED Multi-Agent Workflow")
     print("="*80 + "\n")
     
     workflow = MultiAgentWorkflow()
     
-    # Test conversation flow
+    # Test conversation
     test_messages = [
-        ("Hello", "Should show Receptionist Agent"),
-        ("My name is John Brown", "Should show Receptionist Agent"),
-        ("I'm having swelling in my legs", "Should show Clinical Agent"),
-        ("What foods should I avoid?", "Should show Clinical Agent")
+        "Hello",
+        "My name is Ashley King",
+        "I'm having swelling in my legs. Should I be worried?",
+        "What's the latest research on kidney disease?"
     ]
     
-    for i, (msg, expected) in enumerate(test_messages, 1):
-        print(f"\n--- Turn {i}: {expected} ---")
+    for i, msg in enumerate(test_messages, 1):
+        print(f"\n{'='*80}")
+        print(f"Turn {i}")
+        print('='*80)
         print(f"User: {msg}")
-        response = workflow.process_message(msg, "test-conversation")
         
-        # Check agent label
+        response = workflow.process_message(msg, "test-fixed")
+        
+        # Check which agent responded
         if "**Receptionist Agent:**" in response:
-            print("✓ Labeled as: Receptionist Agent")
+            print("✓ Agent: Receptionist")
         elif "**Clinical Agent:**" in response:
-            print("✓ Labeled as: Clinical Agent")
+            print("✓ Agent: Clinical")
         else:
-            print("✗ No agent label found!")
+            print("✗ Agent label missing")
         
-        print(f"Response: {response[:150]}...")
+        print(f"\nResponse: {response[:200]}...")
     
     print("\n" + "="*80)
     print("✓ Workflow test complete")
+    print("="*80)
 
 
 if __name__ == "__main__":
