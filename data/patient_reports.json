@@ -1,335 +1,7 @@
 [
   {
-    "patient_name": "Linda Johnson",
-    "discharge_date": "2025-10-15",
-    "primary_diagnosis": "Chronic Kidney Disease Stage 4",
-    "icd10_code": "N18.4",
-    "severity": "severe",
-    "medications": [
-      "Lisinopril 20mg daily",
-      "Furosemide 40mg twice daily",
-      "Sodium bicarbonate 650mg TID",
-      "Erythropoietin 2000 units weekly"
-    ],
-    "dietary_restrictions": "Low sodium (2g/day), fluid restriction (1L/day), protein restriction (0.6g/kg/day), potassium restriction",
-    "follow_up": "Nephrology clinic in 1 week, Lab work (BMP, CBC) in 3 days",
-    "warning_signs": "Chest pain or pressure, Swelling in legs, ankles, or feet, Shortness of breath or difficulty breathing",
-    "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately; Attend all dialysis sessions; Strict fluid restriction compliance; Monitor for signs of infection at dialysis access site",
-    "emergency_contact": "Spouse - (946) 270-4644"
-  },
-  {
-    "patient_name": "Karen Clark",
-    "discharge_date": "2025-07-26",
-    "primary_diagnosis": "Diabetic Nephropathy",
-    "icd10_code": "E11.21",
-    "severity": "moderate",
-    "medications": [
-      "Lisinopril 20mg daily",
-      "Metformin 1000mg twice daily",
-      "Insulin glargine 20 units at bedtime"
-    ],
-    "dietary_restrictions": "Diabetic diet, blood glucose monitoring, protein restriction",
-    "follow_up": "Nephrology clinic in 1 month",
-    "warning_signs": "Blood in urine, Uncontrolled blood pressure (>180/110), Severe nausea or vomiting, Decreased urine output or dark urine, Severe headache",
-    "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately; Monitor blood glucose 4 times daily; Follow diabetic meal plan; Check feet daily for sores or injuries",
-    "emergency_contact": "Friend - (953) 525-7491"
-  },
-  {
-    "patient_name": "Thomas Hernandez",
-    "discharge_date": "2025-08-05",
-    "primary_diagnosis": "Acute Kidney Injury (AKI)",
-    "icd10_code": "N17.9",
-    "severity": "severe",
-    "medications": [
-      "IV fluids",
-      "Discontinue NSAIDs",
-      "Monitor electrolytes"
-    ],
-    "dietary_restrictions": "Strict fluid monitoring, avoid nephrotoxic agents",
-    "follow_up": "Lab work (BMP, CBC) in 3 days, Emergency department if symptoms worsen",
-    "warning_signs": "Blood in urine, Severe headache, Severe nausea or vomiting, Uncontrolled blood pressure (>180/110), Fever above 101°F",
-    "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately",
-    "emergency_contact": "Adult child - (989) 298-1033"
-  },
-  {
-    "patient_name": "Jessica Clark",
-    "discharge_date": "2025-08-30",
-    "primary_diagnosis": "Diabetic Nephropathy",
-    "icd10_code": "E11.21",
-    "severity": "moderate",
-    "medications": [
-      "Lisinopril 20mg daily",
-      "Metformin 1000mg twice daily",
-      "Insulin glargine 20 units at bedtime"
-    ],
-    "dietary_restrictions": "Diabetic diet, blood glucose monitoring, protein restriction",
-    "follow_up": "Nephrology clinic in 1 month, Primary care physician in 1 week",
-    "warning_signs": "Decreased urine output or dark urine, Fever above 101°F, Chest pain or pressure, Severe headache, Swelling in legs, ankles, or feet",
-    "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately; Monitor blood glucose 4 times daily; Follow diabetic meal plan; Check feet daily for sores or injuries",
-    "emergency_contact": "Parent - (691) 637-7932"
-  },
-  {
-    "patient_name": "James Thomas",
-    "discharge_date": "2025-09-15",
-    "primary_diagnosis": "Acute Kidney Injury (AKI)",
-    "icd10_code": "N17.9",
-    "severity": "severe",
-    "medications": [
-      "IV fluids",
-      "Discontinue NSAIDs",
-      "Monitor electrolytes"
-    ],
-    "dietary_restrictions": "Strict fluid monitoring, avoid nephrotoxic agents",
-    "follow_up": "Primary care physician in 1 week",
-    "warning_signs": "Severe nausea or vomiting, Severe headache, Swelling in legs, ankles, or feet",
-    "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately",
-    "emergency_contact": "Spouse - (460) 998-6926"
-  },
-  {
-    "patient_name": "John Martin",
-    "discharge_date": "2025-10-11",
-    "primary_diagnosis": "Nephrotic Syndrome",
-    "icd10_code": "N04.9",
-    "severity": "moderate",
-    "medications": [
-      "Prednisone 60mg daily",
-      "Furosemide 40mg daily",
-      "Lisinopril 10mg daily",
-      "Atorvastatin 40mg daily"
-    ],
-    "dietary_restrictions": "Low sodium diet, monitor for infection, avoid NSAIDs",
-    "follow_up": "Nephrology clinic in 1 month",
-    "warning_signs": "Blood in urine, Chest pain or pressure, Confusion or altered mental status",
-    "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately",
-    "emergency_contact": "Friend - (268) 510-9423"
-  },
-  {
-    "patient_name": "Thomas King",
-    "discharge_date": "2025-08-30",
-    "primary_diagnosis": "Polycystic Kidney Disease",
-    "icd10_code": "Q61.3",
-    "severity": "moderate",
-    "medications": [
-      "Tolvaptan 45mg/15mg daily",
-      "Lisinopril 20mg daily",
-      "Pain management as needed"
-    ],
-    "dietary_restrictions": "Adequate hydration, blood pressure control, avoid contact sports",
-    "follow_up": "Primary care physician in 1 week",
-    "warning_signs": "Decreased urine output or dark urine, Uncontrolled blood pressure (>180/110), Fever above 101°F, Shortness of breath or difficulty breathing",
-    "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately",
-    "emergency_contact": "Adult child - (208) 779-8874"
-  },
-  {
-    "patient_name": "Matthew Johnson",
-    "discharge_date": "2025-09-15",
-    "primary_diagnosis": "Chronic Kidney Disease Stage 3",
-    "icd10_code": "N18.3",
-    "severity": "moderate",
-    "medications": [
-      "Lisinopril 10mg daily",
-      "Furosemide 20mg twice daily",
-      "Calcium carbonate 500mg with meals"
-    ],
-    "dietary_restrictions": "Low sodium (2g/day), fluid restriction (1.5L/day), protein restriction (0.8g/kg/day)",
-    "follow_up": "Primary care physician in 1 week, Nephrology clinic in 1 month",
-    "warning_signs": "Confusion or altered mental status, Fever above 101°F, Shortness of breath or difficulty breathing, Decreased urine output or dark urine, Uncontrolled blood pressure (>180/110)",
-    "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately",
-    "emergency_contact": "Parent - (334) 577-9321"
-  },
-  {
-    "patient_name": "James Wilson",
-    "discharge_date": "2025-08-20",
-    "primary_diagnosis": "Nephrotic Syndrome",
-    "icd10_code": "N04.9",
-    "severity": "moderate",
-    "medications": [
-      "Prednisone 60mg daily",
-      "Furosemide 40mg daily",
-      "Lisinopril 10mg daily",
-      "Atorvastatin 40mg daily"
-    ],
-    "dietary_restrictions": "Low sodium diet, monitor for infection, avoid NSAIDs",
-    "follow_up": "Lab work (BMP, CBC) in 3 days",
-    "warning_signs": "Uncontrolled blood pressure (>180/110), Confusion or altered mental status, Fever above 101°F, Blood in urine",
-    "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately",
-    "emergency_contact": "Sibling - (540) 511-1384"
-  },
-  {
-    "patient_name": "James King",
-    "discharge_date": "2025-08-29",
-    "primary_diagnosis": "Diabetic Nephropathy",
-    "icd10_code": "E11.21",
-    "severity": "moderate",
-    "medications": [
-      "Lisinopril 20mg daily",
-      "Metformin 1000mg twice daily",
-      "Insulin glargine 20 units at bedtime"
-    ],
-    "dietary_restrictions": "Diabetic diet, blood glucose monitoring, protein restriction",
-    "follow_up": "Lab work (BMP, CBC) in 3 days",
-    "warning_signs": "Decreased urine output or dark urine, Blood in urine, Severe nausea or vomiting",
-    "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately; Monitor blood glucose 4 times daily; Follow diabetic meal plan; Check feet daily for sores or injuries",
-    "emergency_contact": "Adult child - (238) 449-8330"
-  },
-  {
-    "patient_name": "Donald Walker",
-    "discharge_date": "2025-09-07",
-    "primary_diagnosis": "Nephrotic Syndrome",
-    "icd10_code": "N04.9",
-    "severity": "moderate",
-    "medications": [
-      "Prednisone 60mg daily",
-      "Furosemide 40mg daily",
-      "Lisinopril 10mg daily",
-      "Atorvastatin 40mg daily"
-    ],
-    "dietary_restrictions": "Low sodium diet, monitor for infection, avoid NSAIDs",
-    "follow_up": "Emergency department if symptoms worsen, Nephrology clinic in 1 month",
-    "warning_signs": "Uncontrolled blood pressure (>180/110), Shortness of breath or difficulty breathing, Confusion or altered mental status, Blood in urine",
-    "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately",
-    "emergency_contact": "Spouse - (470) 518-4480"
-  },
-  {
-    "patient_name": "Barbara Smith",
-    "discharge_date": "2025-08-06",
-    "primary_diagnosis": "End-Stage Renal Disease (ESRD) on Hemodialysis",
-    "icd10_code": "N18.6",
-    "severity": "severe",
-    "medications": [
-      "Sevelamer 800mg with meals",
-      "Epoetin alfa 4000 units with dialysis",
-      "Calcium acetate 667mg with meals"
-    ],
-    "dietary_restrictions": "Fluid restriction (750mL/day), low potassium, low phosphorus, dialysis 3x/week",
-    "follow_up": "Emergency department if symptoms worsen, Dialysis center 3 times per week",
-    "warning_signs": "Severe nausea or vomiting, Shortness of breath or difficulty breathing, Decreased urine output or dark urine, Uncontrolled blood pressure (>180/110), Blood in urine",
-    "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately; Attend all dialysis sessions; Strict fluid restriction compliance; Monitor for signs of infection at dialysis access site",
-    "emergency_contact": "Adult child - (466) 563-5165"
-  },
-  {
-    "patient_name": "Sarah Thompson",
-    "discharge_date": "2025-09-16",
-    "primary_diagnosis": "Hypertensive Nephropathy",
-    "icd10_code": "I12.9",
-    "severity": "moderate",
-    "medications": [
-      "Amlodipine 10mg daily",
-      "Lisinopril 20mg daily",
-      "Hydrochlorothiazide 25mg daily"
-    ],
-    "dietary_restrictions": "Low sodium diet (2g/day), DASH diet recommended",
-    "follow_up": "Lab work (BMP, CBC) in 3 days, Dialysis center 3 times per week",
-    "warning_signs": "Blood in urine, Decreased urine output or dark urine, Severe nausea or vomiting, Swelling in legs, ankles, or feet, Shortness of breath or difficulty breathing",
-    "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately",
-    "emergency_contact": "Friend - (683) 205-5088"
-  },
-  {
-    "patient_name": "Charles Rodriguez",
-    "discharge_date": "2025-10-05",
-    "primary_diagnosis": "End-Stage Renal Disease (ESRD) on Hemodialysis",
-    "icd10_code": "N18.6",
-    "severity": "severe",
-    "medications": [
-      "Sevelamer 800mg with meals",
-      "Epoetin alfa 4000 units with dialysis",
-      "Calcium acetate 667mg with meals"
-    ],
-    "dietary_restrictions": "Fluid restriction (750mL/day), low potassium, low phosphorus, dialysis 3x/week",
-    "follow_up": "Nephrology clinic in 1 month",
-    "warning_signs": "Fever above 101°F, Confusion or altered mental status, Swelling in legs, ankles, or feet, Severe nausea or vomiting",
-    "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately; Attend all dialysis sessions; Strict fluid restriction compliance; Monitor for signs of infection at dialysis access site",
-    "emergency_contact": "Spouse - (389) 224-3615"
-  },
-  {
-    "patient_name": "Joseph Taylor",
-    "discharge_date": "2025-08-29",
-    "primary_diagnosis": "Polycystic Kidney Disease",
-    "icd10_code": "Q61.3",
-    "severity": "moderate",
-    "medications": [
-      "Tolvaptan 45mg/15mg daily",
-      "Lisinopril 20mg daily",
-      "Pain management as needed"
-    ],
-    "dietary_restrictions": "Adequate hydration, blood pressure control, avoid contact sports",
-    "follow_up": "Primary care physician in 1 week, Nephrology clinic in 2 weeks",
-    "warning_signs": "Severe nausea or vomiting, Shortness of breath or difficulty breathing, Fever above 101°F",
-    "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately",
-    "emergency_contact": "Adult child - (660) 533-5814"
-  },
-  {
-    "patient_name": "Lisa Rodriguez",
-    "discharge_date": "2025-08-09",
-    "primary_diagnosis": "Glomerulonephritis",
-    "icd10_code": "N05.9",
-    "severity": "moderate",
-    "medications": [
-      "Prednisone 40mg daily",
-      "Cyclophosphamide 100mg daily",
-      "Lisinopril 10mg daily"
-    ],
-    "dietary_restrictions": "Low sodium diet, monitor for infection, immunosuppression precautions",
-    "follow_up": "Dialysis center 3 times per week, Nephrology clinic in 1 month",
-    "warning_signs": "Decreased urine output or dark urine, Severe nausea or vomiting, Uncontrolled blood pressure (>180/110)",
-    "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately",
-    "emergency_contact": "Adult child - (295) 376-5761"
-  },
-  {
-    "patient_name": "Christopher Taylor",
-    "discharge_date": "2025-08-22",
-    "primary_diagnosis": "Hypertensive Nephropathy",
-    "icd10_code": "I12.9",
-    "severity": "moderate",
-    "medications": [
-      "Amlodipine 10mg daily",
-      "Lisinopril 20mg daily",
-      "Hydrochlorothiazide 25mg daily"
-    ],
-    "dietary_restrictions": "Low sodium diet (2g/day), DASH diet recommended",
-    "follow_up": "Emergency department if symptoms worsen, Nephrology clinic in 2 weeks",
-    "warning_signs": "Shortness of breath or difficulty breathing, Chest pain or pressure, Swelling in legs, ankles, or feet",
-    "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately",
-    "emergency_contact": "Adult child - (404) 876-9775"
-  },
-  {
-    "patient_name": "Daniel Miller",
-    "discharge_date": "2025-10-07",
-    "primary_diagnosis": "Polycystic Kidney Disease",
-    "icd10_code": "Q61.3",
-    "severity": "moderate",
-    "medications": [
-      "Tolvaptan 45mg/15mg daily",
-      "Lisinopril 20mg daily",
-      "Pain management as needed"
-    ],
-    "dietary_restrictions": "Adequate hydration, blood pressure control, avoid contact sports",
-    "follow_up": "Nephrology clinic in 1 week",
-    "warning_signs": "Decreased urine output or dark urine, Shortness of breath or difficulty breathing, Fever above 101°F",
-    "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately",
-    "emergency_contact": "Parent - (221) 889-6238"
-  },
-  {
-    "patient_name": "Christopher Harris",
-    "discharge_date": "2025-09-11",
-    "primary_diagnosis": "Chronic Kidney Disease Stage 4",
-    "icd10_code": "N18.4",
-    "severity": "severe",
-    "medications": [
-      "Lisinopril 20mg daily",
-      "Furosemide 40mg twice daily",
-      "Sodium bicarbonate 650mg TID",
-      "Erythropoietin 2000 units weekly"
-    ],
-    "dietary_restrictions": "Low sodium (2g/day), fluid restriction (1L/day), protein restriction (0.6g/kg/day), potassium restriction",
-    "follow_up": "Dialysis center 3 times per week, Nephrology clinic in 2 weeks",
-    "warning_signs": "Chest pain or pressure, Severe nausea or vomiting, Severe headache, Confusion or altered mental status, Swelling in legs, ankles, or feet",
-    "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately; Attend all dialysis sessions; Strict fluid restriction compliance; Monitor for signs of infection at dialysis access site",
-    "emergency_contact": "Sibling - (865) 207-8111"
-  },
-  {
-    "patient_name": "Charles Martin",
-    "discharge_date": "2025-09-23",
+    "patient_name": "Ashley King",
+    "discharge_date": "2025-08-16",
     "primary_diagnosis": "Kidney Stones (Nephrolithiasis)",
     "icd10_code": "N20.0",
     "severity": "mild",
@@ -339,14 +11,14 @@
       "Potassium citrate 10mEq twice daily"
     ],
     "dietary_restrictions": "Increase fluid intake (3L/day), low sodium diet, avoid high oxalate foods",
-    "follow_up": "Primary care physician in 1 week, Nephrology clinic in 1 month",
-    "warning_signs": "Chest pain or pressure, Severe nausea or vomiting, Fever above 101°F, Decreased urine output or dark urine, Severe headache",
+    "follow_up": "Nephrology clinic in 1 month, Nephrology clinic in 1 week",
+    "warning_signs": "Confusion or altered mental status, Decreased urine output or dark urine, Severe nausea or vomiting, Shortness of breath or difficulty breathing, Chest pain or pressure",
     "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately",
-    "emergency_contact": "Sibling - (750) 565-5777"
+    "emergency_contact": "Sibling - (416) 374-5487"
   },
   {
-    "patient_name": "Lisa Hernandez",
-    "discharge_date": "2025-08-31",
+    "patient_name": "Margaret Brown",
+    "discharge_date": "2025-10-18",
     "primary_diagnosis": "Nephrotic Syndrome",
     "icd10_code": "N04.9",
     "severity": "moderate",
@@ -357,48 +29,31 @@
       "Atorvastatin 40mg daily"
     ],
     "dietary_restrictions": "Low sodium diet, monitor for infection, avoid NSAIDs",
-    "follow_up": "Primary care physician in 1 week",
-    "warning_signs": "Swelling in legs, ankles, or feet, Chest pain or pressure, Severe headache, Blood in urine",
+    "follow_up": "Nephrology clinic in 2 weeks, Emergency department if symptoms worsen",
+    "warning_signs": "Swelling in legs, ankles, or feet, Confusion or altered mental status, Severe nausea or vomiting, Fever above 101°F",
     "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately",
-    "emergency_contact": "Spouse - (852) 246-3129"
+    "emergency_contact": "Adult child - (511) 232-5463"
   },
   {
-    "patient_name": "Anthony Harris",
-    "discharge_date": "2025-09-20",
-    "primary_diagnosis": "Hypertensive Nephropathy",
-    "icd10_code": "I12.9",
-    "severity": "moderate",
+    "patient_name": "Margaret Anderson",
+    "discharge_date": "2025-08-11",
+    "primary_diagnosis": "Kidney Stones (Nephrolithiasis)",
+    "icd10_code": "N20.0",
+    "severity": "mild",
     "medications": [
-      "Amlodipine 10mg daily",
-      "Lisinopril 20mg daily",
-      "Hydrochlorothiazide 25mg daily"
+      "Tamsulosin 0.4mg daily",
+      "Ketorolac 10mg PRN pain",
+      "Potassium citrate 10mEq twice daily"
     ],
-    "dietary_restrictions": "Low sodium diet (2g/day), DASH diet recommended",
-    "follow_up": "Nephrology clinic in 1 week",
-    "warning_signs": "Severe nausea or vomiting, Shortness of breath or difficulty breathing, Chest pain or pressure, Blood in urine",
+    "dietary_restrictions": "Increase fluid intake (3L/day), low sodium diet, avoid high oxalate foods",
+    "follow_up": "Primary care physician in 1 week, Nephrology clinic in 2 weeks",
+    "warning_signs": "Fever above 101°F, Swelling in legs, ankles, or feet, Blood in urine, Confusion or altered mental status, Decreased urine output or dark urine",
     "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately",
-    "emergency_contact": "Parent - (334) 389-5758"
+    "emergency_contact": "Friend - (333) 892-2542"
   },
   {
-    "patient_name": "Barbara King",
-    "discharge_date": "2025-08-31",
-    "primary_diagnosis": "Glomerulonephritis",
-    "icd10_code": "N05.9",
-    "severity": "moderate",
-    "medications": [
-      "Prednisone 40mg daily",
-      "Cyclophosphamide 100mg daily",
-      "Lisinopril 10mg daily"
-    ],
-    "dietary_restrictions": "Low sodium diet, monitor for infection, immunosuppression precautions",
-    "follow_up": "Dialysis center 3 times per week",
-    "warning_signs": "Swelling in legs, ankles, or feet, Decreased urine output or dark urine, Shortness of breath or difficulty breathing, Chest pain or pressure",
-    "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately",
-    "emergency_contact": "Parent - (208) 729-4174"
-  },
-  {
-    "patient_name": "Matthew Garcia",
-    "discharge_date": "2025-09-09",
+    "patient_name": "John Williams",
+    "discharge_date": "2025-10-21",
     "primary_diagnosis": "Polycystic Kidney Disease",
     "icd10_code": "Q61.3",
     "severity": "moderate",
@@ -408,31 +63,50 @@
       "Pain management as needed"
     ],
     "dietary_restrictions": "Adequate hydration, blood pressure control, avoid contact sports",
-    "follow_up": "Dialysis center 3 times per week, Nephrology clinic in 1 month",
-    "warning_signs": "Decreased urine output or dark urine, Uncontrolled blood pressure (>180/110), Confusion or altered mental status, Swelling in legs, ankles, or feet, Fever above 101°F",
+    "follow_up": "Nephrology clinic in 2 weeks, Lab work (BMP, CBC) in 3 days",
+    "warning_signs": "Decreased urine output or dark urine, Swelling in legs, ankles, or feet, Uncontrolled blood pressure (>180/110), Severe nausea or vomiting",
     "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately",
-    "emergency_contact": "Spouse - (548) 575-6400"
+    "emergency_contact": "Parent - (288) 870-6918"
   },
   {
-    "patient_name": "Charles Anderson",
-    "discharge_date": "2025-08-15",
-    "primary_diagnosis": "Acute Kidney Injury (AKI)",
-    "icd10_code": "N17.9",
-    "severity": "severe",
+    "patient_name": "Daniel Taylor",
+    "discharge_date": "2025-09-04",
+    "primary_diagnosis": "Nephrotic Syndrome",
+    "icd10_code": "N04.9",
+    "severity": "moderate",
     "medications": [
-      "IV fluids",
-      "Discontinue NSAIDs",
-      "Monitor electrolytes"
+      "Prednisone 60mg daily",
+      "Furosemide 40mg daily",
+      "Lisinopril 10mg daily",
+      "Atorvastatin 40mg daily"
     ],
-    "dietary_restrictions": "Strict fluid monitoring, avoid nephrotoxic agents",
-    "follow_up": "Nephrology clinic in 1 week, Emergency department if symptoms worsen",
-    "warning_signs": "Shortness of breath or difficulty breathing, Uncontrolled blood pressure (>180/110), Swelling in legs, ankles, or feet, Decreased urine output or dark urine, Fever above 101°F",
+    "dietary_restrictions": "Low sodium diet, monitor for infection, avoid NSAIDs",
+    "follow_up": "Nephrology clinic in 1 week",
+    "warning_signs": "Blood in urine, Fever above 101°F, Chest pain or pressure, Shortness of breath or difficulty breathing",
     "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately",
-    "emergency_contact": "Friend - (855) 659-5937"
+    "emergency_contact": "Adult child - (238) 491-4863"
   },
   {
-    "patient_name": "Christopher Young",
-    "discharge_date": "2025-07-25",
+    "patient_name": "David Thomas",
+    "discharge_date": "2025-10-23",
+    "primary_diagnosis": "Nephrotic Syndrome",
+    "icd10_code": "N04.9",
+    "severity": "moderate",
+    "medications": [
+      "Prednisone 60mg daily",
+      "Furosemide 40mg daily",
+      "Lisinopril 10mg daily",
+      "Atorvastatin 40mg daily"
+    ],
+    "dietary_restrictions": "Low sodium diet, monitor for infection, avoid NSAIDs",
+    "follow_up": "Nephrology clinic in 1 month, Nephrology clinic in 2 weeks",
+    "warning_signs": "Confusion or altered mental status, Severe nausea or vomiting, Swelling in legs, ankles, or feet, Decreased urine output or dark urine",
+    "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately",
+    "emergency_contact": "Sibling - (413) 351-9249"
+  },
+  {
+    "patient_name": "Lisa Davis",
+    "discharge_date": "2025-10-01",
     "primary_diagnosis": "Chronic Kidney Disease Stage 4",
     "icd10_code": "N18.4",
     "severity": "severe",
@@ -443,14 +117,48 @@
       "Erythropoietin 2000 units weekly"
     ],
     "dietary_restrictions": "Low sodium (2g/day), fluid restriction (1L/day), protein restriction (0.6g/kg/day), potassium restriction",
-    "follow_up": "Primary care physician in 1 week, Nephrology clinic in 2 weeks",
-    "warning_signs": "Chest pain or pressure, Severe nausea or vomiting, Confusion or altered mental status",
+    "follow_up": "Nephrology clinic in 1 week",
+    "warning_signs": "Shortness of breath or difficulty breathing, Uncontrolled blood pressure (>180/110), Decreased urine output or dark urine",
     "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately; Attend all dialysis sessions; Strict fluid restriction compliance; Monitor for signs of infection at dialysis access site",
-    "emergency_contact": "Adult child - (553) 774-8314"
+    "emergency_contact": "Sibling - (601) 916-3276"
   },
   {
-    "patient_name": "William Jackson",
-    "discharge_date": "2025-10-21",
+    "patient_name": "Nancy Allen",
+    "discharge_date": "2025-10-22",
+    "primary_diagnosis": "Diabetic Nephropathy",
+    "icd10_code": "E11.21",
+    "severity": "moderate",
+    "medications": [
+      "Lisinopril 20mg daily",
+      "Metformin 1000mg twice daily",
+      "Insulin glargine 20 units at bedtime"
+    ],
+    "dietary_restrictions": "Diabetic diet, blood glucose monitoring, protein restriction",
+    "follow_up": "Nephrology clinic in 2 weeks",
+    "warning_signs": "Severe headache, Uncontrolled blood pressure (>180/110), Swelling in legs, ankles, or feet, Shortness of breath or difficulty breathing",
+    "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately; Monitor blood glucose 4 times daily; Follow diabetic meal plan; Check feet daily for sores or injuries",
+    "emergency_contact": "Spouse - (705) 492-8793"
+  },
+  {
+    "patient_name": "Margaret Davis",
+    "discharge_date": "2025-09-21",
+    "primary_diagnosis": "Polycystic Kidney Disease",
+    "icd10_code": "Q61.3",
+    "severity": "moderate",
+    "medications": [
+      "Tolvaptan 45mg/15mg daily",
+      "Lisinopril 20mg daily",
+      "Pain management as needed"
+    ],
+    "dietary_restrictions": "Adequate hydration, blood pressure control, avoid contact sports",
+    "follow_up": "Nephrology clinic in 1 week",
+    "warning_signs": "Decreased urine output or dark urine, Severe nausea or vomiting, Severe headache, Fever above 101°F, Swelling in legs, ankles, or feet",
+    "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately",
+    "emergency_contact": "Friend - (701) 963-8498"
+  },
+  {
+    "patient_name": "Susan Moore",
+    "discharge_date": "2025-08-30",
     "primary_diagnosis": "Nephrotic Syndrome",
     "icd10_code": "N04.9",
     "severity": "moderate",
@@ -461,48 +169,14 @@
       "Atorvastatin 40mg daily"
     ],
     "dietary_restrictions": "Low sodium diet, monitor for infection, avoid NSAIDs",
-    "follow_up": "Dialysis center 3 times per week, Nephrology clinic in 2 weeks",
-    "warning_signs": "Severe nausea or vomiting, Severe headache, Fever above 101°F",
+    "follow_up": "Emergency department if symptoms worsen",
+    "warning_signs": "Blood in urine, Uncontrolled blood pressure (>180/110), Severe nausea or vomiting, Severe headache",
     "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately",
-    "emergency_contact": "Sibling - (562) 310-2724"
+    "emergency_contact": "Sibling - (594) 545-9406"
   },
   {
-    "patient_name": "Patricia Moore",
-    "discharge_date": "2025-08-24",
-    "primary_diagnosis": "Polycystic Kidney Disease",
-    "icd10_code": "Q61.3",
-    "severity": "moderate",
-    "medications": [
-      "Tolvaptan 45mg/15mg daily",
-      "Lisinopril 20mg daily",
-      "Pain management as needed"
-    ],
-    "dietary_restrictions": "Adequate hydration, blood pressure control, avoid contact sports",
-    "follow_up": "Emergency department if symptoms worsen, Lab work (BMP, CBC) in 3 days",
-    "warning_signs": "Uncontrolled blood pressure (>180/110), Chest pain or pressure, Blood in urine",
-    "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately",
-    "emergency_contact": "Sibling - (386) 804-1412"
-  },
-  {
-    "patient_name": "Ashley Hernandez",
-    "discharge_date": "2025-08-29",
-    "primary_diagnosis": "Diabetic Nephropathy",
-    "icd10_code": "E11.21",
-    "severity": "moderate",
-    "medications": [
-      "Lisinopril 20mg daily",
-      "Metformin 1000mg twice daily",
-      "Insulin glargine 20 units at bedtime"
-    ],
-    "dietary_restrictions": "Diabetic diet, blood glucose monitoring, protein restriction",
-    "follow_up": "Emergency department if symptoms worsen, Nephrology clinic in 1 month",
-    "warning_signs": "Swelling in legs, ankles, or feet, Confusion or altered mental status, Decreased urine output or dark urine, Uncontrolled blood pressure (>180/110), Severe headache",
-    "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately; Monitor blood glucose 4 times daily; Follow diabetic meal plan; Check feet daily for sores or injuries",
-    "emergency_contact": "Adult child - (863) 547-4288"
-  },
-  {
-    "patient_name": "Nancy Moore",
-    "discharge_date": "2025-10-18",
+    "patient_name": "Karen Clark",
+    "discharge_date": "2025-09-26",
     "primary_diagnosis": "Acute Kidney Injury (AKI)",
     "icd10_code": "N17.9",
     "severity": "severe",
@@ -512,9 +186,340 @@
       "Monitor electrolytes"
     ],
     "dietary_restrictions": "Strict fluid monitoring, avoid nephrotoxic agents",
-    "follow_up": "Nephrology clinic in 1 month",
-    "warning_signs": "Severe headache, Confusion or altered mental status, Blood in urine",
+    "follow_up": "Nephrology clinic in 1 week",
+    "warning_signs": "Severe nausea or vomiting, Shortness of breath or difficulty breathing, Confusion or altered mental status, Decreased urine output or dark urine",
     "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately",
-    "emergency_contact": "Friend - (310) 202-6995"
+    "emergency_contact": "Sibling - (490) 944-8711"
+  },
+  {
+    "patient_name": "Betty Wilson",
+    "discharge_date": "2025-09-10",
+    "primary_diagnosis": "Nephrotic Syndrome",
+    "icd10_code": "N04.9",
+    "severity": "moderate",
+    "medications": [
+      "Prednisone 60mg daily",
+      "Furosemide 40mg daily",
+      "Lisinopril 10mg daily",
+      "Atorvastatin 40mg daily"
+    ],
+    "dietary_restrictions": "Low sodium diet, monitor for infection, avoid NSAIDs",
+    "follow_up": "Nephrology clinic in 1 week, Lab work (BMP, CBC) in 3 days",
+    "warning_signs": "Decreased urine output or dark urine, Confusion or altered mental status, Swelling in legs, ankles, or feet, Severe nausea or vomiting",
+    "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately",
+    "emergency_contact": "Sibling - (396) 924-4726"
+  },
+  {
+    "patient_name": "Michael Jackson",
+    "discharge_date": "2025-09-20",
+    "primary_diagnosis": "Diabetic Nephropathy",
+    "icd10_code": "E11.21",
+    "severity": "moderate",
+    "medications": [
+      "Lisinopril 20mg daily",
+      "Metformin 1000mg twice daily",
+      "Insulin glargine 20 units at bedtime"
+    ],
+    "dietary_restrictions": "Diabetic diet, blood glucose monitoring, protein restriction",
+    "follow_up": "Nephrology clinic in 1 week",
+    "warning_signs": "Fever above 101°F, Blood in urine, Severe headache, Swelling in legs, ankles, or feet, Chest pain or pressure",
+    "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately; Monitor blood glucose 4 times daily; Follow diabetic meal plan; Check feet daily for sores or injuries",
+    "emergency_contact": "Spouse - (884) 255-5056"
+  },
+  {
+    "patient_name": "Patricia King",
+    "discharge_date": "2025-08-01",
+    "primary_diagnosis": "Acute Kidney Injury (AKI)",
+    "icd10_code": "N17.9",
+    "severity": "severe",
+    "medications": [
+      "IV fluids",
+      "Discontinue NSAIDs",
+      "Monitor electrolytes"
+    ],
+    "dietary_restrictions": "Strict fluid monitoring, avoid nephrotoxic agents",
+    "follow_up": "Primary care physician in 1 week, Nephrology clinic in 1 week",
+    "warning_signs": "Swelling in legs, ankles, or feet, Blood in urine, Uncontrolled blood pressure (>180/110), Severe headache",
+    "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately",
+    "emergency_contact": "Friend - (469) 241-8533"
+  },
+  {
+    "patient_name": "James Thomas",
+    "discharge_date": "2025-09-06",
+    "primary_diagnosis": "Chronic Kidney Disease Stage 4",
+    "icd10_code": "N18.4",
+    "severity": "severe",
+    "medications": [
+      "Lisinopril 20mg daily",
+      "Furosemide 40mg twice daily",
+      "Sodium bicarbonate 650mg TID",
+      "Erythropoietin 2000 units weekly"
+    ],
+    "dietary_restrictions": "Low sodium (2g/day), fluid restriction (1L/day), protein restriction (0.6g/kg/day), potassium restriction",
+    "follow_up": "Dialysis center 3 times per week",
+    "warning_signs": "Uncontrolled blood pressure (>180/110), Confusion or altered mental status, Blood in urine, Severe nausea or vomiting, Decreased urine output or dark urine",
+    "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately; Attend all dialysis sessions; Strict fluid restriction compliance; Monitor for signs of infection at dialysis access site",
+    "emergency_contact": "Adult child - (913) 654-3125"
+  },
+  {
+    "patient_name": "Sandra Davis",
+    "discharge_date": "2025-09-22",
+    "primary_diagnosis": "Chronic Kidney Disease Stage 4",
+    "icd10_code": "N18.4",
+    "severity": "severe",
+    "medications": [
+      "Lisinopril 20mg daily",
+      "Furosemide 40mg twice daily",
+      "Sodium bicarbonate 650mg TID",
+      "Erythropoietin 2000 units weekly"
+    ],
+    "dietary_restrictions": "Low sodium (2g/day), fluid restriction (1L/day), protein restriction (0.6g/kg/day), potassium restriction",
+    "follow_up": "Nephrology clinic in 1 month, Emergency department if symptoms worsen",
+    "warning_signs": "Severe headache, Uncontrolled blood pressure (>180/110), Severe nausea or vomiting",
+    "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately; Attend all dialysis sessions; Strict fluid restriction compliance; Monitor for signs of infection at dialysis access site",
+    "emergency_contact": "Spouse - (666) 714-4562"
+  },
+  {
+    "patient_name": "Thomas Davis",
+    "discharge_date": "2025-09-19",
+    "primary_diagnosis": "Kidney Stones (Nephrolithiasis)",
+    "icd10_code": "N20.0",
+    "severity": "mild",
+    "medications": [
+      "Tamsulosin 0.4mg daily",
+      "Ketorolac 10mg PRN pain",
+      "Potassium citrate 10mEq twice daily"
+    ],
+    "dietary_restrictions": "Increase fluid intake (3L/day), low sodium diet, avoid high oxalate foods",
+    "follow_up": "Primary care physician in 1 week",
+    "warning_signs": "Severe headache, Swelling in legs, ankles, or feet, Uncontrolled blood pressure (>180/110), Confusion or altered mental status",
+    "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately",
+    "emergency_contact": "Adult child - (680) 514-2755"
+  },
+  {
+    "patient_name": "Elizabeth Moore",
+    "discharge_date": "2025-08-26",
+    "primary_diagnosis": "Acute Kidney Injury (AKI)",
+    "icd10_code": "N17.9",
+    "severity": "severe",
+    "medications": [
+      "IV fluids",
+      "Discontinue NSAIDs",
+      "Monitor electrolytes"
+    ],
+    "dietary_restrictions": "Strict fluid monitoring, avoid nephrotoxic agents",
+    "follow_up": "Primary care physician in 1 week",
+    "warning_signs": "Chest pain or pressure, Uncontrolled blood pressure (>180/110), Confusion or altered mental status, Severe nausea or vomiting, Shortness of breath or difficulty breathing",
+    "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately",
+    "emergency_contact": "Friend - (483) 745-4851"
+  },
+  {
+    "patient_name": "Susan Clark",
+    "discharge_date": "2025-08-11",
+    "primary_diagnosis": "Polycystic Kidney Disease",
+    "icd10_code": "Q61.3",
+    "severity": "moderate",
+    "medications": [
+      "Tolvaptan 45mg/15mg daily",
+      "Lisinopril 20mg daily",
+      "Pain management as needed"
+    ],
+    "dietary_restrictions": "Adequate hydration, blood pressure control, avoid contact sports",
+    "follow_up": "Dialysis center 3 times per week",
+    "warning_signs": "Confusion or altered mental status, Decreased urine output or dark urine, Swelling in legs, ankles, or feet, Fever above 101°F",
+    "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately",
+    "emergency_contact": "Sibling - (809) 395-6151"
+  },
+  {
+    "patient_name": "Mary Clark",
+    "discharge_date": "2025-09-18",
+    "primary_diagnosis": "Chronic Kidney Disease Stage 4",
+    "icd10_code": "N18.4",
+    "severity": "severe",
+    "medications": [
+      "Lisinopril 20mg daily",
+      "Furosemide 40mg twice daily",
+      "Sodium bicarbonate 650mg TID",
+      "Erythropoietin 2000 units weekly"
+    ],
+    "dietary_restrictions": "Low sodium (2g/day), fluid restriction (1L/day), protein restriction (0.6g/kg/day), potassium restriction",
+    "follow_up": "Nephrology clinic in 2 weeks",
+    "warning_signs": "Severe headache, Blood in urine, Severe nausea or vomiting",
+    "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately; Attend all dialysis sessions; Strict fluid restriction compliance; Monitor for signs of infection at dialysis access site",
+    "emergency_contact": "Parent - (966) 733-1838"
+  },
+  {
+    "patient_name": "Michael Brown",
+    "discharge_date": "2025-08-22",
+    "primary_diagnosis": "End-Stage Renal Disease (ESRD) on Hemodialysis",
+    "icd10_code": "N18.6",
+    "severity": "severe",
+    "medications": [
+      "Sevelamer 800mg with meals",
+      "Epoetin alfa 4000 units with dialysis",
+      "Calcium acetate 667mg with meals"
+    ],
+    "dietary_restrictions": "Fluid restriction (750mL/day), low potassium, low phosphorus, dialysis 3x/week",
+    "follow_up": "Dialysis center 3 times per week, Lab work (BMP, CBC) in 3 days",
+    "warning_signs": "Chest pain or pressure, Uncontrolled blood pressure (>180/110), Shortness of breath or difficulty breathing",
+    "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately; Attend all dialysis sessions; Strict fluid restriction compliance; Monitor for signs of infection at dialysis access site",
+    "emergency_contact": "Spouse - (880) 802-5708"
+  },
+  {
+    "patient_name": "Jessica Young",
+    "discharge_date": "2025-10-13",
+    "primary_diagnosis": "Glomerulonephritis",
+    "icd10_code": "N05.9",
+    "severity": "moderate",
+    "medications": [
+      "Prednisone 40mg daily",
+      "Cyclophosphamide 100mg daily",
+      "Lisinopril 10mg daily"
+    ],
+    "dietary_restrictions": "Low sodium diet, monitor for infection, immunosuppression precautions",
+    "follow_up": "Lab work (BMP, CBC) in 3 days",
+    "warning_signs": "Confusion or altered mental status, Severe nausea or vomiting, Shortness of breath or difficulty breathing",
+    "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately",
+    "emergency_contact": "Adult child - (238) 637-8583"
+  },
+  {
+    "patient_name": "Matthew King",
+    "discharge_date": "2025-08-02",
+    "primary_diagnosis": "Polycystic Kidney Disease",
+    "icd10_code": "Q61.3",
+    "severity": "moderate",
+    "medications": [
+      "Tolvaptan 45mg/15mg daily",
+      "Lisinopril 20mg daily",
+      "Pain management as needed"
+    ],
+    "dietary_restrictions": "Adequate hydration, blood pressure control, avoid contact sports",
+    "follow_up": "Nephrology clinic in 1 month",
+    "warning_signs": "Fever above 101°F, Shortness of breath or difficulty breathing, Uncontrolled blood pressure (>180/110)",
+    "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately",
+    "emergency_contact": "Parent - (869) 600-2359"
+  },
+  {
+    "patient_name": "Thomas Garcia",
+    "discharge_date": "2025-09-09",
+    "primary_diagnosis": "Nephrotic Syndrome",
+    "icd10_code": "N04.9",
+    "severity": "moderate",
+    "medications": [
+      "Prednisone 60mg daily",
+      "Furosemide 40mg daily",
+      "Lisinopril 10mg daily",
+      "Atorvastatin 40mg daily"
+    ],
+    "dietary_restrictions": "Low sodium diet, monitor for infection, avoid NSAIDs",
+    "follow_up": "Primary care physician in 1 week, Nephrology clinic in 1 month",
+    "warning_signs": "Severe nausea or vomiting, Fever above 101°F, Swelling in legs, ankles, or feet",
+    "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately",
+    "emergency_contact": "Friend - (383) 616-6804"
+  },
+  {
+    "patient_name": "Thomas Moore",
+    "discharge_date": "2025-09-15",
+    "primary_diagnosis": "Nephrotic Syndrome",
+    "icd10_code": "N04.9",
+    "severity": "moderate",
+    "medications": [
+      "Prednisone 60mg daily",
+      "Furosemide 40mg daily",
+      "Lisinopril 10mg daily",
+      "Atorvastatin 40mg daily"
+    ],
+    "dietary_restrictions": "Low sodium diet, monitor for infection, avoid NSAIDs",
+    "follow_up": "Lab work (BMP, CBC) in 3 days",
+    "warning_signs": "Shortness of breath or difficulty breathing, Severe headache, Uncontrolled blood pressure (>180/110), Severe nausea or vomiting, Blood in urine",
+    "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately",
+    "emergency_contact": "Sibling - (762) 492-7547"
+  },
+  {
+    "patient_name": "Elizabeth Jackson",
+    "discharge_date": "2025-09-01",
+    "primary_diagnosis": "Acute Kidney Injury (AKI)",
+    "icd10_code": "N17.9",
+    "severity": "severe",
+    "medications": [
+      "IV fluids",
+      "Discontinue NSAIDs",
+      "Monitor electrolytes"
+    ],
+    "dietary_restrictions": "Strict fluid monitoring, avoid nephrotoxic agents",
+    "follow_up": "Lab work (BMP, CBC) in 3 days",
+    "warning_signs": "Uncontrolled blood pressure (>180/110), Fever above 101°F, Decreased urine output or dark urine, Blood in urine, Chest pain or pressure",
+    "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately",
+    "emergency_contact": "Sibling - (250) 641-5548"
+  },
+  {
+    "patient_name": "William Moore",
+    "discharge_date": "2025-09-06",
+    "primary_diagnosis": "Chronic Kidney Disease Stage 4",
+    "icd10_code": "N18.4",
+    "severity": "severe",
+    "medications": [
+      "Lisinopril 20mg daily",
+      "Furosemide 40mg twice daily",
+      "Sodium bicarbonate 650mg TID",
+      "Erythropoietin 2000 units weekly"
+    ],
+    "dietary_restrictions": "Low sodium (2g/day), fluid restriction (1L/day), protein restriction (0.6g/kg/day), potassium restriction",
+    "follow_up": "Dialysis center 3 times per week, Emergency department if symptoms worsen",
+    "warning_signs": "Shortness of breath or difficulty breathing, Confusion or altered mental status, Swelling in legs, ankles, or feet, Chest pain or pressure",
+    "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately; Attend all dialysis sessions; Strict fluid restriction compliance; Monitor for signs of infection at dialysis access site",
+    "emergency_contact": "Parent - (670) 475-4397"
+  },
+  {
+    "patient_name": "James Lee",
+    "discharge_date": "2025-10-06",
+    "primary_diagnosis": "Polycystic Kidney Disease",
+    "icd10_code": "Q61.3",
+    "severity": "moderate",
+    "medications": [
+      "Tolvaptan 45mg/15mg daily",
+      "Lisinopril 20mg daily",
+      "Pain management as needed"
+    ],
+    "dietary_restrictions": "Adequate hydration, blood pressure control, avoid contact sports",
+    "follow_up": "Nephrology clinic in 2 weeks, Lab work (BMP, CBC) in 3 days",
+    "warning_signs": "Decreased urine output or dark urine, Blood in urine, Swelling in legs, ankles, or feet, Severe nausea or vomiting, Confusion or altered mental status",
+    "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately",
+    "emergency_contact": "Parent - (338) 535-9873"
+  },
+  {
+    "patient_name": "Sandra Allen",
+    "discharge_date": "2025-10-14",
+    "primary_diagnosis": "Chronic Kidney Disease Stage 4",
+    "icd10_code": "N18.4",
+    "severity": "severe",
+    "medications": [
+      "Lisinopril 20mg daily",
+      "Furosemide 40mg twice daily",
+      "Sodium bicarbonate 650mg TID",
+      "Erythropoietin 2000 units weekly"
+    ],
+    "dietary_restrictions": "Low sodium (2g/day), fluid restriction (1L/day), protein restriction (0.6g/kg/day), potassium restriction",
+    "follow_up": "Lab work (BMP, CBC) in 3 days, Nephrology clinic in 1 month",
+    "warning_signs": "Fever above 101°F, Severe headache, Decreased urine output or dark urine",
+    "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately; Attend all dialysis sessions; Strict fluid restriction compliance; Monitor for signs of infection at dialysis access site",
+    "emergency_contact": "Sibling - (743) 808-4291"
+  },
+  {
+    "patient_name": "John Thompson",
+    "discharge_date": "2025-09-28",
+    "primary_diagnosis": "End-Stage Renal Disease (ESRD) on Hemodialysis",
+    "icd10_code": "N18.6",
+    "severity": "severe",
+    "medications": [
+      "Sevelamer 800mg with meals",
+      "Epoetin alfa 4000 units with dialysis",
+      "Calcium acetate 667mg with meals"
+    ],
+    "dietary_restrictions": "Fluid restriction (750mL/day), low potassium, low phosphorus, dialysis 3x/week",
+    "follow_up": "Primary care physician in 1 week",
+    "warning_signs": "Decreased urine output or dark urine, Severe nausea or vomiting, Uncontrolled blood pressure (>180/110)",
+    "discharge_instructions": "Take all medications as prescribed; Monitor blood pressure daily and record in log; Weigh yourself daily at the same time; Keep all follow-up appointments; Report any warning signs immediately; Attend all dialysis sessions; Strict fluid restriction compliance; Monitor for signs of infection at dialysis access site",
+    "emergency_contact": "Parent - (958) 741-7096"
   }
 ]

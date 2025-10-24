@@ -28,7 +28,7 @@ class ClinicalAgent:
         
         # Initialize LLM with higher quality model
         self.llm = ChatGoogleGenerativeAI(
-            model="gemini-2.5-pro",
+            model="gemini-2.5-flash",
             google_api_key=GOOGLE_API_KEY,
             temperature=0.3,  # Lower temperature for medical accuracy
         )
