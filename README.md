@@ -101,6 +101,13 @@ The **Post-Discharge Medical AI Assistant** is an intelligent multi-agent system
 
 </details>
 
+<details>
+<summary>🔄 Click to view Workflow</summary>
+
+![Workflow Flowchart](Architecture%20diagram/workflow_flowchart.jpg)
+
+</details>
+
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                     Streamlit Frontend                       │
