@@ -486,21 +486,6 @@ python -c "from src.mcp.tools import MCPTools; tools = MCPTools(); print(tools.w
 
 ---
 
-## 🔒 Privacy & Security
-
-⚠️ **Important**: This is a **demonstration project** with dummy data only.
-
-**For production use**:
-
-- [ ] Implement proper authentication
-- [ ] Use encrypted database
-- [ ] HIPAA compliance measures
-- [ ] Secure API key management
-- [ ] Input sanitization
-- [ ] Rate limiting
-
----
-
 ## 📝 Medical Disclaimer
 
 ```
@@ -514,8 +499,6 @@ This is an AI assistant for EDUCATIONAL PURPOSES ONLY.
 - Information may not be complete or up-to-date
 - Always verify information with qualified medical professionals
 ```
-
----
 
 ---
 
@@ -555,20 +538,6 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
 4. [Pinecone Documentation](https://docs.pinecone.io/)
 5. [Tavily API Documentation](https://docs.tavily.com/)
 6. [Streamlit Documentation](https://docs.streamlit.io/)
-
----
-
-## 📈 Future Enhancements
-
-- [ ] Voice interface for hands-free operation
-- [ ] Multi-language support (Spanish, Chinese, etc.)
-- [ ] Mobile app (React Native)
-- [ ] Integration with EHR systems
-- [ ] Appointment scheduling
-- [ ] Medication reminders
-- [ ] Symptom tracking over time
-- [ ] Family member access
-- [ ] Telemedicine integration
 
 ---
 
