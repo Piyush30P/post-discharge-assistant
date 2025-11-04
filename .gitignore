@@ -37,6 +37,11 @@ wheels/
 .DS_Store
 Thumbs.db
 
+# Environment variables (NEVER commit real API keys)
+.env
+.env.local
+.env.production
+
 # Data files (too large for git)
 data/*.pdf
 data/*.db
@@ -49,6 +54,9 @@ logs/*.log
 # Vector stores (if using local)
 vectorstore/
 chroma_db/
+
+# Docker volumes
+docker-data/
 
 # Jupyter
 .ipynb_checkpoints/

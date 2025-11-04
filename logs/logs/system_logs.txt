@@ -4546,3 +4546,376 @@ duckduckgo_search.exceptions.DuckDuckGoSearchException: https://html.duckduckgo.
 [2025-10-24 18:09:45] [INFO] [PostDischargeAssistant] [RECEPTIONIST] Response generated (routing: False)
 [2025-10-24 18:09:45] [INFO] [PostDischargeAssistant] [WORKFLOW] Ending at receptionist
 [2025-10-24 18:09:45] [INFO] [PostDischargeAssistant] [WORKFLOW] Response generated (1317 chars)
+[2025-10-31 05:40:07] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-31 05:40:07] [INFO] [PostDischargeAssistant] System Logger Initialized
+[2025-10-31 05:40:07] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-31 05:41:18] [INFO] [PostDischargeAssistant] Initializing Multi-Agent Workflow...
+[2025-10-31 05:41:18] [INFO] [PostDischargeAssistant] Initializing database at: /app/data/patients.db
+[2025-10-31 05:41:18] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-10-31 05:41:18] [INFO] [PostDischargeAssistant] Initializing Pinecone client...
+[2025-10-31 05:41:18] [INFO] [PostDischargeAssistant] Loading embedding model: all-MiniLM-L6-v2
+[2025-10-31 05:41:31] [INFO] [PostDischargeAssistant] ✓ Embedding model loaded (dimension: 384)
+[2025-10-31 05:41:31] [INFO] [PostDischargeAssistant] Connecting to index: nephrology-knowledge
+[2025-10-31 05:41:32] [ERROR] [PostDischargeAssistant] Failed to connect to index: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'x-pinecone-api-version': '2024-07', 'x-cloud-trace-context': '162ce33d339cc42b84af92094798b956', 'date': 'Fri, 31 Oct 2025 05:41:31 GMT', 'content-type': 'text/html', 'server': 'Google Frontend', 'Content-Length': '15', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: Invalid API Key
+
+[2025-10-31 05:41:32] [INFO] [PostDischargeAssistant] ✓ Tavily client initialized
+[2025-10-31 05:41:32] [INFO] [PostDischargeAssistant] ✓ MCP Tools initialized
+[2025-10-31 05:41:32] [INFO] [PostDischargeAssistant] ✓ Receptionist Agent initialized
+[2025-10-31 05:41:32] [INFO] [PostDischargeAssistant] Initializing database at: /app/data/patients.db
+[2025-10-31 05:41:32] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-10-31 05:41:32] [INFO] [PostDischargeAssistant] Initializing Pinecone client...
+[2025-10-31 05:41:32] [INFO] [PostDischargeAssistant] Loading embedding model: all-MiniLM-L6-v2
+[2025-10-31 05:41:35] [INFO] [PostDischargeAssistant] ✓ Embedding model loaded (dimension: 384)
+[2025-10-31 05:41:35] [INFO] [PostDischargeAssistant] Connecting to index: nephrology-knowledge
+[2025-10-31 05:41:35] [ERROR] [PostDischargeAssistant] Failed to connect to index: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'x-pinecone-api-version': '2024-07', 'x-cloud-trace-context': 'f9c684fb771250e5418ad6ddc3d915ed', 'date': 'Fri, 31 Oct 2025 05:41:34 GMT', 'content-type': 'text/html', 'server': 'Google Frontend', 'Content-Length': '15', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: Invalid API Key
+
+[2025-10-31 05:41:35] [INFO] [PostDischargeAssistant] ✓ Tavily client initialized
+[2025-10-31 05:41:35] [INFO] [PostDischargeAssistant] ✓ MCP Tools initialized
+[2025-10-31 05:41:35] [INFO] [PostDischargeAssistant] ✓ Clinical Agent initialized
+[2025-10-31 05:41:35] [INFO] [PostDischargeAssistant] ✓ Multi-Agent Workflow ready
+[2025-10-31 05:41:35] [INFO] [PostDischargeAssistant] [APP] New session: 88e90fbd-9095-476e-9c87-5404fcd2efd5
+[2025-10-31 05:41:46] [INFO] [PostDischargeAssistant] [WORKFLOW] Processing message: HI...
+[2025-10-31 05:41:46] [INFO] [PostDischargeAssistant] [WORKFLOW] Receptionist node
+[2025-10-31 05:41:46] [INFO] [PostDischargeAssistant] [WORKFLOW] Processing user message: HI...
+[2025-10-31 05:41:46] [INFO] [PostDischargeAssistant] [RECEPTIONIST] Processing: HI...
+[2025-10-31 05:41:46] [ERROR] [PostDischargeAssistant] [ERROR] ReceptionistAgent.process: Invalid argument provided to Gemini: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/langchain_google_genai/chat_models.py", line 178, in _chat_with_retry
+    return generation_method(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 1143, in stream_generate_content
+    response = rpc(
+               ^^^^
+  File "/usr/local/lib/python3.11/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/usr/local/lib/python3.11/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/google/api_core/grpc_helpers.py", line 173, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.InvalidArgument: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/app/src/agents/receptionist_agent.py", line 79, in process
+    response = self.executor.invoke({
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/langchain/chains/base.py", line 167, in invoke
+    raise e
+  File "/usr/local/lib/python3.11/site-packages/langchain/chains/base.py", line 157, in invoke
+    self._call(inputs, run_manager=run_manager)
+  File "/usr/local/lib/python3.11/site-packages/langchain/agents/agent.py", line 1620, in _call
+    next_step_output = self._take_next_step(
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/langchain/agents/agent.py", line 1326, in _take_next_step
+    [
+  File "/usr/local/lib/python3.11/site-packages/langchain/agents/agent.py", line 1326, in <listcomp>
+    [
+  File "/usr/local/lib/python3.11/site-packages/langchain/agents/agent.py", line 1354, in _iter_next_step
+    output = self._action_agent.plan(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/langchain/agents/agent.py", line 577, in plan
+    for chunk in self.runnable.stream(inputs, config={"callbacks": callbacks}):
+  File "/usr/local/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 3438, in stream
+    yield from self.transform(iter([input]), config, **kwargs)
+  File "/usr/local/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 3424, in transform
+    yield from self._transform_stream_with_config(
+  File "/usr/local/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 2215, in _transform_stream_with_config
+    chunk: Output = context.run(next, iterator)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 3386, in _transform
+    yield from final_pipeline
+  File "/usr/local/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 1429, in transform
+    for ichunk in input:
+  File "/usr/local/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 5647, in transform
+    yield from self.bound.transform(
+  File "/usr/local/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 1447, in transform
+    yield from self.stream(final, config, **kwargs)
+  File "/usr/local/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 505, in stream
+    for chunk in self._stream(input_messages, stop=stop, **kwargs):
+  File "/usr/local/lib/python3.11/site-packages/langchain_google_genai/chat_models.py", line 1032, in _stream
+    response: GenerateContentResponse = _chat_with_retry(
+                                        ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/langchain_google_genai/chat_models.py", line 196, in _chat_with_retry
+    return _chat_with_retry(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/tenacity/__init__.py", line 338, in wrapped_f
+    return copy(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/tenacity/__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/tenacity/__init__.py", line 378, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/tenacity/__init__.py", line 400, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+                                     ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.11/site-packages/tenacity/__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/langchain_google_genai/chat_models.py", line 190, in _chat_with_retry
+    raise ChatGoogleGenerativeAIError(
+langchain_google_genai.chat_models.ChatGoogleGenerativeAIError: Invalid argument provided to Gemini: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+[2025-10-31 05:41:46] [INFO] [PostDischargeAssistant] [WORKFLOW] Ending at receptionist
+[2025-10-31 05:41:46] [INFO] [PostDischargeAssistant] [WORKFLOW] Response generated (116 chars)
+[2025-10-31 05:51:51] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-31 05:51:51] [INFO] [PostDischargeAssistant] System Logger Initialized
+[2025-10-31 05:51:51] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-31 05:52:10] [INFO] [PostDischargeAssistant] Initializing Multi-Agent Workflow...
+[2025-10-31 05:52:10] [INFO] [PostDischargeAssistant] Initializing database at: /app/data/patients.db
+[2025-10-31 05:52:10] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-10-31 05:52:10] [INFO] [PostDischargeAssistant] Initializing Pinecone client...
+[2025-10-31 05:52:10] [INFO] [PostDischargeAssistant] Loading embedding model: all-MiniLM-L6-v2
+[2025-10-31 05:52:24] [INFO] [PostDischargeAssistant] ✓ Embedding model loaded (dimension: 384)
+[2025-10-31 05:52:24] [INFO] [PostDischargeAssistant] Connecting to index: nephrology-knowledge
+[2025-10-31 05:52:26] [INFO] [PostDischargeAssistant] ✓ Connected to index 'nephrology-knowledge'
+[2025-10-31 05:52:26] [INFO] [PostDischargeAssistant]   Total vectors: 12562
+[2025-10-31 05:52:26] [INFO] [PostDischargeAssistant] ✓ Tavily client initialized
+[2025-10-31 05:52:26] [INFO] [PostDischargeAssistant] ✓ MCP Tools initialized
+[2025-10-31 05:52:27] [INFO] [PostDischargeAssistant] ✓ Receptionist Agent initialized
+[2025-10-31 05:52:27] [INFO] [PostDischargeAssistant] Initializing database at: /app/data/patients.db
+[2025-10-31 05:52:27] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-10-31 05:52:27] [INFO] [PostDischargeAssistant] Initializing Pinecone client...
+[2025-10-31 05:52:27] [INFO] [PostDischargeAssistant] Loading embedding model: all-MiniLM-L6-v2
+[2025-10-31 05:52:30] [INFO] [PostDischargeAssistant] ✓ Embedding model loaded (dimension: 384)
+[2025-10-31 05:52:30] [INFO] [PostDischargeAssistant] Connecting to index: nephrology-knowledge
+[2025-10-31 05:52:31] [INFO] [PostDischargeAssistant] ✓ Connected to index 'nephrology-knowledge'
+[2025-10-31 05:52:31] [INFO] [PostDischargeAssistant]   Total vectors: 12562
+[2025-10-31 05:52:31] [INFO] [PostDischargeAssistant] ✓ Tavily client initialized
+[2025-10-31 05:52:31] [INFO] [PostDischargeAssistant] ✓ MCP Tools initialized
+[2025-10-31 05:52:31] [INFO] [PostDischargeAssistant] ✓ Clinical Agent initialized
+[2025-10-31 05:52:31] [INFO] [PostDischargeAssistant] ✓ Multi-Agent Workflow ready
+[2025-10-31 05:52:31] [INFO] [PostDischargeAssistant] [APP] New session: 600cbdcf-a78e-42ec-aed8-d8cc8868b719
+[2025-10-31 05:52:37] [INFO] [PostDischargeAssistant] [WORKFLOW] Processing message: hi...
+[2025-10-31 05:52:37] [INFO] [PostDischargeAssistant] [WORKFLOW] Receptionist node
+[2025-10-31 05:52:37] [INFO] [PostDischargeAssistant] [WORKFLOW] Processing user message: hi...
+[2025-10-31 05:52:37] [INFO] [PostDischargeAssistant] [RECEPTIONIST] Processing: hi...
+[2025-10-31 05:52:39] [INFO] [PostDischargeAssistant] [RECEPTIONIST] Response generated (routing: False)
+[2025-10-31 05:52:39] [INFO] [PostDischargeAssistant] [WORKFLOW] Ending at receptionist
+[2025-10-31 05:52:39] [INFO] [PostDischargeAssistant] [WORKFLOW] Response generated (88 chars)
+[2025-10-31 05:53:04] [INFO] [PostDischargeAssistant] [WORKFLOW] Processing message: Lisa Davis...
+[2025-10-31 05:53:04] [INFO] [PostDischargeAssistant] [WORKFLOW] Receptionist node
+[2025-10-31 05:53:04] [INFO] [PostDischargeAssistant] [WORKFLOW] Processing user message: Lisa Davis...
+[2025-10-31 05:53:04] [INFO] [PostDischargeAssistant] [RECEPTIONIST] Processing: Lisa Davis...
+[2025-10-31 05:53:05] [INFO] [PostDischargeAssistant] [TOOL] get_patient_data called with params: {'patient_name': 'Lisa Davis'}
+[2025-10-31 05:53:05] [INFO] [PostDischargeAssistant] [TOOL] get_patient_data result: Retrieving patient data
+[2025-10-31 05:53:05] [INFO] [PostDischargeAssistant] [DATABASE] SELECT: Looking up patient: Lisa Davis
+[2025-10-31 05:53:05] [INFO] [PostDischargeAssistant] ✓ Found patient: Lisa Davis
+[2025-10-31 05:53:05] [INFO] [PostDischargeAssistant] ✓ Retrieved patient data for: Lisa Davis
+[2025-10-31 05:53:06] [INFO] [PostDischargeAssistant] [RECEPTIONIST] Response generated (routing: False)
+[2025-10-31 05:53:06] [INFO] [PostDischargeAssistant] [WORKFLOW] Ending at receptionist
+[2025-10-31 05:53:06] [INFO] [PostDischargeAssistant] [WORKFLOW] Response generated (215 chars)
+[2025-10-31 20:43:10] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-31 20:43:10] [INFO] [PostDischargeAssistant] System Logger Initialized
+[2025-10-31 20:43:10] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-31 20:44:37] [INFO] [PostDischargeAssistant] Initializing Multi-Agent Workflow...
+[2025-10-31 20:44:37] [INFO] [PostDischargeAssistant] Initializing database at: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\patients.db
+[2025-10-31 20:44:37] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-10-31 20:44:37] [INFO] [PostDischargeAssistant] Initializing Pinecone client...
+[2025-10-31 20:44:37] [INFO] [PostDischargeAssistant] Loading embedding model: all-MiniLM-L6-v2
+[2025-10-31 20:44:43] [INFO] [PostDischargeAssistant] ✓ Embedding model loaded (dimension: 384)
+[2025-10-31 20:44:43] [INFO] [PostDischargeAssistant] Connecting to index: nephrology-knowledge
+[2025-10-31 20:44:45] [INFO] [PostDischargeAssistant] ✓ Connected to index 'nephrology-knowledge'
+[2025-10-31 20:44:45] [INFO] [PostDischargeAssistant]   Total vectors: 12562
+[2025-10-31 20:44:45] [INFO] [PostDischargeAssistant] ✓ Tavily client initialized
+[2025-10-31 20:44:45] [INFO] [PostDischargeAssistant] ✓ MCP Tools initialized
+[2025-10-31 20:44:45] [INFO] [PostDischargeAssistant] ✓ Receptionist Agent initialized
+[2025-10-31 20:44:45] [INFO] [PostDischargeAssistant] Initializing database at: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\patients.db
+[2025-10-31 20:44:45] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-10-31 20:44:45] [INFO] [PostDischargeAssistant] Initializing Pinecone client...
+[2025-10-31 20:44:45] [INFO] [PostDischargeAssistant] Loading embedding model: all-MiniLM-L6-v2
+[2025-10-31 20:44:49] [INFO] [PostDischargeAssistant] ✓ Embedding model loaded (dimension: 384)
+[2025-10-31 20:44:49] [INFO] [PostDischargeAssistant] Connecting to index: nephrology-knowledge
+[2025-10-31 20:44:50] [INFO] [PostDischargeAssistant] ✓ Connected to index 'nephrology-knowledge'
+[2025-10-31 20:44:50] [INFO] [PostDischargeAssistant]   Total vectors: 12562
+[2025-10-31 20:44:50] [INFO] [PostDischargeAssistant] ✓ Tavily client initialized
+[2025-10-31 20:44:50] [INFO] [PostDischargeAssistant] ✓ MCP Tools initialized
+[2025-10-31 20:44:50] [INFO] [PostDischargeAssistant] ✓ Clinical Agent initialized
+[2025-10-31 20:44:50] [INFO] [PostDischargeAssistant] ✓ Multi-Agent Workflow ready
+[2025-10-31 20:44:50] [INFO] [PostDischargeAssistant] [APP] New session: 7867c372-f417-4b22-926d-29152368dc25
+[2025-10-31 20:46:23] [INFO] [PostDischargeAssistant] [WORKFLOW] Processing message: Betty Wilson
+...
+[2025-10-31 20:46:23] [INFO] [PostDischargeAssistant] [WORKFLOW] Receptionist node
+[2025-10-31 20:46:23] [INFO] [PostDischargeAssistant] [WORKFLOW] Processing user message: Betty Wilson
+...
+[2025-10-31 20:46:23] [INFO] [PostDischargeAssistant] [RECEPTIONIST] Processing: Betty Wilson
+...
+[2025-10-31 20:46:24] [INFO] [PostDischargeAssistant] [TOOL] get_patient_data called with params: {'patient_name': 'Betty Wilson'}
+[2025-10-31 20:46:24] [INFO] [PostDischargeAssistant] [TOOL] get_patient_data result: Retrieving patient data
+[2025-10-31 20:46:24] [INFO] [PostDischargeAssistant] [DATABASE] SELECT: Looking up patient: Betty Wilson
+[2025-10-31 20:46:24] [INFO] [PostDischargeAssistant] ✓ Found patient: Betty Wilson
+[2025-10-31 20:46:24] [INFO] [PostDischargeAssistant] ✓ Retrieved patient data for: Betty Wilson
+[2025-10-31 20:46:27] [INFO] [PostDischargeAssistant] [RECEPTIONIST] Response generated (routing: False)
+[2025-10-31 20:46:27] [INFO] [PostDischargeAssistant] [WORKFLOW] Ending at receptionist
+[2025-10-31 20:46:27] [INFO] [PostDischargeAssistant] [WORKFLOW] Response generated (174 chars)
+[2025-10-31 20:48:02] [INFO] [PostDischargeAssistant] [WORKFLOW] Processing message: I am feeling pain in stomach and little headache i...
+[2025-10-31 20:48:02] [INFO] [PostDischargeAssistant] [WORKFLOW] Receptionist node
+[2025-10-31 20:48:02] [INFO] [PostDischargeAssistant] [WORKFLOW] Processing user message: I am feeling pain in stomach and little headache i...
+[2025-10-31 20:48:02] [INFO] [PostDischargeAssistant] [RECEPTIONIST] Processing: I am feeling pain in stomach and little headache i...
+[2025-10-31 20:48:05] [INFO] [PostDischargeAssistant] [RECEPTIONIST] Response generated (routing: True)
+[2025-10-31 20:48:05] [INFO] [PostDischargeAssistant] [WORKFLOW] Routing to clinical agent
+[2025-10-31 20:48:05] [INFO] [PostDischargeAssistant] [WORKFLOW] Clinical node
+[2025-10-31 20:48:05] [INFO] [PostDischargeAssistant] [WORKFLOW] Passing to clinical: I am feeling pain in stomach and little headache i...
+[2025-10-31 20:48:05] [INFO] [PostDischargeAssistant] [CLINICAL] Extracted query: I am feeling pain in stomach and little headache is there anything serious ?...
+[2025-10-31 20:48:05] [INFO] [PostDischargeAssistant] [CLINICAL] Processing: I am feeling pain in stomach and little headache i...
+[2025-10-31 20:48:05] [INFO] [PostDischargeAssistant] [CLINICAL] Attempt 1/2
+[2025-10-31 20:48:05] [INFO] [PostDischargeAssistant] [CLINICAL] Invoking agent executor...
+[2025-10-31 20:48:09] [INFO] [PostDischargeAssistant] [CLINICAL] RAG Search: stomach pain headache kidney disease...
+[2025-10-31 20:48:09] [INFO] [PostDischargeAssistant] [RAG] Query: stomach pain headache kidney disease
+[2025-10-31 20:48:09] [INFO] [PostDischargeAssistant] [RAG] Retrieved 3 chunks from sources: ['Nephrology Textbook']
+[2025-10-31 20:48:09] [INFO] [PostDischargeAssistant] Searching Pinecone for: 'stomach pain headache kidney disease'
+[2025-10-31 20:48:09] [INFO] [PostDischargeAssistant]   Top K: 3
+[2025-10-31 20:48:11] [INFO] [PostDischargeAssistant] ✓ Found 3 results
+[2025-10-31 20:48:11] [INFO] [PostDischargeAssistant] ✓ Found 3 relevant chunks for: stomach pain headache kidney disease
+[2025-10-31 20:48:11] [INFO] [PostDischargeAssistant] [CLINICAL] RAG found 3 results
+[2025-10-31 20:48:15] [INFO] [PostDischargeAssistant] [CLINICAL] Success! Response: 1381 chars
+[2025-10-31 20:48:15] [INFO] [PostDischargeAssistant] [WORKFLOW] Response generated (1401 chars)
+[2025-10-31 21:02:09] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-31 21:02:09] [INFO] [PostDischargeAssistant] System Logger Initialized
+[2025-10-31 21:02:09] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-10-31 21:02:09] [INFO] [PostDischargeAssistant] [MCP] Starting web search server...
+[2025-10-31 21:02:09] [ERROR] [PostDischargeAssistant] [MCP] Failed to connect to web search server: '_io.TextIOWrapper' object has no attribute 'command'
+[2025-10-31 21:02:09] [INFO] [PostDischargeAssistant] [MCP] Disconnected from web search server
+[2025-11-04 23:42:29] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-11-04 23:42:29] [INFO] [PostDischargeAssistant] System Logger Initialized
+[2025-11-04 23:42:29] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-11-04 23:43:29] [INFO] [PostDischargeAssistant] Initializing Multi-Agent Workflow...
+[2025-11-04 23:43:29] [INFO] [PostDischargeAssistant] Initializing database at: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\patients.db
+[2025-11-04 23:43:29] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-11-04 23:43:29] [INFO] [PostDischargeAssistant] Initializing Pinecone client...
+[2025-11-04 23:43:30] [INFO] [PostDischargeAssistant] Loading embedding model: all-MiniLM-L6-v2
+[2025-11-04 23:43:33] [INFO] [PostDischargeAssistant] ✓ Embedding model loaded (dimension: 384)
+[2025-11-04 23:43:33] [INFO] [PostDischargeAssistant] Connecting to index: nephrology-knowledge
+[2025-11-04 23:43:35] [INFO] [PostDischargeAssistant] ✓ Connected to index 'nephrology-knowledge'
+[2025-11-04 23:43:35] [INFO] [PostDischargeAssistant]   Total vectors: 12562
+[2025-11-04 23:43:35] [INFO] [PostDischargeAssistant] ✓ Tavily client initialized
+[2025-11-04 23:43:35] [INFO] [PostDischargeAssistant] ✓ MCP Tools initialized
+[2025-11-04 23:43:35] [INFO] [PostDischargeAssistant] ✓ Receptionist Agent initialized
+[2025-11-04 23:43:35] [INFO] [PostDischargeAssistant] Initializing database at: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\patients.db
+[2025-11-04 23:43:35] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-11-04 23:43:35] [INFO] [PostDischargeAssistant] Initializing Pinecone client...
+[2025-11-04 23:43:35] [INFO] [PostDischargeAssistant] Loading embedding model: all-MiniLM-L6-v2
+[2025-11-04 23:43:38] [INFO] [PostDischargeAssistant] ✓ Embedding model loaded (dimension: 384)
+[2025-11-04 23:43:38] [INFO] [PostDischargeAssistant] Connecting to index: nephrology-knowledge
+[2025-11-04 23:43:39] [INFO] [PostDischargeAssistant] ✓ Connected to index 'nephrology-knowledge'
+[2025-11-04 23:43:39] [INFO] [PostDischargeAssistant]   Total vectors: 12562
+[2025-11-04 23:43:39] [INFO] [PostDischargeAssistant] ✓ Tavily client initialized
+[2025-11-04 23:43:39] [INFO] [PostDischargeAssistant] ✓ MCP Tools initialized
+[2025-11-04 23:43:39] [INFO] [PostDischargeAssistant] ✓ Clinical Agent initialized
+[2025-11-04 23:43:39] [INFO] [PostDischargeAssistant] ✓ Multi-Agent Workflow ready
+[2025-11-04 23:43:39] [INFO] [PostDischargeAssistant] [APP] New session: 3e38607d-4d87-4bff-bebf-f72777591372
+[2025-11-04 23:44:16] [INFO] [PostDischargeAssistant] [WORKFLOW] Processing message: Betty Wilson...
+[2025-11-04 23:44:16] [INFO] [PostDischargeAssistant] [WORKFLOW] Receptionist node
+[2025-11-04 23:44:16] [INFO] [PostDischargeAssistant] [WORKFLOW] Processing user message: Betty Wilson...
+[2025-11-04 23:44:16] [INFO] [PostDischargeAssistant] [RECEPTIONIST] Processing: Betty Wilson...
+[2025-11-04 23:44:18] [INFO] [PostDischargeAssistant] [TOOL] get_patient_data called with params: {'patient_name': 'Betty Wilson'}
+[2025-11-04 23:44:18] [INFO] [PostDischargeAssistant] [TOOL] get_patient_data result: Retrieving patient data
+[2025-11-04 23:44:18] [INFO] [PostDischargeAssistant] [DATABASE] SELECT: Looking up patient: Betty Wilson
+[2025-11-04 23:44:18] [INFO] [PostDischargeAssistant] ✓ Found patient: Betty Wilson
+[2025-11-04 23:44:18] [INFO] [PostDischargeAssistant] ✓ Retrieved patient data for: Betty Wilson
+[2025-11-04 23:44:19] [INFO] [PostDischargeAssistant] [RECEPTIONIST] Response generated (routing: False)
+[2025-11-04 23:44:19] [INFO] [PostDischargeAssistant] [WORKFLOW] Ending at receptionist
+[2025-11-04 23:44:19] [INFO] [PostDischargeAssistant] [WORKFLOW] Response generated (174 chars)
+[2025-11-04 23:44:45] [INFO] [PostDischargeAssistant] [WORKFLOW] Processing message:  I am feeling sick....
+[2025-11-04 23:44:45] [INFO] [PostDischargeAssistant] [WORKFLOW] Receptionist node
+[2025-11-04 23:44:45] [INFO] [PostDischargeAssistant] [WORKFLOW] Processing user message:  I am feeling sick....
+[2025-11-04 23:44:45] [INFO] [PostDischargeAssistant] [RECEPTIONIST] Processing:  I am feeling sick....
+[2025-11-04 23:44:47] [INFO] [PostDischargeAssistant] [RECEPTIONIST] Response generated (routing: True)
+[2025-11-04 23:44:47] [INFO] [PostDischargeAssistant] [WORKFLOW] Routing to clinical agent
+[2025-11-04 23:44:47] [INFO] [PostDischargeAssistant] [WORKFLOW] Clinical node
+[2025-11-04 23:44:47] [INFO] [PostDischargeAssistant] [WORKFLOW] Passing to clinical:  I am feeling sick....
+[2025-11-04 23:44:47] [INFO] [PostDischargeAssistant] [CLINICAL] Extracted query: I am feeling sick....
+[2025-11-04 23:44:47] [INFO] [PostDischargeAssistant] [CLINICAL] Processing: I am feeling sick....
+[2025-11-04 23:44:47] [INFO] [PostDischargeAssistant] [CLINICAL] Attempt 1/2
+[2025-11-04 23:44:47] [INFO] [PostDischargeAssistant] [CLINICAL] Invoking agent executor...
+[2025-11-04 23:44:51] [INFO] [PostDischargeAssistant] [CLINICAL] Success! Response: 635 chars
+[2025-11-04 23:44:51] [INFO] [PostDischargeAssistant] [WORKFLOW] Response generated (655 chars)
+[2025-11-04 18:33:05] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-11-04 18:33:05] [INFO] [PostDischargeAssistant] System Logger Initialized
+[2025-11-04 18:33:05] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-11-04 18:33:22] [INFO] [PostDischargeAssistant] Initializing Multi-Agent Workflow...
+[2025-11-04 18:33:22] [INFO] [PostDischargeAssistant] Initializing database at: /app/data/patients.db
+[2025-11-04 18:33:22] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-11-04 18:33:22] [INFO] [PostDischargeAssistant] Initializing Pinecone client...
+[2025-11-04 18:33:22] [INFO] [PostDischargeAssistant] Loading embedding model: all-MiniLM-L6-v2
+[2025-11-04 18:33:25] [INFO] [PostDischargeAssistant] ✓ Embedding model loaded (dimension: 384)
+[2025-11-04 18:33:25] [INFO] [PostDischargeAssistant] Connecting to index: nephrology-knowledge
+[2025-11-04 18:33:27] [INFO] [PostDischargeAssistant] ✓ Connected to index 'nephrology-knowledge'
+[2025-11-04 18:33:27] [INFO] [PostDischargeAssistant]   Total vectors: 12562
+[2025-11-04 18:33:27] [INFO] [PostDischargeAssistant] ✓ Tavily client initialized
+[2025-11-04 18:33:27] [INFO] [PostDischargeAssistant] ✓ MCP Tools initialized
+[2025-11-04 18:33:27] [INFO] [PostDischargeAssistant] ✓ Receptionist Agent initialized
+[2025-11-04 18:33:27] [INFO] [PostDischargeAssistant] Initializing database at: /app/data/patients.db
+[2025-11-04 18:33:27] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-11-04 18:33:27] [INFO] [PostDischargeAssistant] Initializing Pinecone client...
+[2025-11-04 18:33:27] [INFO] [PostDischargeAssistant] Loading embedding model: all-MiniLM-L6-v2
+[2025-11-04 18:33:30] [INFO] [PostDischargeAssistant] ✓ Embedding model loaded (dimension: 384)
+[2025-11-04 18:33:30] [INFO] [PostDischargeAssistant] Connecting to index: nephrology-knowledge
+[2025-11-04 18:33:31] [INFO] [PostDischargeAssistant] ✓ Connected to index 'nephrology-knowledge'
+[2025-11-04 18:33:31] [INFO] [PostDischargeAssistant]   Total vectors: 12562
+[2025-11-04 18:33:31] [INFO] [PostDischargeAssistant] ✓ Tavily client initialized
+[2025-11-04 18:33:31] [INFO] [PostDischargeAssistant] ✓ MCP Tools initialized
+[2025-11-04 18:33:31] [INFO] [PostDischargeAssistant] ✓ Clinical Agent initialized
+[2025-11-04 18:33:31] [INFO] [PostDischargeAssistant] ✓ Multi-Agent Workflow ready
+[2025-11-04 18:33:31] [INFO] [PostDischargeAssistant] [APP] New session: 359142ec-9923-41e8-a72e-baf54ab682ab
+[2025-11-04 18:33:55] [INFO] [PostDischargeAssistant] [WORKFLOW] Processing message: Betty Wilson...
+[2025-11-04 18:33:55] [INFO] [PostDischargeAssistant] [WORKFLOW] Receptionist node
+[2025-11-04 18:33:55] [INFO] [PostDischargeAssistant] [WORKFLOW] Processing user message: Betty Wilson...
+[2025-11-04 18:33:55] [INFO] [PostDischargeAssistant] [RECEPTIONIST] Processing: Betty Wilson...
+[2025-11-04 18:33:57] [INFO] [PostDischargeAssistant] [TOOL] get_patient_data called with params: {'patient_name': 'Betty Wilson'}
+[2025-11-04 18:33:57] [INFO] [PostDischargeAssistant] [TOOL] get_patient_data result: Retrieving patient data
+[2025-11-04 18:33:57] [INFO] [PostDischargeAssistant] [DATABASE] SELECT: Looking up patient: Betty Wilson
+[2025-11-04 18:33:57] [INFO] [PostDischargeAssistant] ✓ Found patient: Betty Wilson
+[2025-11-04 18:33:57] [INFO] [PostDischargeAssistant] ✓ Retrieved patient data for: Betty Wilson
+[2025-11-04 18:34:00] [INFO] [PostDischargeAssistant] [RECEPTIONIST] Response generated (routing: False)
+[2025-11-04 18:34:00] [INFO] [PostDischargeAssistant] [WORKFLOW] Ending at receptionist
+[2025-11-04 18:34:00] [INFO] [PostDischargeAssistant] [WORKFLOW] Response generated (174 chars)

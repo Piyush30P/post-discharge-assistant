@@ -47,7 +47,7 @@ class ClinicalAgent:
             Tool(
                 name="web_search",
                 func=self._web_search_wrapper,
-                description="Search web for CURRENT medical information. Use this for: latest research, recent studies, new treatments, current guidelines, anything with 'latest', 'recent', 'new', '2024', '2025', 'news'. Input: query string"
+                description="Search web for CURRENT medical information using MCP server. Use this for: latest research, recent studies, new treatments, current guidelines, anything with 'latest', 'recent', 'new', '2024', '2025', 'news'. Includes medical source prioritization and advanced search capabilities. Input: query string"
             )
         ]
         
@@ -97,28 +97,37 @@ class ClinicalAgent:
             })
     
     def _web_search_wrapper(self, query: str) -> str:
-        """Wrapper for web_search tool"""
+        """Wrapper for web_search tool using simplified MCP client"""
         try:
-            logger.info(f"[CLINICAL] Web Search: {query[:50]}...")
-            result = self.tools_handler.web_search(query, max_results=3)
+            logger.info(f"[CLINICAL] MCP Web Search: {query[:50]}...")
+            
+            # Use the simplified MCP web search client
+            from src.mcp.web_search_client import search_web
+            
+            result = search_web(query, max_results=3)
             
             if result.get("success"):
-                logger.info(f"[CLINICAL] Web search found {result.get('num_results', 0)} results")
+                logger.info(f"[CLINICAL] MCP search found {result.get('num_results', 0)} results")
                 return json.dumps(result, indent=2)
             else:
-                logger.warning(f"[CLINICAL] Web search failed: {result.get('error')}")
-                return json.dumps({
-                    "success": False,
-                    "error": "Web search failed",
-                    "results": []
-                })
+                logger.warning(f"[CLINICAL] MCP search failed: {result.get('error')}")
+                # Fallback to regular Tavily search
+                result = self.tools_handler.web_search(query, max_results=3)
+                return json.dumps(result, indent=2)
+                
         except Exception as e:
             logger.log_error("ClinicalAgent._web_search_wrapper", e)
-            return json.dumps({
-                "success": False,
-                "error": str(e),
-                "results": []
-            })
+            # Fallback to regular web search
+            try:
+                result = self.tools_handler.web_search(query, max_results=3)
+                return json.dumps(result, indent=2)
+            except Exception as fallback_error:
+                logger.log_error("ClinicalAgent._web_search_wrapper.fallback", fallback_error)
+                return json.dumps({
+                    "success": False,
+                    "error": f"Both MCP and fallback search failed: {str(e)}, {str(fallback_error)}",
+                    "results": []
+                })
     
     def _extract_actual_query(self, message: str) -> str:
         """

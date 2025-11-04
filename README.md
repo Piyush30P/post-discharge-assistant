@@ -5,6 +5,7 @@
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.32.0-FF4B4B.svg)](https://streamlit.io)
 [![LangGraph](https://img.shields.io/badge/LangGraph-0.0.35-green.svg)](https://github.com/langchain-ai/langgraph)
+[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED.svg)](https://www.docker.com/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ---
@@ -16,10 +17,13 @@
 - [Architecture](#architecture)
 - [Technology Stack](#technology-stack)
 - [Installation](#installation)
+- [Docker Setup](#docker-setup)
+- [GitHub Setup](#github-setup)
 - [Configuration](#configuration)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [API Keys Setup](#api-keys-setup)
+- [Deployment](#deployment)
 - [Demo](#demo)
 - [Contributing](#contributing)
 - [License](#license)
@@ -219,6 +223,171 @@ TAVILY_API_KEY=your_tavily_api_key_here
 
 ---
 
+## 🐳 Docker Setup
+
+### Prerequisites for Docker
+
+- Docker Desktop installed on your system
+- Docker Compose (included with Docker Desktop)
+
+### Quick Start with Docker
+
+1. **Clone the repository:**
+
+```bash
+git clone https://github.com/YOUR_USERNAME/post-discharge-assistant.git
+cd post-discharge-assistant
+```
+
+2. **Set up environment variables:**
+
+```bash
+# Copy the Docker environment template
+cp .env.docker .env
+
+# Edit .env with your actual API keys
+# GOOGLE_API_KEY=your_actual_key_here
+# PINECONE_API_KEY=your_actual_key_here
+# TAVILY_API_KEY=your_actual_key_here
+```
+
+3. **Build and run with Docker Compose:**
+
+```bash
+# Production setup
+docker-compose up --build
+
+# Development setup with hot reload
+docker-compose -f docker-compose.dev.yml up --build
+```
+
+4. **Access the application:**
+   - Open your browser and go to: `http://localhost:8501`
+
+### Docker Commands Reference
+
+```bash
+# Build the Docker image
+docker build -t post-discharge-assistant .
+
+# Run the container directly
+docker run -p 8501:8501 --env-file .env post-discharge-assistant
+
+# Stop all containers
+docker-compose down
+
+# View logs
+docker-compose logs -f
+
+# Rebuild after changes
+docker-compose up --build
+
+# Run in detached mode
+docker-compose up -d
+```
+
+### Development with Docker
+
+For development with hot reload:
+
+```bash
+# Use the development docker-compose file
+docker-compose -f docker-compose.dev.yml up --build
+```
+
+This setup:
+
+- Mounts your source code for instant changes
+- Enables file watching for auto-reload
+- Persists data in `./data`, `./logs`, and `./vectorstore` directories
+
+### Docker Environment Variables
+
+The Docker setup uses the same environment variables as the local setup. Make sure to update `.env` with your actual API keys:
+
+```bash
+# Required API Keys
+GOOGLE_API_KEY=your_gemini_api_key_here
+PINECONE_API_KEY=your_pinecone_api_key_here
+TAVILY_API_KEY=your_tavily_api_key_here
+
+# Optional configurations
+LOG_LEVEL=INFO
+TEMPERATURE=0.3
+CHUNK_SIZE=1000
+CHUNK_OVERLAP=200
+```
+
+### Troubleshooting Docker
+
+- **Port already in use**: Change the port mapping in `docker-compose.yml` from `"8501:8501"` to `"8502:8501"`
+- **Permission issues**: On Linux/Mac, you might need to run with `sudo`
+- **API key issues**: Ensure your `.env` file has the correct API keys and is in the project root
+- **Memory issues**: Increase Docker Desktop memory allocation in settings
+
+---
+
+## 🐙 GitHub Setup
+
+### Quick Setup with Helper Script
+
+**Windows:**
+
+```cmd
+setup-github.bat
+```
+
+**Linux/Mac:**
+
+```bash
+chmod +x setup-github.sh
+./setup-github.sh
+```
+
+### Manual Setup
+
+1. **Create GitHub Repository:**
+
+   - Go to [GitHub](https://github.com) and create a new repository
+   - Name: `post-discharge-assistant`
+   - Make it public or private
+   - Don't initialize with README
+
+2. **Push to GitHub:**
+
+```bash
+# Initialize git (if not already done)
+git init
+
+# Add all files
+git add .
+
+# Commit
+git commit -m "Initial commit: Post-Discharge Medical AI Assistant"
+
+# Add remote (replace YOUR_USERNAME)
+git remote add origin https://github.com/YOUR_USERNAME/post-discharge-assistant.git
+
+# Push to GitHub
+git push -u origin main
+```
+
+3. **Set Repository Secrets (for deployment):**
+   - Go to repository → Settings → Secrets and variables → Actions
+   - Add secrets:
+     - `GOOGLE_API_KEY`
+     - `PINECONE_API_KEY`
+     - `TAVILY_API_KEY`
+
+### GitHub Features Included
+
+- ✅ **Automated CI/CD** with GitHub Actions
+- ✅ **Docker image building** and security scanning
+- ✅ **Multi-platform deployment** workflows
+- ✅ **Comprehensive documentation**
+
+---
+
 ## 🔑 API Keys Setup
 
 ### 1. Google Gemini API Key (FREE)
@@ -260,6 +429,29 @@ This will:
 - ✅ Upload vectors to Pinecone
 
 **Note**: PDF processing requires a nephrology textbook PDF at `data/nephrology_book.pdf`
+
+### Phase 1.5: MCP Server Setup (Optional)
+
+Set up Model Context Protocol server for enhanced web search:
+
+```bash
+python setup_mcp.py
+```
+
+This will:
+
+- ✅ Test MCP web search server
+- ✅ Verify medical news search
+- ✅ Test integration with clinical agent
+- ✅ Enable advanced medical source prioritization
+
+**Benefits of MCP Setup:**
+
+- 🔍 Dedicated web search server
+- 🏥 Medical source prioritization
+- 📰 Specialized medical news search
+- ⚡ Improved search performance
+- 🔄 Automatic fallback to direct search
 
 ### Phase 2: Agent Setup
 
@@ -519,7 +711,56 @@ This is an AI assistant for EDUCATIONAL PURPOSES ONLY.
 
 ---
 
-## 📜 License
+## � Deployment
+
+### Cloud Deployment Options
+
+#### 1. Heroku (Easy)
+
+```bash
+heroku create your-app-name
+heroku stack:set container
+heroku config:set GOOGLE_API_KEY=your_key
+heroku config:set PINECONE_API_KEY=your_key
+heroku config:set TAVILY_API_KEY=your_key
+git push heroku main
+```
+
+#### 2. Railway (Recommended)
+
+1. Connect GitHub repository to Railway
+2. Add environment variables in dashboard
+3. Deploy automatically from GitHub
+
+#### 3. Render
+
+1. Connect GitHub repository
+2. Choose "Web Service"
+3. Use Docker runtime
+4. Add environment variables
+
+#### 4. DigitalOcean App Platform
+
+1. Connect GitHub repository
+2. Use Dockerfile for deployment
+3. Configure environment variables
+
+### Self-Hosted Deployment
+
+```bash
+# On your server
+git clone https://github.com/YOUR_USERNAME/post-discharge-assistant.git
+cd post-discharge-assistant
+cp .env.docker .env
+# Edit .env with your API keys
+docker-compose up -d
+```
+
+For detailed deployment instructions, see [`DEPLOYMENT.md`](DEPLOYMENT.md).
+
+---
+
+## �📜 License
 
 This project is licensed under the MIT License - see [LICENSE](LICENSE) file for details.
 

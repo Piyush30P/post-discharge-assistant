@@ -1,0 +1,88 @@
+# Git files
+.git
+.gitignore
+README.md
+REPORT.md
+
+# Python cache and artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Environment files (will be mounted separately)
+.env
+
+# Logs (will be mounted as volume)
+logs/
+*.log
+
+# Data files (will be mounted as volume)
+# Uncomment if you want to exclude from image
+# data/
+# vectorstore/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Documentation
+docs/
+*.md
+
+# Test files
+test_*/
+*_test.py
+tests/
+
+# Jupyter notebooks
+*.ipynb
+.ipynb_checkpoints/
+
+# Node modules (if any)
+node_modules/
+
+# Docker files (don't copy into container)
+Dockerfile
+docker-compose.yml
+.dockerignore
