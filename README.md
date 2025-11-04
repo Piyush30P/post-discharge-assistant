@@ -637,11 +637,59 @@ See [REPORT.md](REPORT.md) for detailed architecture justification including:
 
 ---
 
+## 🐛 Troubleshooting
 
+### Issue: "API Key not found"
+
+**Solution**: Ensure all API keys are set in `.env` file
+
+```bash
+# Check if .env exists
+cat .env
+
+# Verify keys are set
+python -c "from src.config import validate_config; validate_config()"
+```
+
+### Issue: "Pinecone connection failed"
+
+**Solution**: Check Pinecone API key and index name
+
+```bash
+python verify_phase1.py
+```
+
+### Issue: "Web search failed"
+
+**Solution**: Verify Tavily API key
+
+```bash
+# Test Tavily
+python -c "from src.mcp.tools import MCPTools; tools = MCPTools(); print(tools.web_search('test'))"
+```
+
+### Issue: "Slow responses"
+
+**Possible causes**:
+
+- First query loads models (5-7 seconds)
+- Pinecone cold start
+- Large PDF chunking
 
 ---
 
+## 🔒 Privacy & Security
 
+⚠️ **Important**: This is a **demonstration project** with dummy data only.
+
+**For production use**:
+
+- [ ] Implement proper authentication
+- [ ] Use encrypted database
+- [ ] HIPAA compliance measures
+- [ ] Secure API key management
+- [ ] Input sanitization
+- [ ] Rate limiting
 
 ---
 
@@ -722,15 +770,15 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
 
 **Your Name**
 
-- GitHub: [Piyush30P](https://github.com/Piyush30P)
-- LinkedIn: (https://www.linkedin.com/in/piyush-pise-73400a264/)
-- Email: pisepiyush39@gmail.com
-
+- GitHub: [@yourusername](https://github.com/yourusername)
+- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
+- Email: your.email@example.com
 
 ---
 
 ## 🙏 Acknowledgments
 
+- **Anthropic Claude** for coding assistance
 - **Google Gemini** for LLM capabilities
 - **Pinecone** for vector database
 - **Tavily** for web search API
@@ -750,6 +798,17 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
 
 ---
 
+## 📈 Future Enhancements
+
+- [ ] Voice interface for hands-free operation
+- [ ] Multi-language support (Spanish, Chinese, etc.)
+- [ ] Mobile app (React Native)
+- [ ] Integration with EHR systems
+- [ ] Appointment scheduling
+- [ ] Medication reminders
+- [ ] Symptom tracking over time
+- [ ] Family member access
+- [ ] Telemedicine integration
 
 ---
 
