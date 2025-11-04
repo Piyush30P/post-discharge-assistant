@@ -54,6 +54,14 @@ The **Post-Discharge Medical AI Assistant** is an intelligent multi-agent system
 - **Clinical Agent**: Provides medical information using RAG and web search
 - **Smart Handoff**: Automatically routes complex medical queries to Clinical Agent
 
+### 🔌 MCP (Model Context Protocol) Integration
+
+- **MCP Server**: Standalone server providing medical tools via standardized protocol
+- **Enhanced Tools**: Patient data, medical knowledge search, web search, drug interactions
+- **Fallback Support**: Seamless fallback to direct access if MCP unavailable
+- **Resource Management**: Structured access to patient database and knowledge base
+- **Tool Standardization**: Consistent interface for all medical tools
+
 ### 🧠 RAG Implementation
 
 - **Vector Database**: Pinecone cloud-based storage (~4000 medical text chunks)
@@ -539,7 +547,10 @@ post-discharge-assistant/
 │   │   ├── clinical_agent.py      # Medical queries with RAG
 │   │   └── prompts.py             # Agent system prompts
 │   │
-│   ├── mcp/                       # MCP Tools
+│   ├── mcp/                       # MCP (Model Context Protocol)
+│   │   ├── server.py              # MCP server implementation
+│   │   ├── client.py              # MCP client for integration
+│   │   └── tools.py               # Enhanced tools with MCP support
 │   │   └── tools.py               # Database, RAG, web search tools
 │   │
 │   ├── workflow/                  # LangGraph Workflow
@@ -568,6 +579,135 @@ post-discharge-assistant/
 ├── REPORT.md                      # Architecture justification report
 └── LICENSE                        # MIT License
 ```
+
+---
+
+## 🔌 MCP (Model Context Protocol) Integration
+
+### Overview
+
+The Post-Discharge Assistant implements **Model Context Protocol (MCP)** to provide standardized access to medical tools and resources. MCP enables seamless integration between the AI agents and various data sources.
+
+### MCP Features
+
+#### 🛠️ Available Tools
+
+1. **get_patient_data**: Retrieve patient discharge information
+2. **search_medical_knowledge**: Search medical knowledge base using RAG
+3. **web_search_medical**: Search web for current medical information
+4. **list_patients**: Get list of all available patients
+5. **get_patient_medications**: Get detailed medication information
+6. **check_drug_interactions**: Check for potential drug interactions
+
+#### 📚 Available Resources
+
+1. **Patient Database**: SQLite database with patient discharge records
+2. **Medical Knowledge Base**: Nephrology textbook stored in Pinecone
+3. **Patient List**: Available patients for testing and demo
+
+### Running MCP Server
+
+#### Start MCP Server Standalone
+
+```bash
+# Start the MCP server
+python start_mcp_server.py
+
+# Or directly
+python src/mcp/server.py
+```
+
+#### Test MCP Integration
+
+```bash
+# Run comprehensive MCP tests
+python test_mcp.py
+```
+
+#### MCP Configuration
+
+The MCP server configuration is in `mcp-config.json`:
+
+```json
+{
+  "mcpServers": {
+    "post-discharge-assistant": {
+      "command": "python",
+      "args": ["src/mcp/server.py"],
+      "env": {
+        "PYTHONPATH": "."
+      }
+    }
+  }
+}
+```
+
+### MCP Integration Modes
+
+#### 1. **MCP Mode** (Recommended)
+
+- Uses MCP server for all tool operations
+- Standardized protocol compliance
+- Enhanced error handling and logging
+- Better resource management
+
+#### 2. **Direct Mode** (Fallback)
+
+- Direct database and API access
+- Used when MCP server unavailable
+- Maintains full functionality
+- Automatic fallback from MCP mode
+
+### Using MCP Tools in Code
+
+```python
+from src.mcp.tools import MCPTools
+
+# Initialize with MCP support (default)
+tools = MCPTools(use_mcp=True)
+
+# Get patient data via MCP
+result = tools.get_patient_data("Ashley King")
+
+# Search medical knowledge via MCP
+knowledge = tools.search_medical_knowledge("kidney disease symptoms")
+
+# Initialize without MCP (direct mode)
+tools_direct = MCPTools(use_mcp=False)
+```
+
+### MCP Client Usage
+
+```python
+from src.mcp.client import MCPClient
+import asyncio
+
+async def example():
+    client = MCPClient()
+
+    # List available tools
+    tools = await client.list_tools()
+
+    # Get patient data
+    patient = await client.get_patient_data("Ashley King")
+
+    # Search medical knowledge
+    knowledge = await client.search_medical_knowledge("kidney stones")
+
+    await client.close()
+
+# Run async function
+asyncio.run(example())
+```
+
+### Benefits of MCP Integration
+
+- ✅ **Standardized Protocol**: Industry-standard tool access
+- ✅ **Enhanced Reliability**: Robust error handling and fallback
+- ✅ **Better Logging**: Comprehensive operation tracking
+- ✅ **Resource Management**: Efficient database and API usage
+- ✅ **Scalability**: Easy to add new tools and resources
+- ✅ **Interoperability**: Can be used by external MCP clients
 
 ---
 

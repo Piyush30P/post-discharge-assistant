@@ -4919,3 +4919,209 @@ message: "API key not valid. Please pass a valid API key."
 [2025-11-04 18:34:00] [INFO] [PostDischargeAssistant] [RECEPTIONIST] Response generated (routing: False)
 [2025-11-04 18:34:00] [INFO] [PostDischargeAssistant] [WORKFLOW] Ending at receptionist
 [2025-11-04 18:34:00] [INFO] [PostDischargeAssistant] [WORKFLOW] Response generated (174 chars)
+[2025-11-05 00:22:53] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-11-05 00:22:53] [INFO] [PostDischargeAssistant] System Logger Initialized
+[2025-11-05 00:22:53] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-11-05 00:23:58] [INFO] [PostDischargeAssistant] Initializing database at: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\patients.db
+[2025-11-05 00:23:58] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-11-05 00:23:58] [INFO] [PostDischargeAssistant] Initializing Pinecone client...
+[2025-11-05 00:23:58] [INFO] [PostDischargeAssistant] Loading embedding model: all-MiniLM-L6-v2
+[2025-11-05 00:24:02] [INFO] [PostDischargeAssistant] ✓ Embedding model loaded (dimension: 384)
+[2025-11-05 00:24:02] [INFO] [PostDischargeAssistant] Connecting to index: nephrology-knowledge
+[2025-11-05 00:24:04] [INFO] [PostDischargeAssistant] ✓ Connected to index 'nephrology-knowledge'
+[2025-11-05 00:24:04] [INFO] [PostDischargeAssistant]   Total vectors: 12562
+[2025-11-05 00:24:04] [INFO] [PostDischargeAssistant] Starting Post-Discharge Assistant MCP Server...
+[2025-11-05 00:24:04] [INFO] [PostDischargeAssistant] Connecting to index: nephrology-knowledge
+[2025-11-05 00:24:05] [INFO] [PostDischargeAssistant] ✓ Connected to index 'nephrology-knowledge'
+[2025-11-05 00:24:05] [INFO] [PostDischargeAssistant]   Total vectors: 12562
+[2025-11-05 00:24:05] [INFO] [PostDischargeAssistant] ✓ MCP Server initialized successfully
+[2025-11-05 00:25:45] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-11-05 00:25:45] [INFO] [PostDischargeAssistant] System Logger Initialized
+[2025-11-05 00:25:45] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-11-05 00:25:58] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-11-05 00:25:58] [INFO] [PostDischargeAssistant] System Logger Initialized
+[2025-11-05 00:25:58] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-11-05 00:26:09] [INFO] [PostDischargeAssistant] ✓ Tavily client available
+[2025-11-05 00:26:11] [INFO] [PostDischargeAssistant] ✓ MCP client integration available
+[2025-11-05 00:26:11] [INFO] [PostDischargeAssistant] Initializing database at: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\patients.db
+[2025-11-05 00:26:11] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-11-05 00:26:11] [INFO] [PostDischargeAssistant] Initializing Pinecone client...
+[2025-11-05 00:26:11] [INFO] [PostDischargeAssistant] Loading embedding model: all-MiniLM-L6-v2
+[2025-11-05 00:26:14] [INFO] [PostDischargeAssistant] ✓ Embedding model loaded (dimension: 384)
+[2025-11-05 00:26:14] [INFO] [PostDischargeAssistant] Connecting to index: nephrology-knowledge
+[2025-11-05 00:26:16] [INFO] [PostDischargeAssistant] ✓ Connected to index 'nephrology-knowledge'
+[2025-11-05 00:26:16] [INFO] [PostDischargeAssistant]   Total vectors: 12562
+[2025-11-05 00:26:16] [INFO] [PostDischargeAssistant] ✓ Tavily client initialized
+[2025-11-05 00:26:16] [INFO] [PostDischargeAssistant] ✓ MCP Tools initialized with direct access mode
+[2025-11-05 00:26:16] [INFO] [PostDischargeAssistant] [TOOL] get_patient_data called with params: {'patient_name': 'Ashley King', 'method': 'Direct'}
+[2025-11-05 00:26:16] [INFO] [PostDischargeAssistant] [TOOL] get_patient_data result: Retrieving patient data
+[2025-11-05 00:26:16] [INFO] [PostDischargeAssistant] [DATABASE] SELECT: Looking up patient: Ashley King
+[2025-11-05 00:26:16] [INFO] [PostDischargeAssistant] ✓ Found patient: Ashley King
+[2025-11-05 00:26:16] [INFO] [PostDischargeAssistant] ✓ Retrieved patient data directly for: Ashley King
+[2025-11-05 00:26:16] [INFO] [PostDischargeAssistant] Initializing database at: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\patients.db
+[2025-11-05 00:26:16] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-11-05 00:26:16] [INFO] [PostDischargeAssistant] Initializing Pinecone client...
+[2025-11-05 00:26:16] [INFO] [PostDischargeAssistant] Loading embedding model: all-MiniLM-L6-v2
+[2025-11-05 00:26:19] [INFO] [PostDischargeAssistant] ✓ Embedding model loaded (dimension: 384)
+[2025-11-05 00:26:19] [INFO] [PostDischargeAssistant] Connecting to index: nephrology-knowledge
+[2025-11-05 00:26:20] [INFO] [PostDischargeAssistant] ✓ Connected to index 'nephrology-knowledge'
+[2025-11-05 00:26:20] [INFO] [PostDischargeAssistant]   Total vectors: 12562
+[2025-11-05 00:26:20] [INFO] [PostDischargeAssistant] ✓ Tavily client initialized
+[2025-11-05 00:26:20] [INFO] [PostDischargeAssistant] ✓ MCP Tools initialized with MCP server integration
+[2025-11-05 00:28:14] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-11-05 00:28:14] [INFO] [PostDischargeAssistant] System Logger Initialized
+[2025-11-05 00:28:14] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-11-05 00:28:27] [INFO] [PostDischargeAssistant] ✓ Tavily client available
+[2025-11-05 00:28:28] [INFO] [PostDischargeAssistant] ✓ MCP client integration available
+[2025-11-05 00:28:28] [INFO] [PostDischargeAssistant] Initializing database at: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\patients.db
+[2025-11-05 00:28:28] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-11-05 00:28:28] [INFO] [PostDischargeAssistant] Initializing Pinecone client...
+[2025-11-05 00:28:28] [INFO] [PostDischargeAssistant] Loading embedding model: all-MiniLM-L6-v2
+[2025-11-05 00:28:31] [INFO] [PostDischargeAssistant] ✓ Embedding model loaded (dimension: 384)
+[2025-11-05 00:28:31] [INFO] [PostDischargeAssistant] Connecting to index: nephrology-knowledge
+[2025-11-05 00:28:33] [INFO] [PostDischargeAssistant] ✓ Connected to index 'nephrology-knowledge'
+[2025-11-05 00:28:33] [INFO] [PostDischargeAssistant]   Total vectors: 12562
+[2025-11-05 00:28:33] [INFO] [PostDischargeAssistant] ✓ Tavily client initialized
+[2025-11-05 00:28:33] [INFO] [PostDischargeAssistant] ✓ MCP Tools initialized with direct access mode
+[2025-11-05 00:28:33] [INFO] [PostDischargeAssistant] [TOOL] get_patient_data called with params: {'patient_name': 'Ashley King', 'method': 'Direct'}
+[2025-11-05 00:28:33] [INFO] [PostDischargeAssistant] [TOOL] get_patient_data result: Retrieving patient data
+[2025-11-05 00:28:33] [INFO] [PostDischargeAssistant] [DATABASE] SELECT: Looking up patient: Ashley King
+[2025-11-05 00:28:33] [INFO] [PostDischargeAssistant] ✓ Found patient: Ashley King
+[2025-11-05 00:28:33] [INFO] [PostDischargeAssistant] ✓ Retrieved patient data directly for: Ashley King
+[2025-11-05 00:28:33] [INFO] [PostDischargeAssistant] Initializing database at: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\patients.db
+[2025-11-05 00:28:33] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-11-05 00:28:33] [INFO] [PostDischargeAssistant] Initializing Pinecone client...
+[2025-11-05 00:28:33] [INFO] [PostDischargeAssistant] Loading embedding model: all-MiniLM-L6-v2
+[2025-11-05 00:28:36] [INFO] [PostDischargeAssistant] ✓ Embedding model loaded (dimension: 384)
+[2025-11-05 00:28:36] [INFO] [PostDischargeAssistant] Connecting to index: nephrology-knowledge
+[2025-11-05 00:28:37] [INFO] [PostDischargeAssistant] ✓ Connected to index 'nephrology-knowledge'
+[2025-11-05 00:28:37] [INFO] [PostDischargeAssistant]   Total vectors: 12562
+[2025-11-05 00:28:37] [INFO] [PostDischargeAssistant] ✓ Tavily client initialized
+[2025-11-05 00:28:37] [INFO] [PostDischargeAssistant] ✓ MCP Tools initialized with MCP server integration
+[2025-11-05 00:28:37] [INFO] [PostDischargeAssistant] [RAG] Query: kidney disease symptoms
+[2025-11-05 00:28:37] [INFO] [PostDischargeAssistant] [RAG] Retrieved 2 chunks from sources: ['Nephrology Textbook', 'Direct']
+[2025-11-05 00:28:37] [INFO] [PostDischargeAssistant] Searching Pinecone for: 'kidney disease symptoms'
+[2025-11-05 00:28:37] [INFO] [PostDischargeAssistant]   Top K: 2
+[2025-11-05 00:28:37] [INFO] [PostDischargeAssistant] ✓ Found 2 results
+[2025-11-05 00:28:37] [INFO] [PostDischargeAssistant] ✓ Found 2 relevant chunks for: kidney disease symptoms
+[2025-11-05 00:28:37] [INFO] [PostDischargeAssistant] [WEB_SEARCH] Query: kidney disease treatment
+[2025-11-05 00:28:37] [INFO] [PostDischargeAssistant] [WEB_SEARCH] Found 1 results
+[2025-11-05 00:28:40] [INFO] [PostDischargeAssistant] ✓ Found 1 web results for: kidney disease treatment
+[2025-11-04 18:59:32] [INFO] [PostDischargeAssistant] Initializing Multi-Agent Workflow...
+[2025-11-04 18:59:32] [INFO] [PostDischargeAssistant] Initializing database at: /app/data/patients.db
+[2025-11-04 18:59:32] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-11-04 18:59:32] [INFO] [PostDischargeAssistant] Initializing Pinecone client...
+[2025-11-04 18:59:33] [INFO] [PostDischargeAssistant] Loading embedding model: all-MiniLM-L6-v2
+[2025-11-04 18:59:37] [INFO] [PostDischargeAssistant] ✓ Embedding model loaded (dimension: 384)
+[2025-11-04 18:59:37] [INFO] [PostDischargeAssistant] Connecting to index: nephrology-knowledge
+[2025-11-04 18:59:38] [INFO] [PostDischargeAssistant] ✓ Connected to index 'nephrology-knowledge'
+[2025-11-04 18:59:38] [INFO] [PostDischargeAssistant]   Total vectors: 12562
+[2025-11-04 18:59:38] [INFO] [PostDischargeAssistant] ✓ Tavily client initialized
+[2025-11-04 18:59:38] [INFO] [PostDischargeAssistant] ✓ MCP Tools initialized
+[2025-11-04 18:59:38] [INFO] [PostDischargeAssistant] ✓ Receptionist Agent initialized
+[2025-11-04 18:59:38] [INFO] [PostDischargeAssistant] Initializing database at: /app/data/patients.db
+[2025-11-04 18:59:38] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-11-04 18:59:38] [INFO] [PostDischargeAssistant] Initializing Pinecone client...
+[2025-11-04 18:59:38] [INFO] [PostDischargeAssistant] Loading embedding model: all-MiniLM-L6-v2
+[2025-11-04 18:59:41] [INFO] [PostDischargeAssistant] ✓ Embedding model loaded (dimension: 384)
+[2025-11-04 18:59:41] [INFO] [PostDischargeAssistant] Connecting to index: nephrology-knowledge
+[2025-11-04 18:59:42] [INFO] [PostDischargeAssistant] ✓ Connected to index 'nephrology-knowledge'
+[2025-11-04 18:59:42] [INFO] [PostDischargeAssistant]   Total vectors: 12562
+[2025-11-04 18:59:42] [INFO] [PostDischargeAssistant] ✓ Tavily client initialized
+[2025-11-04 18:59:42] [INFO] [PostDischargeAssistant] ✓ MCP Tools initialized
+[2025-11-04 18:59:42] [INFO] [PostDischargeAssistant] ✓ Clinical Agent initialized
+[2025-11-04 18:59:42] [INFO] [PostDischargeAssistant] ✓ Multi-Agent Workflow ready
+[2025-11-04 18:59:42] [INFO] [PostDischargeAssistant] [APP] New session: 82a03e80-ff51-4347-a85e-72fa60bac525
+[2025-11-04 19:00:04] [INFO] [PostDischargeAssistant] [WORKFLOW] Processing message: Michael Jackson...
+[2025-11-04 19:00:04] [INFO] [PostDischargeAssistant] [WORKFLOW] Receptionist node
+[2025-11-04 19:00:04] [INFO] [PostDischargeAssistant] [WORKFLOW] Processing user message: Michael Jackson...
+[2025-11-04 19:00:04] [INFO] [PostDischargeAssistant] [RECEPTIONIST] Processing: Michael Jackson...
+[2025-11-04 19:00:06] [INFO] [PostDischargeAssistant] [TOOL] get_patient_data called with params: {'patient_name': 'Michael Jackson'}
+[2025-11-04 19:00:06] [INFO] [PostDischargeAssistant] [TOOL] get_patient_data result: Retrieving patient data
+[2025-11-04 19:00:06] [INFO] [PostDischargeAssistant] [DATABASE] SELECT: Looking up patient: Michael Jackson
+[2025-11-04 19:00:06] [INFO] [PostDischargeAssistant] ✓ Found patient: Michael Jackson
+[2025-11-04 19:00:06] [INFO] [PostDischargeAssistant] ✓ Retrieved patient data for: Michael Jackson
+[2025-11-04 19:00:07] [INFO] [PostDischargeAssistant] [RECEPTIONIST] Response generated (routing: False)
+[2025-11-04 19:00:07] [INFO] [PostDischargeAssistant] [WORKFLOW] Ending at receptionist
+[2025-11-04 19:00:07] [INFO] [PostDischargeAssistant] [WORKFLOW] Response generated (178 chars)
+[2025-11-04 19:09:41] [INFO] [PostDischargeAssistant] Initializing Multi-Agent Workflow...
+[2025-11-04 19:09:41] [INFO] [PostDischargeAssistant] Initializing database at: /app/data/patients.db
+[2025-11-04 19:09:41] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-11-04 19:09:41] [INFO] [PostDischargeAssistant] Initializing Pinecone client...
+[2025-11-04 19:09:41] [INFO] [PostDischargeAssistant] Loading embedding model: all-MiniLM-L6-v2
+[2025-11-04 19:09:44] [INFO] [PostDischargeAssistant] ✓ Embedding model loaded (dimension: 384)
+[2025-11-04 19:09:44] [INFO] [PostDischargeAssistant] Connecting to index: nephrology-knowledge
+[2025-11-04 19:09:45] [INFO] [PostDischargeAssistant] ✓ Connected to index 'nephrology-knowledge'
+[2025-11-04 19:09:45] [INFO] [PostDischargeAssistant]   Total vectors: 12562
+[2025-11-04 19:09:45] [INFO] [PostDischargeAssistant] ✓ Tavily client initialized
+[2025-11-04 19:09:45] [INFO] [PostDischargeAssistant] ✓ MCP Tools initialized
+[2025-11-04 19:09:46] [INFO] [PostDischargeAssistant] ✓ Receptionist Agent initialized
+[2025-11-04 19:09:46] [INFO] [PostDischargeAssistant] Initializing database at: /app/data/patients.db
+[2025-11-04 19:09:46] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-11-04 19:09:46] [INFO] [PostDischargeAssistant] Initializing Pinecone client...
+[2025-11-04 19:09:46] [INFO] [PostDischargeAssistant] Loading embedding model: all-MiniLM-L6-v2
+[2025-11-04 19:09:48] [INFO] [PostDischargeAssistant] ✓ Embedding model loaded (dimension: 384)
+[2025-11-04 19:09:48] [INFO] [PostDischargeAssistant] Connecting to index: nephrology-knowledge
+[2025-11-04 19:09:49] [INFO] [PostDischargeAssistant] ✓ Connected to index 'nephrology-knowledge'
+[2025-11-04 19:09:49] [INFO] [PostDischargeAssistant]   Total vectors: 12562
+[2025-11-04 19:09:49] [INFO] [PostDischargeAssistant] ✓ Tavily client initialized
+[2025-11-04 19:09:49] [INFO] [PostDischargeAssistant] ✓ MCP Tools initialized
+[2025-11-04 19:09:49] [INFO] [PostDischargeAssistant] ✓ Clinical Agent initialized
+[2025-11-04 19:09:49] [INFO] [PostDischargeAssistant] ✓ Multi-Agent Workflow ready
+[2025-11-04 19:09:49] [INFO] [PostDischargeAssistant] [APP] New session: c83478b1-0467-4414-806e-6f16a31d5793
+[2025-11-05 00:41:30] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-11-05 00:41:30] [INFO] [PostDischargeAssistant] System Logger Initialized
+[2025-11-05 00:41:30] [INFO] [PostDischargeAssistant] ================================================================================
+[2025-11-05 00:41:43] [INFO] [PostDischargeAssistant] ✓ Tavily client available
+[2025-11-05 00:41:43] [WARNING] [PostDischargeAssistant] MCP client not available: No module named 'mcp.client.session'; 'mcp.client' is not a package
+[2025-11-05 00:41:43] [INFO] [PostDischargeAssistant] Initializing Multi-Agent Workflow...
+[2025-11-05 00:41:43] [INFO] [PostDischargeAssistant] Initializing database at: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\patients.db
+[2025-11-05 00:41:43] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-11-05 00:41:43] [INFO] [PostDischargeAssistant] Initializing Pinecone client...
+[2025-11-05 00:41:43] [INFO] [PostDischargeAssistant] Loading embedding model: all-MiniLM-L6-v2
+[2025-11-05 00:41:46] [INFO] [PostDischargeAssistant] ✓ Embedding model loaded (dimension: 384)
+[2025-11-05 00:41:46] [INFO] [PostDischargeAssistant] Connecting to index: nephrology-knowledge
+[2025-11-05 00:41:48] [INFO] [PostDischargeAssistant] ✓ Connected to index 'nephrology-knowledge'
+[2025-11-05 00:41:48] [INFO] [PostDischargeAssistant]   Total vectors: 12562
+[2025-11-05 00:41:48] [INFO] [PostDischargeAssistant] ✓ Tavily client initialized
+[2025-11-05 00:41:48] [INFO] [PostDischargeAssistant] ✓ MCP Tools initialized with direct access mode
+[2025-11-05 00:41:48] [INFO] [PostDischargeAssistant] ✓ Receptionist Agent initialized
+[2025-11-05 00:41:48] [INFO] [PostDischargeAssistant] Initializing database at: C:\Users\pisep\OneDrive\Desktop\6th sem main\Projects\post-discharge-assistant\data\patients.db
+[2025-11-05 00:41:48] [INFO] [PostDischargeAssistant] ✓ Database initialized successfully
+[2025-11-05 00:41:48] [INFO] [PostDischargeAssistant] Initializing Pinecone client...
+[2025-11-05 00:41:48] [INFO] [PostDischargeAssistant] Loading embedding model: all-MiniLM-L6-v2
+[2025-11-05 00:41:51] [INFO] [PostDischargeAssistant] ✓ Embedding model loaded (dimension: 384)
+[2025-11-05 00:41:51] [INFO] [PostDischargeAssistant] Connecting to index: nephrology-knowledge
+[2025-11-05 00:41:52] [INFO] [PostDischargeAssistant] ✓ Connected to index 'nephrology-knowledge'
+[2025-11-05 00:41:52] [INFO] [PostDischargeAssistant]   Total vectors: 12562
+[2025-11-05 00:41:52] [INFO] [PostDischargeAssistant] ✓ Tavily client initialized
+[2025-11-05 00:41:52] [INFO] [PostDischargeAssistant] ✓ MCP Tools initialized with direct access mode
+[2025-11-05 00:41:52] [INFO] [PostDischargeAssistant] ✓ Clinical Agent initialized
+[2025-11-05 00:41:52] [INFO] [PostDischargeAssistant] ✓ Multi-Agent Workflow ready
+[2025-11-05 00:41:52] [INFO] [PostDischargeAssistant] [APP] New session: 91076918-e3b8-41cb-9b2d-d436d71f5e47
+[2025-11-05 00:51:16] [INFO] [PostDischargeAssistant] [WORKFLOW] Processing message: Patricia King...
+[2025-11-05 00:51:16] [INFO] [PostDischargeAssistant] [WORKFLOW] Receptionist node
+[2025-11-05 00:51:16] [INFO] [PostDischargeAssistant] [WORKFLOW] Processing user message: Patricia King...
+[2025-11-05 00:51:16] [INFO] [PostDischargeAssistant] [RECEPTIONIST] Processing: Patricia King...
+[2025-11-05 00:51:18] [INFO] [PostDischargeAssistant] [TOOL] get_patient_data called with params: {'patient_name': 'Patricia King', 'method': 'Direct'}
+[2025-11-05 00:51:18] [INFO] [PostDischargeAssistant] [TOOL] get_patient_data result: Retrieving patient data
+[2025-11-05 00:51:18] [INFO] [PostDischargeAssistant] [DATABASE] SELECT: Looking up patient: Patricia King
+[2025-11-05 00:51:18] [INFO] [PostDischargeAssistant] ✓ Found patient: Patricia King
+[2025-11-05 00:51:18] [INFO] [PostDischargeAssistant] ✓ Retrieved patient data directly for: Patricia King
+[2025-11-05 00:51:19] [INFO] [PostDischargeAssistant] [RECEPTIONIST] Response generated (routing: False)
+[2025-11-05 00:51:19] [INFO] [PostDischargeAssistant] [WORKFLOW] Ending at receptionist
+[2025-11-05 00:51:19] [INFO] [PostDischargeAssistant] [WORKFLOW] Response generated (189 chars)
+[2025-11-05 00:51:53] [INFO] [PostDischargeAssistant] [WORKFLOW] Processing message: I am feeling pain near stomach ...
+[2025-11-05 00:51:53] [INFO] [PostDischargeAssistant] [WORKFLOW] Receptionist node
+[2025-11-05 00:51:53] [INFO] [PostDischargeAssistant] [WORKFLOW] Processing user message: I am feeling pain near stomach ...
+[2025-11-05 00:51:53] [INFO] [PostDischargeAssistant] [RECEPTIONIST] Processing: I am feeling pain near stomach ...
+[2025-11-05 00:51:54] [INFO] [PostDischargeAssistant] [RECEPTIONIST] Response generated (routing: True)
+[2025-11-05 00:51:54] [INFO] [PostDischargeAssistant] [WORKFLOW] Routing to clinical agent
+[2025-11-05 00:51:54] [INFO] [PostDischargeAssistant] [WORKFLOW] Clinical node
+[2025-11-05 00:51:54] [INFO] [PostDischargeAssistant] [WORKFLOW] Passing to clinical: I am feeling pain near stomach ...
+[2025-11-05 00:51:54] [INFO] [PostDischargeAssistant] [CLINICAL] Extracted query: I am feeling pain near stomach...
+[2025-11-05 00:51:54] [INFO] [PostDischargeAssistant] [CLINICAL] Processing: I am feeling pain near stomach...
+[2025-11-05 00:51:54] [INFO] [PostDischargeAssistant] [CLINICAL] Attempt 1/2
+[2025-11-05 00:51:54] [INFO] [PostDischargeAssistant] [CLINICAL] Invoking agent executor...
+[2025-11-05 00:51:57] [INFO] [PostDischargeAssistant] [CLINICAL] Success! Response: 153 chars
+[2025-11-05 00:51:57] [INFO] [PostDischargeAssistant] [WORKFLOW] Response generated (173 chars)
