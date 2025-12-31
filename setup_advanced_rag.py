@@ -89,7 +89,7 @@ def fetch_all_documents_from_pinecone(pinecone_manager: PineconeManager) -> List
             logger.info(f"Querying with term: {term}")
 
             # Query Pinecone
-            results = pinecone_manager.search(term, k=1000)  # Get up to 1000 per query
+            results = pinecone_manager.search(term, top_k=1000)  # Get up to 1000 per query
 
             for match in results.get('matches', []):
                 vec_id = match.get('id', '')

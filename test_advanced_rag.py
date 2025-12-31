@@ -185,7 +185,7 @@ class AdvancedRAGEvaluator:
 
             # Basic retrieval (vector only)
             start_time = time.time()
-            basic_results = self.pinecone_manager.search(query, k=5)
+            basic_results = self.pinecone_manager.search(query, top_k=5)
             basic_time = time.time() - start_time
 
             basic_docs = basic_results.get('matches', [])
