@@ -17,10 +17,18 @@ from enum import Enum
 import numpy as np
 from sentence_transformers import SentenceTransformer, CrossEncoder
 from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain.prompts import ChatPromptTemplate
+from langchain.prompts import ChatPromptTemplate, PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
+from langchain_core.language_models import BaseLLM
 import json
 import re
+
+# Import hybrid LLM config
+try:
+    from src.llm_config import get_query_transformation_llm
+    HYBRID_LLM_AVAILABLE = True
+except ImportError:
+    HYBRID_LLM_AVAILABLE = False
 
 logger = logging.getLogger(__name__)
 
@@ -73,10 +81,29 @@ class QueryTransformationAgent:
     1. Query expansion - Add synonyms and related terms
     2. Query decomposition - Break complex queries into sub-queries
     3. Query refinement - Rephrase for better matching
+
+    Uses local LLM (Ollama) by default to avoid API quota limits.
+    Falls back to cloud LLM if local is unavailable.
     """
 
-    def __init__(self, llm: ChatGoogleGenerativeAI):
-        self.llm = llm
+    def __init__(self, llm=None):
+        """
+        Initialize query transformation agent.
+
+        Args:
+            llm: Optional LLM instance. If None, uses hybrid config (local preferred)
+        """
+        if llm is None and HYBRID_LLM_AVAILABLE:
+            # Use local LLM for query transformation (no quota limits!)
+            try:
+                self.llm = get_query_transformation_llm(temperature=0.7)
+                logger.info("Using local LLM for query transformation")
+            except Exception as e:
+                logger.warning(f"Local LLM not available: {e}")
+                self.llm = llm
+        else:
+            self.llm = llm
+
         self._setup_prompts()
 
     def _setup_prompts(self):

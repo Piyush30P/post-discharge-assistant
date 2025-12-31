@@ -19,6 +19,13 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 
+# Import hybrid LLM config
+try:
+    from src.llm_config import get_summary_llm
+    HYBRID_LLM_AVAILABLE = True
+except ImportError:
+    HYBRID_LLM_AVAILABLE = False
+
 logger = logging.getLogger(__name__)
 
 
@@ -58,17 +65,28 @@ class SummaryIndex:
     Summary index for document collections.
 
     Generates and stores hierarchical summaries of documents.
+    Uses local LLM (Ollama) by default to avoid API quota limits.
     """
 
-    def __init__(self, llm: ChatGoogleGenerativeAI, storage_path: str = "data/summary_index.pkl"):
+    def __init__(self, llm=None, storage_path: str = "data/summary_index.pkl"):
         """
         Initialize summary index.
 
         Args:
-            llm: Language model for generating summaries
+            llm: Optional language model. If None, uses hybrid config (local preferred)
             storage_path: Path to store the index
         """
-        self.llm = llm
+        if llm is None and HYBRID_LLM_AVAILABLE:
+            # Use local LLM for summaries (no quota limits!)
+            try:
+                self.llm = get_summary_llm(temperature=0.3)
+                logger.info("Using local LLM for summary generation")
+            except Exception as e:
+                logger.warning(f"Local LLM not available: {e}")
+                self.llm = llm
+        else:
+            self.llm = llm
+
         self.storage_path = Path(storage_path)
         self.summaries: Dict[str, DocumentSummary] = {}
         self._setup_prompts()
