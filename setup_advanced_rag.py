@@ -91,7 +91,8 @@ def fetch_all_documents_from_pinecone(pinecone_manager: PineconeManager) -> List
             # Query Pinecone
             results = pinecone_manager.search(term, top_k=1000)  # Get up to 1000 per query
 
-            for match in results.get('matches', []):
+            # results is already a list of matches (not a dict)
+            for match in results:
                 vec_id = match.get('id', '')
 
                 if vec_id not in seen_ids:
