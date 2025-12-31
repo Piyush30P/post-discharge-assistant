@@ -425,10 +425,11 @@ class FusionRetriever:
     def _vector_retrieve(self, query: str, top_k: int) -> List[RetrievedDocument]:
         """Vector search only"""
         try:
-            results = self.vector_retriever.search(query, k=top_k)
+            results = self.vector_retriever.search(query, top_k=top_k)
 
             docs = []
-            for match in results.get('matches', []):
+            # results is already a list of matches (not a dict)
+            for match in results:
                 docs.append(RetrievedDocument(
                     content=match.get('metadata', {}).get('text', ''),
                     score=float(match.get('score', 0.0)),

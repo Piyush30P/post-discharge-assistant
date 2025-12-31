@@ -188,7 +188,8 @@ class AdvancedRAGEvaluator:
             basic_results = self.pinecone_manager.search(query, top_k=5)
             basic_time = time.time() - start_time
 
-            basic_docs = basic_results.get('matches', [])
+            # basic_results is already a list of docs (not a dict)
+            basic_docs = basic_results
             logger.info(f"\n[BASIC] Retrieved {len(basic_docs)} documents in {basic_time:.3f}s")
 
             if basic_docs:
