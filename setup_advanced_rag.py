@@ -221,6 +221,35 @@ def main():
     logger.info("\n1. Connecting to Pinecone...")
     pinecone_manager = PineconeManager()
 
+    # Connect to the index
+    try:
+        pinecone_manager.connect_to_index()
+        logger.info(f"✓ Connected to Pinecone index: {PINECONE_INDEX_NAME}")
+
+        # Verify index has data
+        stats = pinecone_manager.index.describe_index_stats()
+        total_vectors = stats.get('total_vector_count', 0)
+
+        if total_vectors == 0:
+            logger.error("\n❌ Pinecone index is EMPTY!")
+            logger.error("\nYou need to populate Pinecone first:")
+            logger.error("  python setup_phase2.py")
+            logger.error("\nThis will:")
+            logger.error("  1. Create the Pinecone index")
+            logger.error("  2. Process the medical knowledge PDF")
+            logger.error("  3. Upload ~4000 document chunks to Pinecone")
+            sys.exit(1)
+
+        logger.info(f"✓ Pinecone index has {total_vectors:,} vectors")
+
+    except Exception as e:
+        logger.error(f"Failed to connect to Pinecone index: {e}")
+        logger.error("\nPlease ensure:")
+        logger.error("  1. Your PINECONE_API_KEY is correct in .env")
+        logger.error("  2. The index exists (run setup_phase2.py first)")
+        logger.error("  3. The PINECONE_INDEX_NAME is correct")
+        sys.exit(1)
+
     # Fetch documents
     logger.info("\n2. Fetching documents from Pinecone...")
     documents = fetch_all_documents_from_pinecone(pinecone_manager)
