@@ -15,6 +15,7 @@ from src.workflow.state import AgentState, create_initial_state
 from src.agents.receptionist_agent import ReceptionistAgent
 # Import fixed clinical agent or use the same import
 from src.agents.clinical_agent import ClinicalAgent
+from src.query_transformer import QueryTransformer
 from src.utils.logger import get_logger
 
 logger = get_logger()
@@ -28,6 +29,7 @@ class MultiAgentWorkflow:
         logger.info("Initializing Multi-Agent Workflow...")
         self.receptionist = ReceptionistAgent()
         self.clinical = ClinicalAgent()
+        self.query_transformer = QueryTransformer()
         
         # Build graph
         self.graph = self._build_graph()
@@ -152,6 +154,26 @@ class MultiAgentWorkflow:
         
         logger.info(f"[WORKFLOW] Passing to clinical: {user_query[:50]}...")
         
+        # ✨ NEW: Apply query transformation
+        logger.info("[WORKFLOW] Applying query transformation...")
+        transformed = self.query_transformer.transform_query(user_query, mode="auto")
+        
+        # Use transformed query
+        if transformed.get("recommended_strategy") == "decomposition":
+            decomp_result = transformed["transformations"]["decomposition"]
+            if decomp_result.get("needs_decomposition"):
+                logger.info(f"[WORKFLOW] Query decomposed into {len(decomp_result['sub_queries'])} sub-queries")
+                # For now, use all sub-queries combined (can be enhanced later for multi-retrieval)
+                query_to_use = " | ".join(decomp_result["sub_queries"])
+            else:
+                query_to_use = user_query
+        elif transformed.get("recommended_strategy") == "rewrite":
+            rewrite_result = transformed["transformations"]["rewrite"]
+            query_to_use = rewrite_result.get("rewritten_query", user_query)
+            logger.info(f"[WORKFLOW] Query rewritten: {query_to_use[:50]}...")
+        else:
+            query_to_use = user_query
+        
         # Get chat history (excluding routing messages)
         chat_history = []
         for msg in state["messages"]:
@@ -166,20 +188,25 @@ class MultiAgentWorkflow:
         
         # Process through clinical agent
         response = self.clinical.process(
-            user_query,  # Pass the actual user question
+            query_to_use,  # Use transformed query
             chat_history,
             patient_context=state.get("patient_data")
         )
         
-        # Add agent label to response
-        labeled_response = f"**Clinical Agent:** {response['message']}"
+        # Add agent label to response with transformation info
+        transformation_note = ""
+        if query_to_use != user_query:
+            transformation_note = f"\n*[Query optimized for better retrieval]*\n\n"
+        
+        labeled_response = f"**Clinical Agent:**{transformation_note} {response['message']}"
         
         # Update state
         return {
             "messages": [{"role": "assistant", "content": labeled_response}],
             "current_agent": "clinical",
             "needs_routing": False,
-            "turn_count": state.get("turn_count", 0) + 1
+            "turn_count": state.get("turn_count", 0) + 1,
+            "query_transformation": transformed  # Store transformation details
         }
     
     def _route_from_receptionist(self, state: AgentState) -> Literal["clinical", "end"]:
